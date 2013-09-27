@@ -1,0 +1,46 @@
+<!-- INCLUDE overall_header.html -->
+<!-- IF S_SHOW_COPPA or S_REGISTRATION -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><form method="post" action="{S_UCP_ACTION}" id="agreement">
+
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<div class="content">
+			<h2>{SITENAME} - {L_REGISTRATION}</h2>
+			<p><!-- IF S_SHOW_COPPA -->{L_COPPA_BIRTHDAY}<!-- ELSE -->{L_TERMS_OF_USE}<!-- ENDIF --></p>
+		</div>
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<fieldset class="submit-buttons">
+			<!-- IF S_SHOW_COPPA -->
+			<strong><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7BU_COPPA_NO%7D" class="button1">{L_COPPA_NO}</a></strong>&nbsp; <a href="http://www.aobot.org/forum/styles/Exhibit/template/%7BU_COPPA_YES%7D" class="button2">{L_COPPA_YES}</a>
+			<!-- ELSE -->
+			<input name="agreed" id="agreed" value="{L_AGREE}" class="button1" type="submit">&nbsp;
+			<input name="not_agreed" value="{L_NOT_AGREE}" class="button2" type="submit">
+			<!-- ENDIF -->
+			{S_HIDDEN_FIELDS}
+			{S_FORM_TOKEN}
+		</fieldset>
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	</form>
+
+<!-- ELSEIF S_AGREEMENT -->
+
+	<div class="panel">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<div class="content">
+			<h2>{SITENAME} - {AGREEMENT_TITLE}</h2>
+			<p>{AGREEMENT_TEXT}</p>
+			<hr class="dashed">
+			<p><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7BU_BACK%7D" class="button2">{L_BACK}</a></p>
+		</div>
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+<!-- ENDIF -->
+
+<!-- INCLUDE overall_footer.html --></body></html>

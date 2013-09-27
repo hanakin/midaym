@@ -1,0 +1,52 @@
+<!-- INCLUDE overall_header.html -->
+<div id="login-content" class="grid_24">
+	<form action="{S_LOGIN_ACTION}" method="post" id="login" class="clearfix">
+		<div class="panel grid_24">
+			<fieldset <!-- IF not S_CONFIRM_CODE -->class="fields1"<!-- ELSE -->class="fields2"<!-- ENDIF -->>
+				<h2><!-- IF LOGIN_EXPLAIN -->{LOGIN_EXPLAIN}<!-- ELSE -->{L_LOGIN}<!-- ENDIF --></h2>
+				<!-- IF LOGIN_ERROR --><div class="error">{LOGIN_ERROR}</div><!-- ENDIF -->
+				<dl class="field">
+					<dt><label for="{USERNAME_CREDENTIAL}">{L_USERNAME}:</label></dt>
+					<dd><input type="text" tabindex="1" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" value="{USERNAME}" class="inputbox autowidth" /></dd>
+				</dl>
+				<dl class="field">
+					<dt><label for="{PASSWORD_CREDENTIAL}">{L_PASSWORD}:</label></dt>
+					<dd><input type="password" tabindex="2" id="{PASSWORD_CREDENTIAL}" name="{PASSWORD_CREDENTIAL}" size="25" class="inputbox autowidth" /></dd>
+				</dl>
+				<!-- IF CAPTCHA_TEMPLATE and S_CONFIRM_CODE -->
+				<!-- DEFINE $CAPTCHA_TAB_INDEX = 3 -->
+				<!-- INCLUDE {CAPTCHA_TEMPLATE} -->
+				<!-- ENDIF -->
+				<!-- IF S_DISPLAY_FULL_LOGIN -->
+				<dl class="options">
+					<!-- IF S_DISPLAY_FULL_LOGIN and (U_SEND_PASSWORD or U_RESEND_ACTIVATION) -->
+					<dd>
+						<ul>
+					<!-- IF U_SEND_PASSWORD --><li><a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a></li><!-- ENDIF -->
+					<!-- IF U_RESEND_ACTIVATION --><li><a href="{U_RESEND_ACTIVATION}">{L_RESEND_ACTIVATION}</a></li><!-- ENDIF -->
+						</ul>
+					</dd>
+					<!-- ENDIF -->
+					<!-- IF S_AUTOLOGIN_ENABLED --><dd><label for="autologin"><input type="checkbox" name="autologin" id="autologin" tabindex="4" /> {L_LOG_ME_IN}</label></dd><!-- ENDIF -->
+					<dd><label for="viewonline"><input type="checkbox" name="viewonline" id="viewonline" tabindex="5" /> {L_HIDE_ME}</label></dd>
+				</dl>
+						<!-- ENDIF -->
+				<dl>
+					<dt>&nbsp;</dt>
+					<dd>{S_HIDDEN_FIELDS}<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" /></dd>
+				</dl>
+			</fieldset>
+		</div>
+		<!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->
+		<div class="panel grid_24">
+			<div class="inner">
+				<h3>{L_REGISTER}</h3>
+				<p>{L_LOGIN_INFO}</p>
+				<p><strong><a href="{U_TERMS_USE}">{L_TERMS_USE}</a> | <a href="{U_PRIVACY}">{L_PRIVACY}</a></strong></p>
+				<span class="button2"><a href="{U_REGISTER}">{L_REGISTER}</a></span>
+			</div>
+		</div>
+		<!-- ENDIF -->
+	</form>
+</div>
+<!-- INCLUDE overall_footer.html -->

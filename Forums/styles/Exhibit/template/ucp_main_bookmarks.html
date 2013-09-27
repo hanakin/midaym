@@ -1,0 +1,75 @@
+<!-- INCLUDE ucp_header.html -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><form id="ucp" method="post" action="{S_UCP_ACTION}" {s_form_enctype}="">
+
+<h2>{L_TITLE}</h2>
+
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<p>{L_BOOKMARKS_EXPLAIN}</p>
+
+<!-- IF S_NO_DISPLAY_BOOKMARKS -->
+	<p class="error">{L_BOOKMARKS_DISABLED}</p>
+<!-- ELSE -->
+
+<!-- IF .topicrow -->
+	<ul class="topiclist">
+		<li class="header">
+			<dl class="icon">
+				<dt>{L_BOOKMARKS}</dt>
+				<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
+			</dl>
+		</li>
+	</ul>
+	<ul class="topiclist cplist">
+
+	<!-- BEGIN topicrow -->
+		<li class="row&lt;!-- IF topicrow.S_TOPIC_REPORTED --&gt; reported&lt;!-- ELSEIF topicrow.S_ROW_COUNT is odd --&gt; bg1&lt;!-- ELSE --&gt; bg2&lt;!-- ENDIF --&gt;">
+			<!-- IF topicrow.S_DELETED_TOPIC -->
+				<dl><dt><strong>{L_DELETED_TOPIC}</strong></dt>
+				<dd class="mark"><input name="t[{topicrow.TOPIC_ID}]" id="t{topicrow.TOPIC_ID}" type="checkbox"></dd>
+				</dl>
+			<!-- ELSE -->
+			<dl class="icon" style="background-image: url({topicrow.TOPIC_FOLDER_IMG_SRC}); background-repeat: no-repeat;">
+				<dt style="&lt;!-- IF topicrow.TOPIC_ICON_IMG --&gt;background-image: url({T_ICONS_PATH}{topicrow.TOPIC_ICON_IMG}); background-repeat: no-repeat;&lt;!-- ENDIF --&gt;" title="{topicrow.TOPIC_FOLDER_IMG_ALT}">
+					<!-- IF topicrow.S_UNREAD_TOPIC --><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Btopicrow.U_NEWEST_POST%7D">{NEWEST_POST_IMG}</a> <!-- ENDIF --><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Btopicrow.U_VIEW_TOPIC%7D" class="topictitle">{topicrow.TOPIC_TITLE}</a>
+					<!-- IF topicrow.S_TOPIC_UNAPPROVED or topicrow.S_POSTS_UNAPPROVED --><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Btopicrow.U_MCP_QUEUE%7D">{topicrow.UNAPPROVED_IMG}</a> <!-- ENDIF -->
+					<!-- IF topicrow.S_TOPIC_REPORTED --><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Btopicrow.U_MCP_REPORT%7D">{REPORTED_IMG}</a><!-- ENDIF --><br>
+					<!-- IF topicrow.PAGINATION --><strong class="pagination"><span>{topicrow.PAGINATION}</span></strong><!-- ENDIF -->
+					<!-- IF topicrow.ATTACH_ICON_IMG -->{topicrow.ATTACH_ICON_IMG} <!-- ENDIF -->{L_POST_BY_AUTHOR} {topicrow.TOPIC_AUTHOR_FULL} » {topicrow.FIRST_POST_TIME}
+				</dt>
+				<dd class="lastpost"><span><dfn>{L_LAST_POST} </dfn>{L_POST_BY_AUTHOR} {topicrow.LAST_POST_AUTHOR_FULL}
+					<a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Btopicrow.U_LAST_POST%7D">{LAST_POST_IMG}</a> <br>{topicrow.LAST_POST_TIME}</span>
+				</dd>
+				<dd class="mark"><input name="t[{topicrow.TOPIC_ID}]" id="t{topicrow.TOPIC_ID}" type="checkbox"></dd>
+			</dl>
+			<!-- ENDIF -->
+		</li>
+	<!-- END topicrow -->
+	</ul>
+	<ul class="linklist">
+		<li class="rightside pagination">
+			<!-- IF TOTAL_TOPICS --> {TOTAL_TOPICS} <!-- ENDIF -->
+			<!-- IF PAGE_NUMBER --><!-- IF PAGINATION --> &#8226; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{PAGE_NUMBER}</a> &#8226; <span>{PAGINATION}</span><!-- ELSE --> &#8226; {PAGE_NUMBER}<!-- ENDIF --><!-- ENDIF -->
+		</li>
+	</ul>
+<!-- ELSE -->
+	<p><strong>{L_NO_BOOKMARKS}</strong></p>
+<!-- ENDIF -->
+
+<!-- ENDIF -->
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<!-- IF .topicrow and not S_NO_DISPLAY_BOOKMARKS -->
+	<fieldset class="display-actions">
+		<input name="unbookmark" value="{L_REMOVE_BOOKMARK_MARKED}" class="button2" type="submit">
+		<div><a href="#" onclick="marklist('ucp', '', true); return false;">{L_MARK_ALL}</a> &#8226; <a href="#" onclick="marklist('ucp', '', false); return false;">{L_UNMARK_ALL}</a></div>
+		{S_FORM_TOKEN}
+	</fieldset>
+<!-- ENDIF -->
+</form>
+
+<!-- INCLUDE ucp_footer.html --></body></html>

@@ -1,0 +1,12 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			Mino (the default phpBB 3.1.x style)
+	Based on style:		
+	Original author:	Mike Miday ( http://www.midaym.com/ )
+	Modified by:		phpBB Group ( https://www.phpbb.com/ )
+    --------------------------------------------------------------
+*/
+
+@import url("../assets/css/global.css"); 		/* Base styles (Reset, Defaults) - DO NOT MAKE CHANGES TO THIS FILE */
+@import url("../assets/css/core.css");			/* Default structure syles (grids, responsive uilities) */
+@import url("../assets/css/theme.css");		/* All changes for individual themes */

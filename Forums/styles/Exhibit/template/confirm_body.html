@@ -1,0 +1,21 @@
+<!-- INCLUDE overall_header.html -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><form id="confirm" action="{S_CONFIRM_ACTION}" method="post">
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<h2>{MESSAGE_TITLE}</h2>
+	<p>{MESSAGE_TEXT}</p>
+	
+	<fieldset class="submit-buttons">
+		{S_HIDDEN_FIELDS}
+		<input name="confirm" value="{L_YES}" class="button2" type="submit">&nbsp; 
+		<input name="cancel" value="{L_NO}" class="button2" type="submit">
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</form>
+
+<!-- INCLUDE overall_footer.html -->
+</body></html>

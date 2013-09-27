@@ -1,0 +1,49 @@
+
+
+/* @group fonts */
+
+#forum-head p									{ text-transform: uppercase; }
+.postprofile strong,
+.postprofile a									{ font-size: 12px; }
+.top											{ font-weight: 700; text-transform: uppercase; }
+.top:hover,
+strong.pagination span a:hover,
+li.pagination span a:hover						{ text-decoration: none; }
+a#logo,
+li.buttons span a,
+ul.profile-icons li a,
+ul.post-icons li a,
+li.header dt .no-expand a.expand				{ text-indent: -9999px; }
+a.username-coloured,
+ul.linklist a.icon-home							{ font-weight: 700; }
+body											{ font-family: "Lucida Grande", Lucida, Verdana, sans-serif; letter-spacing: .05em; line-height: 16px; }
+dd.posts,
+dd.topics,
+dd.views										{ line-height: 2em; }
+div#info h3,
+div#info h3 a									{ font-size: 14px; font-weight: 700; text-transform: uppercase; }
+div#nav label,
+.postprofile									{ font-size: 11px; }
+div#nav li										{ font-size: 11px; font-weight: 700; }
+div#nav ul										{ margin: 0 0 0 2px; padding: 12px; text-align: center; }
+div.copyright,
+ul.topiclist dd.topics,
+ul.topiclist dd.posts,
+ul.topiclist dd.views,
+.sort,
+#quick-reply									{ text-align: center; }
+h3.first a span									{ font-size: 14px; }
+li.header dd									{ font-size: 12px; font-weight: 700; text-transform: uppercase; }
+li.header dd,
+li.row											{ line-height: 1.1em; }
+li.header dt span b.ftitle						{ font-size: 12px; font-weight: 700; text-transform: uppercase; }
+li.pagination span a,
+li.pagination span strong						{ font-size: 12px; font-weight: 900; }
+li.rightside									{ text-align: right; }
+li.row dt a.subforum							{ font-size: 12px; font-weight: 400; }
+li.row dt a.topictitle							{ font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+li.row dt,p										{ font-weight: 400; }
+strong											{ font-weight: 900; }
+strong.pagination span a						{ font-size: 10px; font-weight: 400; text-decoration: none; }
+
+/* @end */

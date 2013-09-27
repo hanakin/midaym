@@ -1,0 +1,28 @@
+<!-- INCLUDE mcp_header.html -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><form method="post" id="mcp" action="{U_POST_ACTION}">
+
+<h2>{L_TITLE}</h2>
+
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<fieldset>
+	<dl>
+		<dt><label for="username">{L_SELECT_USER}:</label></dt>
+		<dd><input name="username" id="username" class="inputbox" type="text"></dd>
+		<dd><strong><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7BU_FIND_USERNAME%7D" onclick="find_username(this.href); return false;">{L_FIND_USERNAME}</a></strong></dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<fieldset class="submit-buttons">
+	<input value="{L_RESET}" name="reset" class="button2" type="reset">&nbsp; 
+	<input name="submituser" value="{L_SUBMIT}" class="button1" type="submit">
+	{S_FORM_TOKEN}
+</fieldset>
+</form>
+
+<!-- INCLUDE mcp_footer.html --></body></html>

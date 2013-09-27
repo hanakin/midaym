@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}" xml:lang="{S_USER_LANG}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="{S_USER_LANG}" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+{META}
+<title>{SITENAME} &bull;
+<!-- IF S_IN_MCP -->
+{L_MCP} &bull;
+<!-- ELSEIF S_IN_UCP -->
+{L_UCP} &bull;
+<!-- ENDIF -->
+{PAGE_TITLE}</title>
+<!-- IF S_ENABLE_FEEDS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{U_FEED}" />
+<!-- IF S_ENABLE_FEEDS_NEWS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{U_FEED}?mode=news" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_FORUMS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_FORUMS}" href="{U_FEED}?mode=forums" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_TOPICS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_TOPICS}" href="{U_FEED}?mode=topics" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_FORUM and S_FORUM_ID -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FORUM} - {FORUM_NAME}" href="{U_FEED}?f={S_FORUM_ID}" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}" href="{U_FEED}?f={S_FORUM_ID}&amp;t={S_TOPIC_ID}" />
+<!-- ENDIF -->
+<!-- ENDIF -->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = '{LA_JUMP_PAGE}:';
+	var on_page = '{ON_PAGE}';
+	var per_page = '{PER_PAGE}';
+	var base_url = '{A_BASE_URL}';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	<!-- IF S_USER_PM_POPUP -->
+		if ({S_NEW_PM})
+		{
+			var url = '{UA_POPUP_PM}';
+			window.open(url.replace(/&amp;/g, '&'), '_phpbbprivmsg', 'height=225,resizable=yes,scrollbars=yes, width=400');
+		}
+	<!-- ENDIF -->
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	}
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	}
+
+// ]]>
+</script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/styleswitcher.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/forum_fn.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="{T_THEME_PATH}/stylesheet.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+	$(".search-link").click(function(){
+			$("#searchbox").slideToggle("slow");
+			$(this).toggleClass("active"); return false;
+		});	
+});
+//]]>
+</script>
+</head>
+<body id="phpbb">
+<a id="top" name="top" accesskey="t"></a>
+<div class="main-wrap">
+<div class="container_24 clearfix">
+	<div id="header" class="grid_24">
+		<div class="grid_8 alpha"><a href="./index.php" title="Board index" id="logo"></a></div>
+		<div id="nav" class="round-5">
+			<ul class="float">
+				<!-- IF not S_IS_BOT -->
+					<!-- IF S_USER_LOGGED_IN -->
+					<li>Welcome Back <a href="{U_VIEWPROFILE}" style="color: #{S_USER_COLOR};" class="username-coloured">{S_USERNAME}</a>
+					<!-- IF S_DISPLAY_PM -->( <a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a> )<!-- ENDIF -->
+					</li>
+					<li><a class="logot" href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x">Logout</a></li>
+					<li><a href="{U_PROFILE}">User CP</a></li>
+					<!-- ELSE -->
+					<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED --><li><a href="{U_REGISTER}">{L_REGISTER}</a></li><!-- ENDIF -->
+					<li><a class="login" href="{U_LOGIN_LOGOUT}" accesskey="x">Login</a></li>
+					<!-- ENDIF -->
+					<!-- IF U_MCP --><li><a class="mcp" href="{U_MCP}">Moderator CP</a></li><!-- ENDIF -->
+					<!-- IF U_ACP --><li><a class="acp" href="{U_ACP}">Admin CP</a></li><!-- ENDIF -->
+					<!-- IF S_DISPLAY_SEARCH --><li><a class="search-link" href="#">Search</a></li><!-- ENDIF -->
+				<!-- ENDIF -->
+			</ul>
+			<div id="searchbox" class="clear hide">
+				<form action="{U_SEARCH}" method="post" id="search">
+					<fieldset>
+						<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search" vvalue="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+						<input class="button2" value="{L_SEARCH}" type="submit" />
+						<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH_ADV}</a> {S_SEARCH_HIDDEN_FIELDS}
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<ul class="clear linklist grid_24">
+			<li class="icon-home grid_11 alpha">
+				<span class="home"><a href="{U_INDEX}" accesskey="h">{L_INDEX}</a></span>
+				<!-- BEGIN navlinks -->
+				<strong>&#8249;</strong> <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a>
+				<!-- END navlinks -->
+			</li>
+			<li class="rightside grid_12 alpha">
+				<!-- IF U_RESTORE_PERMISSIONS -->
+				<a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a> &bull; 
+				<!-- ENDIF -->
+				<!-- IF S_USER_LOGGED_IN -->
+				<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
+				<a href="{U_MARK_FORUMS}" accesskey="m">{L_MARK_FORUMS_READ}</a>
+				<!-- ENDIF -->
+				<!-- ENDIF -->
+			</li>
+		</ul>
+	</div>
+		<!-- @end overall_header -->

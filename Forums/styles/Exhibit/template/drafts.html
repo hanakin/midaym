@@ -1,0 +1,44 @@
+<!-- IF .draftrow -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<h3>{L_LOAD_DRAFT}</h3>
+	<p>{L_LOAD_DRAFT_EXPLAIN}</p>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<div class="forumbg">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<ul class="topiclist">
+		<li class="header">
+			<dl>
+				<dt>{L_LOAD_DRAFT}</dt>
+				<dd class="posted">{L_SAVE_DATE}</dd>
+			</dl>
+		</li>
+	</ul>
+	<ul class="topiclist topics">
+
+	<!-- BEGIN draftrow -->
+	<li class="row&lt;!-- IF draftrow.S_ROW_COUNT is even --&gt; bg1&lt;!-- ELSE --&gt; bg2&lt;!-- ENDIF --&gt;">
+		<dl>
+			<dt>
+				<a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Bdraftrow.U_INSERT%7D" title="{L_LOAD_DRAFT}" class="topictitle">{draftrow.DRAFT_SUBJECT}</a><br>
+				<!-- IF not S_PRIVMSGS --><!-- IF draftrow.S_LINK_TOPIC -->{L_TOPIC}: <a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Bdraftrow.U_VIEW%7D">{draftrow.TITLE}</a>
+				<!-- ELSEIF draftrow.S_LINK_FORUM -->{L_FORUM}: <a href="http://www.aobot.org/forum/styles/Exhibit/template/%7Bdraftrow.U_VIEW%7D">{draftrow.TITLE}</a>
+				<!-- ELSE -->{L_NO_TOPIC_FORUM}<!-- ENDIF --><!-- ENDIF -->
+			</dt>
+			<dd class="posted">{draftrow.DATE}</dd>
+		</dl>
+	</li>
+	<!-- END draftrow -->
+
+	</ul>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- ENDIF -->
+</body></html>

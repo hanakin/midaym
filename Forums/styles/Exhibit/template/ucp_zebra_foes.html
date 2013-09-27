@@ -1,0 +1,41 @@
+<!-- INCLUDE ucp_header.html -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head><body><form id="ucp" method="post" action="{S_UCP_ACTION}" {s_form_enctype}="">
+
+<h2>{L_TITLE}</h2>
+
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<p>{L_FOES_EXPLAIN}</p>
+
+	<fieldset class="fields2">
+	<!-- IF ERROR --><p class="error">{ERROR}</p><!-- ENDIF -->
+	<dl>
+		<dt><label <!--="" if="" s_username_options="" --="">for="usernames"<!-- ENDIF -->&gt;{L_YOUR_FOES}:</label><br><span>{L_YOUR_FOES_EXPLAIN}</span></dt>
+		<dd>
+			<!-- IF S_USERNAME_OPTIONS -->
+				<select name="usernames[]" id="usernames" multiple="multiple" size="5">{S_USERNAME_OPTIONS}</select>
+			<!-- ELSE -->
+				<strong>{L_NO_FOES}</strong>
+			<!-- ENDIF -->
+		</dd>
+	</dl>
+	<dl>
+		<dt><label for="add">{L_ADD_FOES}:</label><br><span>{L_ADD_FOES_EXPLAIN}</span></dt>
+		<dd><textarea name="add" id="add" rows="3" cols="30" class="inputbox">{USERNAMES}</textarea></dd>
+		<dd><strong><a href="http://www.aobot.org/forum/styles/Exhibit/template/%7BU_FIND_USERNAME%7D" onclick="find_username(this.href); return false;">{L_FIND_USERNAME}</a></strong></dd>
+	</dl>
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<fieldset class="submit-buttons">
+	{S_HIDDEN_FIELDS}<input value="{L_RESET}" name="reset" class="button2" type="reset">&nbsp; 
+	<input name="submit" value="{L_SUBMIT}" class="button1" type="submit">
+	{S_FORM_TOKEN}
+</fieldset>
+</form>
+
+<!-- INCLUDE ucp_footer.html --></body></html>

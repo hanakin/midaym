@@ -1,0 +1,82 @@
+
+
+/* @group spacing */
+
+#quick-mod										{ margin-right: 15px; }
+#quick-reply									{ margin: 10px 0; padding: 10px; }
+.post .inner									{ padding: 20px; }
+.postprofile									{ margin: 0 0 0 29px; padding: 10px 0 10px 10px; }
+.top											{ margin-top: 20px; padding-left: 22px; padding-top: 2px; }
+dd.lastpost span								{ padding-left: 4px; }
+div#footer div.container_24						{ padding-top: 15px; }
+div#forum-head p								{ margin-top: -12px; }
+div#forum-head,ul.profile-icons					{ margin-top: 20px; }
+div#info										{ margin: 20px 0 0 20px; }
+div#nav											{ margin: 30px 0 0; padding: 0; }
+div#nav #searchbox fieldset						{ margin: 0 0 0 60px; }
+div#nav div#searchbox input[type=text],
+div#nav div#searchbox input[type=password],
+div#nav div#searchbox input.text,
+div#nav div#searchbox input.title,
+div#nav textarea,
+div#nav div#searchbox select					{ margin: 0; width: 300px; }
+div#nav dl.checks								{ margin: 0 136px; }
+div#nav dl.checks dt							{ margin-left: 36px; }
+div#nav fieldset								{ margin: 16px 0 20px 35px; }
+div#nav fieldset dl								{ margin: 0 0 5px; }
+div#nav input[type=text],
+div#nav input[type=password],
+div#nav input.text,
+div#nav input.title,
+div#nav textarea,
+div#nav select,
+div.forabg dl,
+div.forabg ul,
+div.forumbg dl,
+.post-message h3,
+.postprofile dd,
+div.forumbg ul,
+ul.forum-topics,
+li.icon-home span.home							{ margin: 0; }
+div#nav li										{ padding: 0 11px; }
+div#nav ul										{ padding: 12px; }
+div#rules										{ margin: 10px 0 30px; padding: 10px; }
+div.copyright									{ margin: 25px 0 30px; padding: 5px 5px 0; }
+div.forabg,
+div.forumbg										{ padding: 8px 0; }
+div.inner div.wrap								{ padding: 4px; }
+div.navbar										{ padding: 11px 4px; }
+div.topic-actions								{ margin-bottom: 10px; }
+dl.icon dt										{ padding: 4px 10px 4px 0; }
+dl.icon dt span									{ margin: 10px; }
+fieldset dd										{ margin-left: 1em; }
+hr												{ margin-left: 10px; }
+li.buttons div.search-box						{ margin-left: 30px; margin-top: 0; }
+li.header dd									{ border-left-width: 0; margin: 9px 0 0; padding-left: 12px; }
+li.header dt									{ padding-right: 17px; }
+li.header dt span								{ margin: 0 0 -7px -6px; }
+li.header dt span b.ftitle						{ padding: 10px 26px 10px 0; }
+li.header dt span em.no-expand					{ margin: 10px 7px; }
+li.header dt span em.no-expand a.expand			{ margin: 0 7px; }
+li.icon-home span								{ margin-left: 10px; padding-left: 20px; }
+li.pagination									{ padding-top: 5px; }
+li.pagination span								{ margin-left: 5px; margin-top: -5px; }
+li.pagination span a,
+li.pagination span strong						{ margin: 0 3px; padding: 6px 8px; }
+li.row dd										{ margin: 0; padding-top: 8px; }
+li.row dt a										{ margin-bottom: 4px; }
+li.row em.subs a.unread,
+li.rightside,
+li.row em.subs a.read							{ padding-left: 15px; }
+li.row p										{ margin: 2px 0; padding: 0; }
+strong.pagination span							{ margin: 0; padding-left: 15px; }
+strong.pagination span a,
+strong.pagination span strong					{ margin: 0 2px; padding: 0 2px; }
+ul#jump-box										{ margin-left: 15px; }
+ul.linklist										{ margin-bottom: 10px; margin-top: 10px; }
+ul.post-icons li.edit-icon						{ padding-left: 35px; }
+ul.profile-icons li,
+ul.post-icons li								{ margin: 0 4px; }
+ul.topiclist dd									{ padding-left: 5px; padding-right: 5px; }
+
+/* @end */

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}" xml:lang="{S_USER_LANG}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="{S_USER_LANG}" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+{META}
+<title>{SITENAME} &bull;
+<!-- IF S_IN_MCP -->
+{L_MCP} &bull;
+<!-- ELSEIF S_IN_UCP -->
+{L_UCP} &bull;
+<!-- ENDIF -->
+{PAGE_TITLE}</title>
+<!-- IF S_ENABLE_FEEDS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{U_FEED}" />
+<!-- IF S_ENABLE_FEEDS_NEWS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{U_FEED}?mode=news" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_FORUMS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_FORUMS}" href="{U_FEED}?mode=forums" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_TOPICS -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_TOPICS}" href="{U_FEED}?mode=topics" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_FORUM and S_FORUM_ID -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FORUM} - {FORUM_NAME}" href="{U_FEED}?f={S_FORUM_ID}" />
+<!-- ENDIF -->
+<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID -->
+<link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}" href="{U_FEED}?f={S_FORUM_ID}&amp;t={S_TOPIC_ID}" />
+<!-- ENDIF -->
+<!-- ENDIF -->
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = '{LA_JUMP_PAGE}:';
+	var on_page = '{ON_PAGE}';
+	var per_page = '{PER_PAGE}';
+	var base_url = '{A_BASE_URL}';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '{A_COOKIE_SETTINGS}';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+
+	<!-- IF S_USER_PM_POPUP -->
+		if ({S_NEW_PM})
+		{
+			var url = '{UA_POPUP_PM}';
+			window.open(url.replace(/&amp;/g, '&'), '_phpbbprivmsg', 'height=225,resizable=yes,scrollbars=yes, width=400');
+		}
+	<!-- ENDIF -->
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	}
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	}
+
+// ]]>
+</script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/styleswitcher.js"></script>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/forum_fn.js"></script>
+<link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="{T_THEME_PATH}/stylesheet.css" rel="stylesheet" type="text/css" media="screen, projection" />
+</head><body id="phpbb">
+<a id="top" name="top" accesskey="t"></a>
+<div class="container_24 clearfix">
+	<div id="header" class="grid_24">
+		<div class="grid_8 alpha"><a href="./index.php" title="Board index" id="logo"></a></div>
+		<div id="nav" class="round-5">
+			<ul class="float">
+				<!-- IF not S_IS_BOT -->
+					<!-- IF S_USER_LOGGED_IN -->
+					<li>Welcome Back <a href="{U_VIEWPROFILE}" style="color: #{S_USER_COLOR};" class="username-coloured">{S_USERNAME}</a>
+					<!-- IF S_DISPLAY_PM -->( <a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a> )<!-- ENDIF -->
+					</li>
+					<li><a class="login" href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x">Logout</a></li>
+					<li><a href="{U_PROFILE}">User CP</a></li>
+					<!-- ELSE -->
+					<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED --><li><a href="{U_REGISTER}">{L_REGISTER}</a></li><!-- ENDIF -->
+					<li><a class="login" href="{U_LOGIN_LOGOUT}" accesskey="x">Login</a></li>
+					<!-- ENDIF -->
+					<!-- IF U_MCP --><li><a class="mcp" href="{U_MCP}">Moderator CP</a></li><!-- ENDIF -->
+					<!-- IF U_ACP --><li><a class="acp" href="{U_ACP}">Admin CP</a></li><!-- ENDIF -->
+					<!-- IF S_DISPLAY_SEARCH --><li><a href="#">Search</a></li><!-- ENDIF -->
+				<!-- ENDIF -->
+			</ul>
+			<div id="searchbox" class="clear hide">
+				<form action="{U_SEARCH}" method="post" id="search">
+					<fieldset>
+						<input name="keywords" id="keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search" vvalue="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+						<input class="button2" value="{L_SEARCH}" type="submit" />
+						<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH_ADV}</a> {S_SEARCH_HIDDEN_FIELDS}
+					</fieldset>
+				</form>
+			</div>
+			<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
+			<div id="loginbox" class="hide">
+				<form action="{S_LOGIN_ACTION}" method="post" id="login">
+					<fieldset 
+					<!-- IF not S_CONFIRM_CODE -->
+					class="fields1"
+					<!-- ELSE -->
+					class="fields2"
+					<!-- ENDIF -->
+					>
+					<!-- IF LOGIN_ERROR -->
+					<div class="error">{LOGIN_ERROR}</div>
+					<!-- ENDIF -->
+					<dl class="boxes clearfix">
+						<dd>
+							<label for="{USERNAME_CREDENTIAL}">{L_USERNAME}:</label>
+						</dd>
+						<dd>
+							<input type="text" tabindex="1" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}" size="25" value="{USERNAME}" class="inputbox autowidth" />
+						</dd>
+						<dd>
+							<label for="{PASSWORD_CREDENTIAL}">{L_PASSWORD}:</label>
+						</dd>
+						<dd>
+							<input type="password" tabindex="2" id="{PASSWORD_CREDENTIAL}" name="{PASSWORD_CREDENTIAL}" size="25" class="inputbox autowidth" />
+						</dd>
+					</dl>
+					<dl class="checks">
+						<!-- IF S_DISPLAY_FULL_LOGIN and (U_SEND_PASSWORD or U_RESEND_ACTIVATION) -->
+						<!-- IF U_SEND_PASSWORD -->
+						<dd><a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a></dd>
+						<!-- ENDIF -->
+						<!-- IF U_RESEND_ACTIVATION -->
+						<dd><a href="{U_RESEND_ACTIVATION}">{L_RESEND_ACTIVATION}</a></dd>
+						<!-- ENDIF -->
+						<!-- ENDIF -->
+						<!-- IF CAPTCHA_TEMPLATE and S_CONFIRM_CODE -->
+						<!-- DEFINE $CAPTCHA_TAB_INDEX = 3 -->
+						<!-- INCLUDE {CAPTCHA_TEMPLATE} -->
+						<!-- ENDIF -->
+						<!-- IF S_AUTOLOGIN_ENABLED -->
+						<dd>
+							<label for="autologin">
+								<input type="checkbox" name="autologin" id="autologin" tabindex="4" />
+								{L_LOG_ME_IN}</label>
+						</dd>
+						<!-- ENDIF -->
+						<dd>
+							<label for="viewonline">
+								<input type="checkbox" name="viewonline" id="viewonline" tabindex="5" />
+								{L_HIDE_ME}</label>
+						</dd>
+					</dl>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd>{S_HIDDEN_FIELDS}
+							<input type="submit" name="login" tabindex="6" value="{L_LOGIN}" class="button1" />
+						</dd>
+					</dl>
+					</fieldset>
+				</form>
+			</div>
+			<!-- ENDIF -->
+			<div id="admincp" class="hide">
+				<form action="index.php?sid=dcbb7ecfdc20104098694045b4b8d098&amp;redirect=.%2F..%2Fadm%2Findex.php%3Fsid%3Ddcbb7ecfdc20104098694045b4b8d098" method="post" id="login">
+					<fieldset class="fields1">
+						<dl class="boxes clearfix">
+							<dd>
+								<label for="username">Username:</label>
+							</dd>
+							<dd>
+								<input type="text" tabindex="1" name="username" id="username" size="25" value="Hanakin" class="inputbox autowidth" />
+							</dd>
+							<dd>
+								<label for="password_32a00207cc2f5d3ea78193502861f8ac">Password:</label>
+							</dd>
+							<dd>
+								<input type="password" tabindex="2" id="password_32a00207cc2f5d3ea78193502861f8ac" name="password_32a00207cc2f5d3ea78193502861f8ac" size="25" class="inputbox autowidth" />
+							</dd>
+							<dd>
+								<input type="hidden" name="sid" value="dcbb7ecfdc20104098694045b4b8d098" />
+								<input type="hidden" name="credential" value="32a00207cc2f5d3ea78193502861f8ac" />
+								<input type="submit" name="login" tabindex="6" value="Login" class="button1" />
+							</dd>
+						</dl>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	<>
+		<!-- @end overall_header -->
