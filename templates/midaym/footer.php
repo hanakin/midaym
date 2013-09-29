@@ -1,7 +1,7 @@
 		<footer>
 	        <div class="container">
 	              <div class="row">
-	                <div class="span5">
+	                <div class="span7">
 	                    <p class="copyright">
 	                        &copy; Copyright 2013 <a href="#"><strong><i class="icon-midaym"></i>MIDAYM</strong></a>. <span class="desk">All Right Reserved.</span>
 	                    </p>
@@ -14,7 +14,7 @@
 	                        <li><a class="hide-text"href="https://plus.google.com/105826784814723673348" title="Google+"><i class="icon-googleplus"></i></a></li>
 	                    </ul>
 	                </div>
-	                <div class="span7">
+	                <div class="span5">
 	                    <nav class="pull-right">
 	                        <ul>
 	                            <li>
