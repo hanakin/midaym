@@ -1439,9 +1439,6 @@ img.featured {
   width: 300px;
   height: 300px;
 }
-img.about {
-  margin-top: -185px;
-}
 blockquote {
   border-left: solid 5px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -1558,7 +1555,7 @@ header .branding {
   display: block;
   width: 230px;
   text-transform: uppercase;
-  font-family: 'midaymMain';
+  font-family: 'midaym';
   margin-top: -20px;
   font-size: 48px;
   color: #333333;
@@ -1787,12 +1784,6 @@ footer .social > li:hover i {
   width: 0;
   height: 0;
 }
-/* Desktop */
-@media (max-width: 1200px) {
-  img.about {
-    width: 100%;
-  }
-}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 979px) {
   nav {
@@ -1823,13 +1814,6 @@ footer .social > li:hover i {
     width: 0;
     height: 0;
   }
-  img.about {
-    display: none;
-    visibility: hidden;
-    overflow: hidden;
-    width: 0;
-    height: 0;
-  }
 }
 /* Mobile Landscape */
 @media (max-width: 767px) {
@@ -1848,8 +1832,7 @@ footer .social > li:hover i {
   aside {
     padding-top: 40px;
   }
-  img.featured,
-  img.about {
+  img.featured {
     display: none;
     visibility: hidden;
     overflow: hidden;
@@ -1895,8 +1878,7 @@ footer .social > li:hover i {
   .pull-right {
     float: none;
   }
-  img.featured,
-  img.about {
+  img.featured {
     display: none;
     visibility: hidden;
     overflow: hidden;
