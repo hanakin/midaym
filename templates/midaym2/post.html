@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        
+        <meta name="keywords" content="keywords">
+        <meta name="description" content="description">
+        <meta name="author" content="author">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
+        
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/sugar.css">
+        <link rel="stylesheet" href="assets/css/theme.css">
+                
+        <link rel="shortcut icon" href="favicon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrapper">
+        
+        <nav class="grid nav visible-s">
+            <ul class="list-inline grid-row">
+                <li class="grid-s-4 text-center"><a href="archives.html" title="archives"><i class="icon icon-cloud"></i></a></li>
+                <li class="grid-s-4 text-center"><a href="about.html" title="about"><i class="icon icon-user"></i></a></li>
+                <li class="grid-s-4 text-center"><a href="contact.html" title="contact"><i class="icon icon-mail"></i></a></li>
+            </ul>
+        </nav>
+        <header class="header intro">
+            <p class="brand">
+                <a href="index.html"><img src="assets/img/branding.png" width="48px" height="48px">MIDAYM</a>
+            </p>
+            <hgroup class="grid">
+                <h1 class="intro-lead">
+                    Frameing Mino
+                    <small>
+                        Responsive, SMACSS, Bare-Bone, Bootstrap 3.0
+                    </small>
+                </h1>
+            </hgroup>
+        </header>
+
+        <section class="post">
+            <div class="grid">
+                <div class="row">
+                    <article class="post-single grid-s-12">
+                        <hgroup>
+                            <h2></h2>
+                        </hgroup>
+                        
+                        <p>When coming up with the best solution for working with the front-end devlopment of a major web application, there are alot of factors to take into account. By establishing the requirments for both devlopment and releaseability. We can then begin to determine what is needed out of a front-end workflow. Once we establish the workflow we can determine what best way to utilize a framework. Can we use one of the existing ones? Do we need to build our own fully tailor framework? Can we customize an existing one to fit our needs. These are the major questions that I wayed when determining the best approach to utilizing a framework.</p>
+
+                        <h2>Framework Requirments</h2>
+
+                        <p>To better allow me to answer the framework quetion I needed to define the devlopment modal for the themes. This was tricky as their is alot changing with PHPBB at the moment in the dev community. Their were a few things that stood out as major requirments however.</p>
+
+                        <ol>
+                            <li>LESS</li>
+                            <li>Responsive Grid Approach - best implimentation for our purposes</li>
+                            <li>SMACSS
+                                <ol>
+                                    <li>Scaleable file structure</li>
+                                    <li>Modular Component Files(ie: buttuns.less, labels.less, etc..)</li>
+                                </ol>
+                            </li>
+                            <li>Seperation - seperation of framework core files from build files</li>
+                        </ol>
+                        
+                        <h2>The Result</h2>
+                        
+                        <p>With these requirments I finally settled upon a customized scaled down version of <a href="https://github.com/twitter/bootstrap/tree/3.0.0-wip" title="Bootstrap 3.0">BS3</a>. The file structure is completely unique to the theme but the core of it utilizes several compnets of <a href="https://github.com/twitter/bootstrap/tree/3.0.0-wip" title="Bootstrap 3.0">BS3</a>. Mostly the structure and base stuff but also some of the core functionality for some of its components.</p>
+
+                        <h4>The Devlopment File Structure</h4>
+
+                        <p>The structure is broken into a three tier development process the <strong>Framework</strong>, <strong>Core</strong>, &amp; <strong>Theme</strong></p>
+
+                        <ul>
+                            <li>
+                                <h5><strong>Framework</strong></h5>
+                                <ul>
+                                    <li>This consists of the modified <a href="https://github.com/twitter/bootstrap/tree/3.0.0-wip" title="Bootstrap 3.0">BS3</a> less files
+                                        <ul>
+                                            <li>_variables.less</li>
+                                            <li>_mixins.less</li>
+                                            <li><strong>Global</strong></li>
+                                            <li>_normalize.less</li>
+                                            <li>_base.less</li>
+                                            <li>_type.less</li>
+                                            <li>_code.less</li>
+                                            <li>_tables.less</li>
+                                            <li>_forms.less</li>
+                                            <li><strong>Structure</strong></li>
+                                            <li>_responsive.less</li>
+                                            <li>_grid.less</li>
+                                            <li><strong>OBJECTS</strong></li>
+                                            <li>individual module core functionality</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><strong>Core</strong></h5>
+                                <ul>
+                                    <li>This is essentially used to set the baseline or barebone styles
+                                        <ul>
+                                            <li>global.less
+                                                <ul>
+                                                     <li>This serves as normalizing and setting up default type and element styles at the core level to build                            upon. This will serve as the primary file in a bare-bone theme</li>
+                                                </ul>
+                                            </li>
+                                            <li>core-structure.less
+                                                <ul>
+                                                    <li>This will establish the layout of the theme. This gives us the grid and responsive utilities as well                            as some default structural styles to build off of</li>
+                                                </ul>
+                                            </li>
+                                            <li>core-OBJECTS.less
+                                                <ul>
+                                                    <li>This is used to customize the OBJECTS ported from bootstrap and allow for further definition of the                             defaults for them.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><strong>Theme</strong></h5>
+                                <ul>
+                                    <li>This consists of 3 additional less files that do all the heavy lifting for generating the final css                             files that correspond directly to these files.
+                                        <ul>
+                                            <li>structure.less
+                                                <ul>
+                                                    <li>This allows for theme specific layout styling</li>
+                                                </ul>
+                                            </li>
+                                            <li>theme.less
+                                                <ul>
+                                                    <li>This allows for theme specific styles.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>The Deployment Files</h4>
+                            
+                        <p>The end result that is served to the application consists of 4 files.</p>
+                            
+                        <ul>
+                            <li>stylesheet.css - This is leveraged the same way as it currently is to merge all the files together.
+                                <ul>
+                                    <li>global.css
+                                        <ul>
+                                            <li>This is the rendered core global css rules</li>
+                                        </ul>
+                                    </li>
+                                    <li>structure.css
+                                        <ul>
+                                            <li>This is the rendered layout for the theme</li>
+                                        </ul>
+                                    </li>
+                                    <li>theme.css
+                                        <ul>
+                                            <li>This is all the rendered theme specific rules</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Articles in This Series Series</h4>
+                            
+                        <ul>
+                            <li><a href="http://www.midaym.com/new-themeing-project">In the Begining</a> </li>
+                            <li><a href="http://www.midaym.com/style-the-guidelines">Style the Guidelines [Design Creation]</a></li>
+                            <li><a href="http://www.midaym.com/frameing-mino">Frameing Mino</a></li>
+                            <li>Rapid Prototyping [XHTML Prototyping]</li>
+                            <li>The Flavour </li>
+                            <li>Tweak &amp; Polish </li>
+                            <li>Seperation Anxiety</li>
+                            <li>Template Temptation</li>
+                            <li>jHancing</li>
+                            <li>Bench</li>
+                            <li>Deployment!</li>
+                        </ul>
+                    </article>
+                    
+                    <aside class="grid-s-12">
+                        <span class="date">Jul 24, 2013</span>
+                        <a class="pill-light" href="https://twitter.com/intent/tweet?screen_name=midaym
+&text=Re:%20http://www.midaym.com/frameing-mino%20" data-dnt="true">Comment on Twitter</a>
+                        </br>
+                        <a class="pill-light" href="https://twitter.com/intent/tweet?text=&quot;&quot;%20http://www.midaym.com/frameing-mino%20via%20&#64;midaym
+" data-dnt="true">Share on Twitter</a>
+                        </br>
+                        <a class="pill-light" href="http://www.midaym.com">More Articles</a>
+                        <script>
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                        </script>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="copyright">
+                &copy; Copyright 2013 MIDAYM. All Right Reserved.</span>
+            </p>
+            <ul class="social list-inline">
+                <li><a href="http://www.flickr.com/photos/midaym/" title="Flickr"><i class="icon icon-flickr"></i></a></li>
+                <li><a href="https://twitter.com/midaym" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/Midaymcom" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+                <li><a href="https://github.com/hanakin" title="Github"><i class="icon icon-github"></i></a></li>
+                <li><a href="http://www.linkedin.com/pub/mike-miday/16/694/4ba" title="Linked In"><i class="icon icon-linkedin"></i></a></li>
+                <li><a href="https://plus.google.com/105826784814723673348" title="Google+"><i class="icon icon-google"></i></a></li>
+            </ul>
+            <p class="logo"><a href="index.html" title="Midaym"><i class="icon icon-midaym1"></i></a></p>
+        </footer>
+
+        <!-- <?php echo $content ?> -->
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <?php echo stripslashes($tracking_code) ?> -->
+    </div>
+    </body>
+</html>
+
+

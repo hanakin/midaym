@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $BASE--CODE
+\*------------------------------------*/
+
+/**
+ * Simple Defaults
+ */
+
+code,
+kdb,
+pre,
+samp { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
+
+/**
+ * Inline Code
+ */
+code {
+    // ** Text ** \\
+    font-size: 90%;
+    white-space: nowrap;
+    // ** Layout ** \\
+    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+}
+
+/**
+ * Code Blocks
+ */
+pre {
+    // ** Text ** \\
+    .font-size(@base-font-size - 1);
+    .line-height(@base-font-size - 1);
+    word-break: break-all;
+    word-wrap: break-word;
+    // ** Layout ** \\
+    display: block;
+    margin: 0;
+    .margin-left(@half-spacing-unit);
+    .padding(@half-spacing-unit);
+
+    // Account for some code outputs that place code tags in pre tags
+    code {
+        // ** Text ** \\
+        font-size: inherit;
+        white-space: pre-wrap;
+        // ** Decoration ** \\
+        background-color: transparent;
+        border: 0;
+        color: inherit;
+        // ** Layout ** \\
+        padding: 0;
+    }
+}
+

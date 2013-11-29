@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $CORE--TYPE
+\*------------------------------------*/
+
+/**
+ * Detailing type elements
+ */
+
+abbr.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+/**
+ * Better looking blockquotes
+ */
+blockquote {
+    // ** Decoration ** \\
+    border-left: 5px solid @white-dark;
+    // ** Layout ** \\
+    .padding(@half-spacing-unit,@base-spacing-unit);
+    .margin(0, 0, @base-spacing-unit);
+    
+    p {
+        .font-size(18);
+        font-weight: 400;
+        .line-height(18);
+    }
+    p:last-child { margin-bottom: 0; }
+
+    small {
+        // ** Text ** \\
+        .line-height(@base-font-size);
+        // ** Decoration ** \\
+        color: @gray;
+        // ** Layout ** \\
+        display: block;
+        
+        &:before { content: '\2014 \00A0'; } // EM DASH, NBSP
+    }
+}
+

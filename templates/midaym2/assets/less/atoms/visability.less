@@ -1,0 +1,167 @@
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+
+/**
+ * Hide Content
+ */
+.hidden             { .hidden(); }
+
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+    .responsive-invisibility();
+    @media (max-width: @medium-max) { .responsive-visibility(); }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-w { 
+        @media (min-width: @wide) { .responsive-visibility(); } 
+    }
+}
+
+.visible-m {
+    .responsive-invisibility();
+
+    &.visible-s { 
+        @media (min-width: @small) and (max-width: @medium-max) { .responsive-visibility(); } 
+    }
+
+    @media (max-width: @large-max) { .responsive-visibility(); }
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-w { 
+        @media (min-width: @wide) { .responsive-visibility(); } 
+    }
+}
+
+.visible-l {
+    .responsive-invisibility();
+
+    &.visible-s { 
+        @media (max-width: @medium-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-visibility(); } 
+    }
+
+    @media (max-width: @wide-max) { .responsive-visibility(); }
+
+    &.visible-w { 
+        @media (min-width: @wide) { .responsive-visibility(); } 
+    }
+}
+
+.visible-w {
+    .responsive-invisibility();
+    
+    &.visible-s { 
+        @media (max-width: @medium-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-visibility(); } 
+    }
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-visibility(); } 
+    }
+
+    @media (min-width: @wide-max) { .responsive-visibility(); }
+}
+
+/**
+ * Responsive Hidden Classes
+ */
+.hidden-s {
+    .responsive-visibility();
+
+    @media (max-width: @medium-max) { .responsive-invisibility(); }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .responsive-invisibility(); }
+    }
+}
+
+.hidden-m {
+    .responsive-visibility();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .responsive-invisibility(); }
+    }
+
+    @media (min-width: @medium) and (max-width: @large-max) { .responsive-invisibility(); }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .responsive-invisibility(); }
+    }
+}
+
+.hidden-l {
+    .responsive-visibility();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-invisibility(); }
+    }
+
+    @media (min-width: @large) and (max-width: @wide-max) { .responsive-invisibility(); }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .responsive-invisibility(); }
+    }
+}
+
+.hidden-w {
+    .responsive-visibility();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .responsive-invisibility(); }
+    }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .responsive-invisibility(); }
+    }
+
+    @media (min-width: @wide) { .responsive-invisibility(); }
+}
+
+/**
+ * Print Classes
+ */
+.visible-print { .responsive-invisibility(); }
+
+@media print {
+    .visible-print { .responsive-visibility(); }
+    .hidden-print { .responsive-invisibility(); }
+}

@@ -1,0 +1,11 @@
+
+.wrapper{padding:0}
+section{padding:10px 0;border-top:1px solid rgba(0,0,0,0.05);border-bottom:1px solid rgba(255,255,255,0.25)}section article>h3{color:#245682}
+section h4{color:#a02622}
+.section-head{background-color:#f2f2f2}
+.section-odd{background-color:#edf4fa}
+.section-even{background-color:#e5eff8}
+.hero-unit{padding:30px 0}.hero-unit h1{letter-spacing:-3px;font-size:48px}.hero-unit h1 small{letter-spacing:-1px;font-size:30px}
+footer{padding:10px 0}footer .text-left{margin-top:8px}
+@font-face{font-family:'midaym';src:url('../../fonts/midaym.eot');src:url('../../fonts/midaym.eot?#iefix') format('embedded-opentype'),url('../../fonts/midaym.svg#icomoon') format('svg'),url('../../fonts/midaym.woff') format('woff'),url('../../fonts/midaym.ttf') format('truetype');font-weight:normal;font-style:normal}.branding{color:#ccc;font-family:'midaym';font-size:24px}.branding:hover{color:#999;text-decoration:none}
+.branding img{margin-bottom:-2px;margin-right:4px}

@@ -1,7 +1,7 @@
 <?php
 $blog_email = 'midaym@gmail.com';
 $blog_twitter = 'midaym';
-$blog_url = 'http://www.midaym.com';
+$blog_url = 'http://midaym.dev';
 $blog_title = "midaym";
 $meta_description = "The Personal Blog of Michael Miday a Front-End Specialist. Follow along as I discuss topics and projects covering the scope of all things Web Design &amp; Development related. I cover topics in HTML, [HTML5, CSS, CSS3, Design, PHP, Javascript, jQuery, PHPBB, Laravel, Less, Git, Photoshop &amp; More...";
 $intro_title = "The Playground";

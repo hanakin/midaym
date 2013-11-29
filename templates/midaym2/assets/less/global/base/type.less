@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    $BASE--TYPE
+\*------------------------------------*/
+
+/**
+ * 1. Apply default link color
+ * 2. Set hover color instead of underline as default
+ * 3. Remove outline on focus
+ */
+a {
+    color: @base-link-color; // [1]
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        // ** Text ** \\
+        text-decoration: none;  // [2]
+        // ** Decoration ** \\
+        color: darken(@base-link-color, 15%);  // [2]
+    }
+    &:focus { outline: none; }  // [3]
+}
+
+/**
+ * Establish proper baseline grid
+ */
+p { .margin(0, 0, @base-spacing-unit); }
+
+/**
+ * Set default consistent size
+ */
+small   { font-size: 85%; }
+
+/**
+ * Undo browser default styling
+ */
+cite    { font-style: normal; }
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,ins{ text-decoration:none; }
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+ins { border-bottom:1px solid; }
+
+/**
+ * 1. Give a help cursor to elements that give extra info on `:hover`.
+ * 2. Add dotted underline for more offset
+ */
+abbr[title] {
+    // ** Text ** \\
+    cursor: help; // [1]
+    // ** Decoration ** \\
+    border-bottom: 1px dotted @base-ui-color; // [2]
+}
+
+/**
+ * Set up better spacing
+ */
+address {
+    // ** Text ** \\
+    font-style: normal;
+    .line-height(@base-font-size);
+    // ** Layout ** \\
+    .margin-bottom(@base-spacing-unit);
+}
+
+/**
+ * Ensure no content before or after blockquotes
+ */
+blockquote:before,
+blockquote:after {
+    content: "";
+}
+
+/**
+ * A better looking default horizontal rule
+ *
+ * https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+ */
+hr {
+    // ** Decortion ** \\
+	border: 0;
+    border-top: 1px solid @base-ui-color;
+    // ** Layout ** \\
+    display: block;
+    height: 1px;
+    .margin(@base-spacing-unit, 0);
+}
+
+

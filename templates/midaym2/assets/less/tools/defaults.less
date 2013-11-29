@@ -1,0 +1,167 @@
+//------------------------------------//
+//  $DEFAULTS
+//------------------------------------//
+//  Redefine these in your own `vars.less` to override them.
+
+
+//------------------------------------//
+//  $COLORS
+//------------------------------------//
+
+//
+// Blacks
+//
+@black-pure:                    #000;
+@black-dark:                    lighten(#000, 10%); // #1a1a1a
+@black:                         lighten(#000, 20%); // #333333
+@black-light:                   lighten(#000, 30%); // #4d4d4d
+
+//
+// Grays
+//
+@gray-darker:                   lighten(#000, 40%); // #666
+@gray-dark:                     lighten(#000, 50%); // #808
+@gray:                          lighten(#000, 60%); // #999
+@gray-light:                    lighten(#000, 70%); // #b3b
+@gray-lighter:                  lighten(#000, 80%); // #ccc
+
+//
+// Whites
+//
+@white-darker:                  lighten(#000, 90%); // #e5e5e5
+@white-dark:                    lighten(#000, 95%); // #f2f2f2
+@white:                         #fff;
+
+// Accent colors
+@blue-dark:               		#2f6fa1;
+@blue:                   		#4f9fd0;
+@red:                    		#d44950;
+@green:                  		#48d470;
+@yellow:                 		#ffcd1a;
+@orange:                 		#f98d21;
+@pink:                   		#d448ac;
+@purple:                 		#9e48d4;
+
+
+//------------------------------------//
+//  $BASE
+//------------------------------------//
+
+//
+// Base font sizes
+//
+@base-font-size:                16;
+@base-rem-multiplier:           @base-font-size;
+
+//
+// Base line height
+//
+@base-line-height:              24;
+@base-line-height-ratio:        (@base-line-height/@base-font-size);
+
+//
+// Base spacing units
+//
+@base-spacing-unit:             @base-line-height; 			// 24
+//Large units
+@sextuple-spacing-unit:         (@base-spacing-unit * 6); 	// 144
+@quintuple-spacing-unit:        (@base-spacing-unit * 5); 	// 120
+@quadruple-spacing-unit:        (@base-spacing-unit * 4); 	// 96
+@triple-spacing-unit:           (@base-spacing-unit * 3); 	// 72
+@double-spacing-unit:           (@base-spacing-unit * 2); 	// 48
+// Small units
+@half-spacing-unit:             (@base-spacing-unit / 2); 	// 12
+@quarter-spacing-unit:          (@base-spacing-unit / 4); 	// 6
+@eighth-spacing-unit:           (@base-spacing-unit / 8); 	// 3
+
+
+//
+// Base font-family.
+//
+@base-font-family:              "Helvetica Neue", Arial, sans-serif;
+
+//
+// Base colour for objects’ borders etc.
+//
+@base-ui-color:                 @gray-lighter;
+
+//
+// Base colour for links
+//
+@base-link-color:               #21b5e4;
+        
+//
+// How big would you like round corners to be by default?
+//
+@base-radius:                   4px;
+
+//
+// Font-sizes (in pixels). Refer to relevant sections for their implementations.
+//
+@giga:                          @quadruple-spacing-unit;
+@mega:                          @triple-spacing-unit;
+@kilo:                          @double-spacing-unit;
+        
+@h1-size:                       36; 
+@h2-size:                       30; 
+@h3-size:                       @base-spacing-unit; 
+@h4-size:                       18; 
+@h5-size:                       16; 
+@h6-size:                       14; 
+        
+@milli:                         @half-spacing-unit;
+@micro:                         10;
+        
+@alpha:                         @h1-size;
+@beta:                          @h2-size;
+@gamma:                         @h3-size;
+@delta:                         @h4-size;
+@epsilon:                       @h5-size;
+@zeta:                          @h6-size;
+
+
+//------------------------------------//
+//  $ELEMENTS
+//------------------------------------//
+
+//
+// Code
+//
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@pre-bg:                      #f5f5f5;
+
+
+//------------------------------------//
+//  $BREAKPOINTS
+//------------------------------------//
+
+//
+// Different breakpoints for the project.
+//
+@small:                         480px;
+@medium:                        768px;
+@large:                         992px;
+@wide:                          1200px;
+
+//
+// So media queries don't overlap when required, provide a maximum
+//
+@small-max:                     (@small - 1);
+@medium-max:                    (@medium - 1);
+@large-max:                     (@large - 1);
+@wide-max:                      (@wide - 1);
+
+
+//------------------------------------//
+//  $GRIDS
+//------------------------------------//
+
+//
+// Different Grid sizes for the project.
+//
+@container-m:                   720px + (@base-spacing-unit * 1px);
+@container-l:                   940px + (@base-spacing-unit * 1px);
+@container-w:                   1140px + (@base-spacing-unit * 1px);
+

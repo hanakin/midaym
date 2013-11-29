@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $CORE--HEADINGS
+\*------------------------------------*/
+
+/**
+ * Detailing code elements
+ */
+h2, 
+h3, 
+h4 { font-weight: 900; }
+
+h2 {
+	.font-size(42);
+    .line-height(@double-spacing-unit);
+    letter-spacing: -3px;
+
+    display: block;
+    .margin-bottom(@quarter-spacing-unit);
+    
+    small {        
+        .font-size(30);
+        font-weight: 300;
+        .line-height(36);
+        letter-spacing: -1px;
+
+        color: @white;
+        .opacity(.6);
+
+        //display: block;
+    }
+}
+
+h3, 
+h4, 
+h5, 
+h6 { list-style: -1px; }
+h3, h4 {
+	.font-size(30);
+	.line-height(36);
+}
+
+h5 {
+	.font-size(18);
+	.line-height(@quarter-spacing-unit);
+	.margin-top(@base-spacing-unit);
+}
+
+h6 {
+	.font-size(18);
+	line-height: 0;
+	.margin(@base-spacing-unit, 0, -@half-spacing-unit);
+}
+

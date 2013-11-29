@@ -1,0 +1,1781 @@
+/*------------------------------------*\
+    GLOBAL.LESS
+\*------------------------------------*/
+/**
+ *  Contains all contents from the global directory - Base html normalize and styles as well as layout controling styles
+ */
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $NORMALIZE
+\*------------------------------------*/
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/*
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/*
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/*
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+/*
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts  in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/*
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/*
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/*
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/*
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/*
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/*
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+/*
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/*
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/*
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+/*
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Correct `color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/*
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+
+  font-size: 100%;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/*
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/*
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/*
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/*
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/*
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Force the use of box sizing by default
+ *
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/**
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications. Removes the default spacing and border for
+ * appropriate elements.
+ *
+ * https://github.com/suitcss/base
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  border: 0;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*------------------------------------*\
+    $BASE--MAIN
+\*------------------------------------*/
+/**
+ *  simple defaults for root level
+ */
+html {
+  font: 16px 1.5 "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+body {
+  color: #333333;
+}
+/*------------------------------------*\
+    $BASE--CODE
+\*------------------------------------*/
+/**
+ * Simple Defaults
+ */
+code,
+kdb,
+pre,
+samp {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+/**
+ * Inline Code
+ */
+code {
+  font-size: 90%;
+  white-space: nowrap;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+}
+/**
+ * Code Blocks
+ */
+pre {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: block;
+  margin: 0;
+  margin-left: 12px;
+  margin-left: 0.75rem;
+  padding: 12px;
+  padding: 0.75rem;
+}
+pre code {
+  font-size: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  padding: 0;
+}
+/*------------------------------------*\
+        $BASE--HEADINGS
+\*------------------------------------*/
+/**
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+h1,
+.alpha {
+  font-size: 36px;
+  font-size: 2.25rem;
+}
+h2,
+.beta {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+h3,
+.gamma {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+h4,
+.delta {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+h5,
+.epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+}
+h6,
+.zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.giga {
+  font-size: 96px;
+  font-size: 6rem;
+  line-height: 96px;
+  line-height: 6rem;
+}
+.mega {
+  font-size: 72px;
+  font-size: 4.5rem;
+  line-height: 72px;
+  line-height: 4.5rem;
+}
+.kilo {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 48px;
+  line-height: 3rem;
+}
+h1,
+.alpha,
+h2,
+.beta,
+h3,
+.gamma,
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  font-weight: 500;
+}
+h1 small,
+.alpha small,
+h2 small,
+.beta small,
+h3 small,
+.gamma small,
+h4 small,
+.delta small,
+h5 small,
+.epsilon small,
+h6 small,
+.zeta small {
+  font-weight: normal;
+  line-height: 24px;
+  line-height: 1.5rem;
+  color: #cccccc;
+  display: inline-block;
+}
+h1,
+.alpha,
+h2,
+.beta,
+h3,
+.gamma {
+  margin: 24px 0px;
+  margin: 1.5rem 0rem;
+}
+h1 small,
+.alpha small,
+h2 small,
+.beta small,
+h3 small,
+.gamma small {
+  font-size: 65%;
+}
+h4,
+.delta,
+h5,
+.epsilon,
+h6,
+.zeta {
+  margin: 12px 0px;
+  margin: 0.75rem 0rem;
+}
+h4 small,
+.delta small,
+h5 small,
+.epsilon small,
+h6 small,
+.zeta small {
+  font-size: 75%;
+}
+/*------------------------------------*\
+    $BASE--IMAGES
+\*------------------------------------*/
+/**
+ * So that `alt` text is visually offset if images don’t load.
+ */
+img {
+  font-style: italic;
+}
+/**
+ * Fluid images.
+ */
+img {
+  max-width: 100%;
+}
+/**
+ * Non-fluid images if you specify `width` and/or `height` attributes.
+ */
+img[width],
+img[height] {
+  max-width: none;
+}
+/**
+ * Images in `figure` elements.
+ */
+figure > img {
+  display: block;
+}
+/*------------------------------------*\
+    $BASE--LISTS
+\*------------------------------------*/
+ul,
+ol {
+  margin: 0px 0px 0px 24px;
+  margin: 0rem 0rem 0rem 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 6px 0px 6px 24px;
+  margin: 0.375rem 0rem 0.375rem 1.5rem;
+}
+dl {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+dt,
+dd {
+  line-height: 16px;
+  line-height: 1rem;
+}
+dt {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+dd {
+  margin-left: 0;
+}
+/*------------------------------------*\
+    $BASE--TYPE
+\*------------------------------------*/
+/**
+ * 1. Apply default link color
+ * 2. Set hover color instead of underline as default
+ * 3. Remove outline on focus
+ */
+a {
+  color: #21b5e4;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1482a4;
+}
+a:focus {
+  outline: none;
+}
+/**
+ * Establish proper baseline grid
+ */
+p {
+  margin: 0px 0px 24px;
+  margin: 0rem 0rem 1.5rem;
+}
+/**
+ * Set default consistent size
+ */
+small {
+  font-size: 85%;
+}
+/**
+ * Undo browser default styling
+ */
+cite {
+  font-style: normal;
+}
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+u,
+ins {
+  text-decoration: none;
+}
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+ins {
+  border-bottom: 1px solid;
+}
+/**
+ * 1. Give a help cursor to elements that give extra info on `:hover`.
+ * 2. Add dotted underline for more offset
+ */
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #cccccc;
+}
+/**
+ * Set up better spacing
+ */
+address {
+  font-style: normal;
+  line-height: 16px;
+  line-height: 1rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+/**
+ * Ensure no content before or after blockquotes
+ */
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+/**
+ * A better looking default horizontal rule
+ *
+ * https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+ */
+hr {
+  border: 0;
+  border-top: 1px solid #cccccc;
+  display: block;
+  height: 1px;
+  margin: 24px 0px;
+  margin: 1.5rem 0rem;
+}
+/*------------------------------------*\
+    $BASE--TABLES
+\*------------------------------------*/
+/**
+ * Cell alignments
+ */
+[colspan] {
+  text-align: center;
+}
+[colspan="1"] {
+  text-align: left;
+}
+[rowspan] {
+  vertical-align: middle;
+}
+[rowspan="1"] {
+  vertical-align: top;
+}
+table {
+  width: 100%;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  /**
+    * Bottom align for column headings
+    */
+
+  /**
+    * Remove top border from thead by default
+    */
+
+  /**
+    * Account for multiple tbody instances
+    */
+
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-align: center;
+  vertical-align: top;
+  border-top: 1px solid #cccccc;
+  padding: 8px;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #cccccc;
+}
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody + tbody {
+  border-top: 2px solid #cccccc;
+}
+/*------------------------------------*\
+    $BASE--FORMS
+\*------------------------------------*/
+/**
+ * Give form elements some cursor interactions...
+ */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}
+/**
+ * Set Fieldset border and paddings 
+ */
+fieldset {
+  border: 0;
+  padding: 24px;
+  padding: 1.5rem;
+}
+legend {
+  font-size: 21px;
+  font-size: 1.3125px;
+  line-height: inherit;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+  display: block;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+input[type="radio"],
+input[type="checkbox"] {
+  line-height: normal;
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  /* IE8-9 */
+
+  position: relative;
+  top: -3px;
+}
+/**
+ *  Set the height of select and file controls to match text inputs
+ */
+input[type="file"] {
+  display: block;
+}
+/**
+ *  Make multiple select elements height not fixed
+ */
+select[multiple],
+select[size] {
+  height: auto;
+}
+/**
+ *  Fix optgroup Firefox bug per https://github.com/twbs/bootstrap/issues/7611
+ */
+select optgroup {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+}
+/**
+ *  Focus for select, file, radio, and checkbox
+ */
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/**
+ *  Fix for Chrome number input
+ *  Setting certain font-sizes causes the `I` bar to appear on hover of the bottom increment button.
+ *  See https://github.com/twbs/bootstrap/issues/8350 for more.
+ */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+/**
+ *  Adjust output element
+ */
+output {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1rem;
+  vertical-align: middle;
+  color: #cccccc;
+  display: block;
+  padding-top: 7px;
+}
+/**
+ *  Placeholder text gets special styles because when browsers invalidate entire lines it doesn't understand a selector
+ */
+select:-moz-placeholder,
+textarea:-moz-placeholder,
+input[type="text"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="datetime"]:-moz-placeholder,
+input[type="datetime-local"]:-moz-placeholder,
+input[type="date"]:-moz-placeholder,
+input[type="month"]:-moz-placeholder,
+input[type="time"]:-moz-placeholder,
+input[type="week"]:-moz-placeholder,
+input[type="number"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="url"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="color"]:-moz-placeholder {
+  color: #cccccc;
+}
+select::-moz-placeholder,
+textarea::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="datetime"]::-moz-placeholder,
+input[type="datetime-local"]::-moz-placeholder,
+input[type="date"]::-moz-placeholder,
+input[type="month"]::-moz-placeholder,
+input[type="time"]::-moz-placeholder,
+input[type="week"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="color"]::-moz-placeholder {
+  color: #cccccc;
+}
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="datetime"]:-ms-input-placeholder,
+input[type="datetime-local"]:-ms-input-placeholder,
+input[type="date"]:-ms-input-placeholder,
+input[type="month"]:-ms-input-placeholder,
+input[type="time"]:-ms-input-placeholder,
+input[type="week"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="color"]:-ms-input-placeholder {
+  color: #cccccc;
+}
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="datetime"]::-webkit-input-placeholder,
+input[type="datetime-local"]::-webkit-input-placeholder,
+input[type="date"]::-webkit-input-placeholder,
+input[type="month"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder,
+input[type="week"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="color"]::-webkit-input-placeholder {
+  color: #cccccc;
+}
+select,
+textarea,
+input[type="text"],
+input[type="file"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: block;
+  height: 32px;
+  padding-top: 6px;
+  padding-top: 0.375rem;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-bottom: 6px;
+  padding-bottom: 0.375rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  width: 100%;
+  /**
+     *  Disabled and read-only inputs
+     *  Note: HTML5 says that controls under a fieldset > legend:first-child won't
+     *  be disabled if the fieldset is disabled. Due to implementation difficulty,
+     *  we don't honor that edge case; we style them as disabled anyway.   
+     */
+
+}
+select[disabled],
+textarea[disabled],
+input[type="text"][disabled],
+input[type="file"][disabled],
+input[type="password"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="date"][disabled],
+input[type="month"][disabled],
+input[type="time"][disabled],
+input[type="week"][disabled],
+input[type="number"][disabled],
+input[type="email"][disabled],
+input[type="url"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="color"][disabled],
+select[readonly],
+textarea[readonly],
+input[type="text"][readonly],
+input[type="file"][readonly],
+input[type="password"][readonly],
+input[type="datetime"][readonly],
+input[type="datetime-local"][readonly],
+input[type="date"][readonly],
+input[type="month"][readonly],
+input[type="time"][readonly],
+input[type="week"][readonly],
+input[type="number"][readonly],
+input[type="email"][readonly],
+input[type="url"][readonly],
+input[type="search"][readonly],
+input[type="tel"][readonly],
+input[type="color"][readonly],
+fieldset[disabled] select,
+fieldset[disabled] textarea,
+fieldset[disabled] input[type="text"],
+fieldset[disabled] input[type="file"],
+fieldset[disabled] input[type="password"],
+fieldset[disabled] input[type="datetime"],
+fieldset[disabled] input[type="datetime-local"],
+fieldset[disabled] input[type="date"],
+fieldset[disabled] input[type="month"],
+fieldset[disabled] input[type="time"],
+fieldset[disabled] input[type="week"],
+fieldset[disabled] input[type="number"],
+fieldset[disabled] input[type="email"],
+fieldset[disabled] input[type="url"],
+fieldset[disabled] input[type="search"],
+fieldset[disabled] input[type="tel"],
+fieldset[disabled] input[type="color"] {
+  cursor: not-allowed;
+  background-color: #cccccc;
+}
+textarea select,
+textarea textarea,
+textarea input[type="text"],
+textarea input[type="file"],
+textarea input[type="password"],
+textarea input[type="datetime"],
+textarea input[type="datetime-local"],
+textarea input[type="date"],
+textarea input[type="month"],
+textarea input[type="time"],
+textarea input[type="week"],
+textarea input[type="number"],
+textarea input[type="email"],
+textarea input[type="url"],
+textarea input[type="search"],
+textarea input[type="tel"],
+textarea input[type="color"] {
+  height: auto;
+}
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/**
+ *  Grid ported from Bootstrap 3.0.1
+ */
+/**
+ *  Decalre a grid
+ */.grid {
+  margin: 0 auto;
+  padding: 0px 12px;
+  padding: 0rem 0.75rem;
+}
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+/**
+ *  Declare Grid Row
+ */
+.grid-row {
+  margin: 0px 12px;
+  margin: 0rem 0.75rem;
+}
+.grid-row:before,
+.grid-row:after {
+  content: " ";
+  display: table;
+}
+.grid-row:after {
+  clear: both;
+}
+.grid-row:before,
+.grid-row:after {
+  content: " ";
+  display: table;
+}
+.grid-row:after {
+  clear: both;
+}
+/**
+ *  Common styles for small and large grid columns
+ */
+.grid-s-1,
+.grid-s-2,
+.grid-s-3,
+.grid-s-4,
+.grid-s-5,
+.grid-s-6,
+.grid-s-7,
+.grid-s-8,
+.grid-s-9,
+.grid-s-10,
+.grid-s-11,
+.grid-s-12,
+.grid-m-1,
+.grid-m-2,
+.grid-m-3,
+.grid-m-4,
+.grid-m-5,
+.grid-m-6,
+.grid-m-7,
+.grid-m-8,
+.grid-m-9,
+.grid-m-10,
+.grid-m-11,
+.grid-m-12,
+.grid-l-1,
+.grid-l-2,
+.grid-l-3,
+.grid-l-4,
+.grid-l-5,
+.grid-l-6,
+.grid-l-7,
+.grid-l-8,
+.grid-l-9,
+.grid-l-10,
+.grid-l-11,
+.grid-l-12,
+.grid-w-1,
+.grid-w-2,
+.grid-w-3,
+.grid-w-4,
+.grid-w-5,
+.grid-w-6,
+.grid-w-7,
+.grid-w-8,
+.grid-w-9,
+.grid-w-10,
+.grid-w-11,
+.grid-w-12 {
+  float: left;
+  min-height: 1px;
+  padding: 0px 12px;
+  padding: 0rem 0.75rem;
+  position: relative;
+}
+/**
+ *  Small - this is a mboile first grid approach...
+ */
+.grid-s-1 {
+  width: 8.333%;
+}
+.grid-s-2 {
+  width: 16.666%;
+}
+.grid-s-3 {
+  width: 25%;
+}
+.grid-s-4 {
+  width: 33.333%;
+}
+.grid-s-5 {
+  width: 41.666%;
+}
+.grid-s-6 {
+  width: 50%;
+}
+.grid-s-7 {
+  width: 58.333%;
+}
+.grid-s-8 {
+  width: 66.666%;
+}
+.grid-s-9 {
+  width: 75%;
+}
+.grid-s-10 {
+  width: 83.333%;
+}
+.grid-s-11 {
+  width: 91.666%;
+}
+.grid-s-12 {
+  width: 100%;
+}
+/**
+ *  Medium
+ */@media only screen and (min-width: 768px) {
+  .grid {
+    width: 744px;
+  }
+  .grid-m-1 {
+    width: 8.333%;
+  }
+  .grid-m-2 {
+    width: 16.666%;
+  }
+  .grid-m-3 {
+    width: 25%;
+  }
+  .grid-m-4 {
+    width: 33.333%;
+  }
+  .grid-m-5 {
+    width: 41.666%;
+  }
+  .grid-m-6 {
+    width: 50%;
+  }
+  .grid-m-7 {
+    width: 58.333%;
+  }
+  .grid-m-8 {
+    width: 66.666%;
+  }
+  .grid-m-9 {
+    width: 75%;
+  }
+  .grid-m-10 {
+    width: 83.333%;
+  }
+  .grid-m-11 {
+    width: 91.666%;
+  }
+  .grid-m-12 {
+    width: 100%;
+  }
+  .grid-m-push-1 {
+    left: 8.333%;
+  }
+  .grid-m-push-2 {
+    left: 16.666%;
+  }
+  .grid-m-push-3 {
+    left: 25%;
+  }
+  .grid-m-push-4 {
+    left: 33.333%;
+  }
+  .grid-m-push-5 {
+    left: 41.666%;
+  }
+  .grid-m-push-6 {
+    left: 50%;
+  }
+  .grid-m-push-7 {
+    left: 58.333%;
+  }
+  .grid-m-push-8 {
+    left: 66.666%;
+  }
+  .grid-m-push-9 {
+    left: 75%;
+  }
+  .grid-m-push-10 {
+    left: 83.333%;
+  }
+  .grid-m-push-11 {
+    left: 91.666%;
+  }
+  .grid-m-pull-1 {
+    right: 8.333%;
+  }
+  .grid-m-pull-2 {
+    right: 16.666%;
+  }
+  .grid-m-pull-3 {
+    right: 25%;
+  }
+  .grid-m-pull-4 {
+    right: 33.333%;
+  }
+  .grid-m-pull-5 {
+    right: 41.666%;
+  }
+  .grid-m-pull-6 {
+    right: 50%;
+  }
+  .grid-m-pull-7 {
+    right: 58.333%;
+  }
+  .grid-m-pull-8 {
+    right: 66.666%;
+  }
+  .grid-m-pull-9 {
+    right: 75%;
+  }
+  .grid-m-pull-10 {
+    right: 83.333%;
+  }
+  .grid-m-pull-11 {
+    right: 91.666%;
+  }
+  .grid-m-offset-1 {
+    margin-left: 8.333%;
+  }
+  .grid-m-offset-2 {
+    margin-left: 16.666%;
+  }
+  .grid-m-offset-3 {
+    margin-left: 25%;
+  }
+  .grid-m-offset-4 {
+    margin-left: 33.333%;
+  }
+  .grid-m-offset-5 {
+    margin-left: 41.666%;
+  }
+  .grid-m-offset-6 {
+    margin-left: 50%;
+  }
+  .grid-m-offset-7 {
+    margin-left: 58.333%;
+  }
+  .grid-m-offset-8 {
+    margin-left: 66.666%;
+  }
+  .grid-m-offset-9 {
+    margin-left: 75%;
+  }
+  .grid-m-offset-10 {
+    margin-left: 83.333%;
+  }
+  .grid-m-offset-11 {
+    margin-left: 91.666%;
+  }
+}
+/**
+ *  Large
+ */
+@media only screen and (min-width: 992px) {
+  .grid {
+    width: 964px;
+  }
+  .grid-l-1 {
+    width: 8.333%;
+  }
+  .grid-l-2 {
+    width: 16.666%;
+  }
+  .grid-l-3 {
+    width: 25%;
+  }
+  .grid-l-4 {
+    width: 33.333%;
+  }
+  .grid-l-5 {
+    width: 41.666%;
+  }
+  .grid-l-6 {
+    width: 50%;
+  }
+  .grid-l-7 {
+    width: 58.333%;
+  }
+  .grid-l-8 {
+    width: 66.666%;
+  }
+  .grid-l-9 {
+    width: 75%;
+  }
+  .grid-l-10 {
+    width: 83.333%;
+  }
+  .grid-l-11 {
+    width: 91.666%;
+  }
+  .grid-l-12 {
+    width: 100%;
+  }
+  .grid-l-push-1 {
+    left: 8.333%;
+  }
+  .grid-l-push-2 {
+    left: 16.666%;
+  }
+  .grid-l-push-3 {
+    left: 25%;
+  }
+  .grid-l-push-4 {
+    left: 33.333%;
+  }
+  .grid-l-push-5 {
+    left: 41.666%;
+  }
+  .grid-l-push-6 {
+    left: 50%;
+  }
+  .grid-l-push-7 {
+    left: 58.333%;
+  }
+  .grid-l-push-8 {
+    left: 66.666%;
+  }
+  .grid-l-push-9 {
+    left: 75%;
+  }
+  .grid-l-push-10 {
+    left: 83.333%;
+  }
+  .grid-l-push-11 {
+    left: 91.666%;
+  }
+  .grid-l-pull-1 {
+    right: 8.333%;
+  }
+  .grid-l-pull-2 {
+    right: 16.666%;
+  }
+  .grid-l-pull-3 {
+    right: 25%;
+  }
+  .grid-l-pull-4 {
+    right: 33.333%;
+  }
+  .grid-l-pull-5 {
+    right: 41.666%;
+  }
+  .grid-l-pull-6 {
+    right: 50%;
+  }
+  .grid-l-pull-7 {
+    right: 58.333%;
+  }
+  .grid-l-pull-8 {
+    right: 66.666%;
+  }
+  .grid-l-pull-9 {
+    right: 75%;
+  }
+  .grid-l-pull-10 {
+    right: 83.333%;
+  }
+  .grid-l-pull-11 {
+    right: 91.666%;
+  }
+  .grid-l-offset-1 {
+    margin-left: 8.333%;
+  }
+  .grid-l-offset-2 {
+    margin-left: 16.666%;
+  }
+  .grid-l-offset-3 {
+    margin-left: 25%;
+  }
+  .grid-l-offset-4 {
+    margin-left: 33.333%;
+  }
+  .grid-l-offset-5 {
+    margin-left: 41.666%;
+  }
+  .grid-l-offset-6 {
+    margin-left: 50%;
+  }
+  .grid-l-offset-7 {
+    margin-left: 58.333%;
+  }
+  .grid-l-offset-8 {
+    margin-left: 66.666%;
+  }
+  .grid-l-offset-9 {
+    margin-left: 75%;
+  }
+  .grid-l-offset-10 {
+    margin-left: 83.333%;
+  }
+  .grid-l-offset-11 {
+    margin-left: 91.666%;
+  }
+}
+/**
+ *  Wide
+ */
+@media only screen and (min-width: 1200px) {
+  .grid {
+    width: 1164px;
+  }
+  .grid-w-1 {
+    width: 8.333%;
+  }
+  .grid-w-2 {
+    width: 16.666%;
+  }
+  .grid-w-3 {
+    width: 25%;
+  }
+  .grid-w-4 {
+    width: 33.333%;
+  }
+  .grid-w-5 {
+    width: 41.666%;
+  }
+  .grid-w-6 {
+    width: 50%;
+  }
+  .grid-w-7 {
+    width: 58.333%;
+  }
+  .grid-w-8 {
+    width: 66.666%;
+  }
+  .grid-w-9 {
+    width: 75%;
+  }
+  .grid-w-10 {
+    width: 83.333%;
+  }
+  .grid-w-11 {
+    width: 91.666%;
+  }
+  .grid-w-12 {
+    width: 100%;
+  }
+  .grid-w-push-1 {
+    left: 8.333%;
+  }
+  .grid-w-push-2 {
+    left: 16.666%;
+  }
+  .grid-w-push-3 {
+    left: 25%;
+  }
+  .grid-w-push-4 {
+    left: 33.333%;
+  }
+  .grid-w-push-5 {
+    left: 41.666%;
+  }
+  .grid-w-push-6 {
+    left: 50%;
+  }
+  .grid-w-push-7 {
+    left: 58.333%;
+  }
+  .grid-w-push-8 {
+    left: 66.666%;
+  }
+  .grid-w-push-9 {
+    left: 75%;
+  }
+  .grid-w-push-10 {
+    left: 83.333%;
+  }
+  .grid-w-push-11 {
+    left: 91.666%;
+  }
+  .grid-w-pull-1 {
+    right: 8.333%;
+  }
+  .grid-w-pull-2 {
+    right: 16.666%;
+  }
+  .grid-w-pull-3 {
+    right: 25%;
+  }
+  .grid-w-pull-4 {
+    right: 33.333%;
+  }
+  .grid-w-pull-5 {
+    right: 41.666%;
+  }
+  .grid-w-pull-6 {
+    right: 50%;
+  }
+  .grid-w-pull-7 {
+    right: 58.333%;
+  }
+  .grid-w-pull-8 {
+    right: 66.666%;
+  }
+  .grid-w-pull-9 {
+    right: 75%;
+  }
+  .grid-w-pull-10 {
+    right: 83.333%;
+  }
+  .grid-w-pull-11 {
+    right: 91.666%;
+  }
+  .grid-w-offset-1 {
+    margin-left: 8.333%;
+  }
+  .grid-w-offset-2 {
+    margin-left: 16.666%;
+  }
+  .grid-w-offset-3 {
+    margin-left: 25%;
+  }
+  .grid-w-offset-4 {
+    margin-left: 33.333%;
+  }
+  .grid-w-offset-5 {
+    margin-left: 41.666%;
+  }
+  .grid-w-offset-6 {
+    margin-left: 50%;
+  }
+  .grid-w-offset-7 {
+    margin-left: 58.333%;
+  }
+  .grid-w-offset-8 {
+    margin-left: 66.666%;
+  }
+  .grid-w-offset-9 {
+    margin-left: 75%;
+  }
+  .grid-w-offset-10 {
+    margin-left: 83.333%;
+  }
+  .grid-w-offset-11 {
+    margin-left: 91.666%;
+  }
+}
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+/**
+ * common classes that can be usesed to control the positioning of content
+ */
+/**
+ * Floats Classes
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+blockquote.f-right {
+  border-left: 0;
+  border-right: 5px solid #f2f2f2;
+  padding-left: 0;
+}
+blockquote.f-right p,
+blockquote.f-right small {
+  text-align: right;
+}
+blockquote.f-right small:after {
+  content: '\00A0 \2014';
+}
+blockquote.f-right small:before {
+  content: '';
+}
+/**
+ * grid-paint Class
+ * 
+ * use on grid unit to color it
+ */
+.grid-paint {
+  /* Decoration */
+
+  background-color: #4a8ec2;
+  border-radius: 4px;
+  color: #fff;
+  /* Layout */
+
+  padding: 12px;
+  padding: 0.75rem;
+}

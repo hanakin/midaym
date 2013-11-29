@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    $ATOM-IMAGES
+\*------------------------------------*/
+
+/**
+ * Image Classes
+ */
+.img-rounded        { border-radius: 6px; }
+.img-circle         { border-radius: 50%; } // set radius in percents
+.img-thumbnail {
+    // ** Text ** \\
+    .line-height(@base-font-size);
+    // ** Decoration ** \\
+    background-color: @white;
+    border: 1px solid #ddd;
+    border-radius: @base-radius;
+    .transition(all .2s ease-in-out);
+    // ** Layout ** \\
+    .img-responsive(inline-block); // Keep them at most 100% wide
+    .padding(4);
+}

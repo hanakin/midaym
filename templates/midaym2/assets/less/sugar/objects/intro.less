@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $OBJECTS-INTRO
+\*------------------------------------*/
+
+/**
+ * Intro module.
+ *
+ */
+.intro { .padding(@half-spacing-unit, @half-spacing-unit, @double-spacing-unit); }
+
+.intro-lead {
+    .font-size(54);
+    font-weight: 900;
+    .line-height(60);
+    letter-spacing: -4px;
+    
+    .margin-top(@half-spacing-unit);
+    margin-bottom: 0;
+
+    small {
+        .font-size(30);
+        font-weight: 300;
+        .line-height(36);
+        letter-spacing: -1px;
+        
+        color: @black;
+        .opacity(.6);
+
+        display: block;
+    }
+}
+

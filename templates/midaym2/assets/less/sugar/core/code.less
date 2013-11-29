@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $CORE--CODE
+\*------------------------------------*/
+
+/**
+ * Detailing code elements
+ */
+
+/**
+ * Inline Code
+ */
+code {
+    background-color: @code-bg;
+    border-radius: @base-radius;
+    color: @code-color;
+}
+
+/**
+ * Code Blocks
+ */
+pre {
+    background-color: @pre-bg;
+    border: 1px solid @base-ui-color;
+    border-radius: @base-radius;
+    color: @black;
+}
+
+/**
+ * Prettify
+ */
+pre.prettyprint, code.prettyprint {
+	display: block;
+	.padding(@half-spacing-unit);
+	.margin-left(@base-spacing-unit);
+	background-color: @black; //darken(@white, 5%)
+	border-radius: 5px;
+	border: solid 1px darken(@white, 15%);
+	.line-height(20);
+}
+
+.pln { color: @white; }
+@media screen {
+  .str { color: @red; }  /* string content */
+  .kwd { color: @blue-dark;}  /* a keyword */
+  .com { color: @gray-light; }  /* a comment */
+  .typ { color: @white; }  /* a type name */
+  .lit { color: @red; }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun { color: @blue; }
+  .opn { color: @white; }
+  .clo { color: @white; }
+  .tag { color: @blue-dark; }  /* a markup tag name */
+  .atn { color: @blue; }  /* a markup attribute name */
+  .atv { color: @red; }  /* a markup attribute value */
+  .dec, .var { color: @blue-dark; }  /* a declaration; a variable name */
+  .fun { color: @red; }  /* a function name */
+}

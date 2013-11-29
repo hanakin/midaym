@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $BASE--LISTS
+\*------------------------------------*/
+
+ul,
+ol {
+	.margin(0, 0, 0, @base-spacing-unit);
+    ul,
+    ol{ .margin(@quarter-spacing-unit, 0, @quarter-spacing-unit, @base-spacing-unit); }
+}
+
+dl { .margin-bottom(@base-spacing-unit); }
+dt,
+dd { .line-height(@base-font-size); }
+dt { 
+    // ** Text ** \\
+    font-weight: bold;
+    // ** Layout ** \\
+    .margin-top(@half-spacing-unit);
+}
+dd { margin-left: 0; } // Undo browser default
+
