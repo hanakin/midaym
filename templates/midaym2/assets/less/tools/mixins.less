@@ -3,17 +3,20 @@
 //------------------------------------\\
 // Mixins ported and trimed from Bootstrap 3.0.1
 
-// Clearfix
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
 //
-// For modern browsers
+// Contain floats
+//
+// Make an element expand to contain floated children.
+// Uses pseudo-elements (micro clearfix).
+//
 // 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
+//    `contenteditable` attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of the
+//    element.
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
-.clearfix() {
+//
+.cf() {
     &:before,
     &:after {
         content: " ";   // [1]
@@ -348,19 +351,6 @@
 // More easily include all the states for responsive-utilities.less.
 .responsive-visibility() { display: block !important; }
 .responsive-invisibility() { & { display: none !important; } }
-
-
-// Hide content off-screen without resorting to `display:none;`
-.hidden(){
-    border: 0 !important;
-    clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-}
 
 
 // Rem Size Mixins
