@@ -24,16 +24,11 @@ textarea:focus{
 /**
  * Set Fieldset border and paddings 
  */
-fieldset {
-    // ** Decoration ** \\
-    border: 0;
-    // ** Layout ** \\
-    .padding(@base-spacing-unit);
-}
+fieldset { .padding(@base-spacing-unit); }
 
 legend {
     // ** Text ** \\
-    .font-size(21px);
+    .font-size(21);
     line-height: inherit;
     // ** Decoration ** \\
     border: 0;
@@ -184,10 +179,7 @@ input[type="color"] {
     .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
     display: block;
     height: @base-font-size*2px;
-    .padding-top(@quarter-spacing-unit);
-    .padding-right(@half-spacing-unit);
-    .padding-bottom(@quarter-spacing-unit);
-    .padding-left(@half-spacing-unit);
+    .padding(@quarter-spacing-unit, @half-spacing-unit);
     width: 100%;
 
     /**
