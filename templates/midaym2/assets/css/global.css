@@ -8,6 +8,1049 @@
     $IMPORTS
 \*------------------------------------*/
 /*------------------------------------*\
+    $ATOMS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ATOM-MARGINS
+\*------------------------------------*/
+/**
+ * Used to adjust the default spacing between components
+ *
+ * t = top
+ * r = right
+ * b = bottom
+ * l = left
+ * h = horizontal
+ * v = vertical
+ *
+ */
+/**
+ * All
+ */
+.m {
+  margin: 24;
+}
+.m-2x {
+  margin: 48;
+}
+.m-3x {
+  margin: 72;
+}
+.m-4x {
+  margin: 96;
+}
+.m-5x {
+  margin: 120;
+}
+.m-6x {
+  margin: 144;
+}
+.m-half {
+  margin: 12;
+}
+.m-quarter {
+  margin: 6;
+}
+.m-eighth {
+  margin: 3;
+}
+.p {
+  padding: 24;
+}
+.p-2x {
+  padding: 48;
+}
+.p-3x {
+  padding: 72;
+}
+.p-4x {
+  padding: 96;
+}
+.p-5x {
+  padding: 120;
+}
+.p-6x {
+  padding: 144;
+}
+.p-half {
+  padding: 12;
+}
+.p-quarter {
+  padding: 6;
+}
+.p-eighth {
+  padding: 3;
+}
+/**
+ * Top
+ */
+.mt {
+  margin-top: 24;
+}
+.mt-2x {
+  margin-top: 48;
+}
+.mt-3x {
+  margin-top: 72;
+}
+.mt-4x {
+  margin-top: 96;
+}
+.mt-5x {
+  margin-top: 120;
+}
+.mt-6x {
+  margin-top: 144;
+}
+.mt-half {
+  margin-top: 12;
+}
+.mt-quarter {
+  margin-top: 6;
+}
+.mt-eighth {
+  margin-top: 3;
+}
+.pt {
+  padding-top: 24;
+}
+.pt-2x {
+  padding-top: 48;
+}
+.pt-3x {
+  padding-top: 72;
+}
+.pt-4x {
+  padding-top: 96;
+}
+.pt-5x {
+  padding-top: 120;
+}
+.pt-6x {
+  padding-top: 144;
+}
+.pt-half {
+  padding-top: 12;
+}
+.pt-quarter {
+  padding-top: 6;
+}
+.pt-eighth {
+  padding-top: 3;
+}
+/**
+ * Right
+ */
+.mr {
+  margin-right: 24;
+}
+.mr-2x {
+  margin-right: 48;
+}
+.mr-3x {
+  margin-right: 72;
+}
+.mr-4x {
+  margin-right: 96;
+}
+.mr-5x {
+  margin-right: 120;
+}
+.mr-6x {
+  margin-right: 144;
+}
+.mr-half {
+  margin-right: 12;
+}
+.mr-quarter {
+  margin-right: 6;
+}
+.mr-eighth {
+  margin-right: 3;
+}
+.pr {
+  padding-right: 24;
+}
+.pr-2x {
+  padding-right: 48;
+}
+.pr-3x {
+  padding-right: 72;
+}
+.pr-4x {
+  padding-right: 96;
+}
+.pr-5x {
+  padding-right: 120;
+}
+.pr-6x {
+  padding-right: 144;
+}
+.pr-half {
+  padding-right: 12;
+}
+.pr-quarter {
+  padding-right: 6;
+}
+.pr-eighth {
+  padding-right: 3;
+}
+/**
+ * Bottom
+ */
+.mb {
+  margin-bottom: 24;
+}
+.mb-2x {
+  margin-bottom: 48;
+}
+.mb-3x {
+  margin-bottom: 72;
+}
+.mb-4x {
+  margin-bottom: 96;
+}
+.mb-5x {
+  margin-bottom: 120;
+}
+.mb-6x {
+  margin-bottom: 144;
+}
+.mb-half {
+  margin-bottom: 12;
+}
+.mb-quarter {
+  margin-bottom: 6;
+}
+.mb-eighth {
+  margin-bottom: 3;
+}
+.pb {
+  padding-bottom: 24;
+}
+.pb-2x {
+  padding-bottom: 48;
+}
+.pb-3x {
+  padding-bottom: 72;
+}
+.pb-4x {
+  padding-bottom: 96;
+}
+.pb-5x {
+  padding-bottom: 120;
+}
+.pb-6x {
+  padding-bottom: 144;
+}
+.pb-half {
+  padding-bottom: 12;
+}
+.pb-quarter {
+  padding-bottom: 6;
+}
+.pb-eighth {
+  padding-bottom: 3;
+}
+/**
+ * Left
+ */
+.ml {
+  margin-left: 24;
+}
+.ml-2x {
+  margin-left: 48;
+}
+.ml-3x {
+  margin-left: 72;
+}
+.ml-4x {
+  margin-left: 96;
+}
+.ml-5x {
+  margin-left: 120;
+}
+.ml-6x {
+  margin-left: 144;
+}
+.ml-half {
+  margin-left: 12;
+}
+.ml-quarter {
+  margin-left: 6;
+}
+.ml-eighth {
+  margin-left: 3;
+}
+.pl {
+  padding-left: 24;
+}
+.pl-2x {
+  padding-left: 48;
+}
+.pl-3x {
+  padding-left: 72;
+}
+.pl-4x {
+  padding-left: 96;
+}
+.pl-5x {
+  padding-left: 120;
+}
+.pl-6x {
+  padding-left: 144;
+}
+.pl-half {
+  padding-left: 12;
+}
+.pl-quarter {
+  padding-left: 6;
+}
+.pl-eighth {
+  padding-left: 3;
+}
+/**
+ * Horizontal
+ */
+.mh {
+  margin-left: 24;
+  margin-right: 24;
+}
+.mh-2x {
+  margin-left: 48;
+  margin-right: 48;
+}
+.mh-3x {
+  margin-left: 72;
+  margin-right: 72;
+}
+.mh-4x {
+  margin-left: 96;
+  margin-right: 96;
+}
+.mh-5x {
+  margin-left: 120;
+  margin-right: 120;
+}
+.mh-6x {
+  margin-left: 144;
+  margin-right: 144;
+}
+.mh-half {
+  margin-left: 12;
+  margin-right: 12;
+}
+.mh-quarter {
+  margin-left: 6;
+  margin-right: 6;
+}
+.mh-eighth {
+  margin-left: 3;
+  margin-right: 3;
+}
+.ph {
+  padding-left: 24;
+  padding-right: 24;
+}
+.ph-2x {
+  padding-left: 48;
+  padding-right: 48;
+}
+.ph-3x {
+  padding-left: 72;
+  padding-right: 72;
+}
+.ph-4x {
+  padding-left: 96;
+  padding-right: 96;
+}
+.ph-5x {
+  padding-left: 120;
+  padding-right: 120;
+}
+.ph-6x {
+  padding-left: 144;
+  padding-right: 144;
+}
+.ph-half {
+  padding-left: 12;
+  padding-right: 12;
+}
+.ph-quarter {
+  padding-left: 6;
+  padding-right: 6;
+}
+.ph-eighth {
+  padding-left: 3;
+  padding-right: 3;
+}
+/**
+ * Vertical
+ */
+.mv {
+  margin-top: 24;
+  margin-bottom: 24;
+}
+.mv-2x {
+  margin-top: 48;
+  margin-bottom: 48;
+}
+.mv-3x {
+  margin-top: 72;
+  margin-bottom: 72;
+}
+.mv-4x {
+  margin-top: 96;
+  margin-bottom: 96;
+}
+.mv-5x {
+  margin-top: 120;
+  margin-bottom: 120;
+}
+.mv-6x {
+  margin-top: 144;
+  margin-bottom: 144;
+}
+.mv-half {
+  margin-top: 12;
+  margin-bottom: 12;
+}
+.mv-quarter {
+  margin-top: 6;
+  margin-bottom: 6;
+}
+.mv-eighth {
+  margin-top: 3;
+  margin-bottom: 3;
+}
+.pv {
+  padding-top: 24;
+  padding-bottom: 24;
+}
+.pv-2x {
+  padding-top: 48;
+  padding-bottom: 48;
+}
+.pv-3x {
+  padding-top: 72;
+  padding-bottom: 72;
+}
+.pv-4x {
+  padding-top: 96;
+  padding-bottom: 96;
+}
+.pv-5x {
+  padding-top: 120;
+  padding-bottom: 120;
+}
+.pv-6x {
+  padding-top: 144;
+  padding-bottom: 144;
+}
+.pv-half {
+  padding-top: 12;
+  padding-bottom: 12;
+}
+.pv-quarter {
+  padding-top: 6;
+  padding-bottom: 6;
+}
+.pv-eighth {
+  padding-top: 3;
+  padding-bottom: 3;
+}
+/*------------------------------------*\
+    $ATOM-TEXT
+\*------------------------------------*/
+/**
+ * Horizontal text alignment
+ */
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.text-truncate {
+  max-width: 100%;
+  /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 */
+}
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.text-break {
+  word-wrap: break-word !important;
+}
+/*------------------------------------*\
+    $ATOM-LISTS
+\*------------------------------------*/
+/**
+ * List Type Classes
+ */
+.list-unstyled {
+  list-style: none;
+}
+.list-unstyled ul,
+.list-unstyled ol {
+  list-style: none;
+}
+.list-inline {
+  list-style: none;
+}
+.list-inline ul,
+.list-inline ol {
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+}
+@media (min-width: 768px) {
+  .list-inline {
+    /**
+         * Inline Description Lists
+         * Defaults to being stacked without any of the below styles applied, until the
+         * grid breakpoint is reached (default of ~768px).
+         */
+  }
+  .list-inline dt {
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    float: left;
+    margin-top: 0;
+    width: 160px;
+  }
+  .list-inline dd {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+    margin-left: 180px;
+  }
+  .list-inline dd:before,
+  .list-inline dd:after {
+    content: " ";
+    display: table;
+  }
+  .list-inline dd:after {
+    clear: both;
+  }
+}
+/*------------------------------------*\
+    $ATOM-TABLES
+\*------------------------------------*/
+/**
+ * Table Type Classes
+ */
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 6px;
+  padding: 0.375rem;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-bordered > thead th:first-child {
+  border-top-left-radius: 0;
+}
+.table-bordered > thead th:last-child {
+  border-top-right-radius: 0;
+}
+/*------------------------------------*\
+    $ATOM-INLLINE-FORMS
+\*------------------------------------*/
+/**
+ * Form Inline Class
+ * 
+ * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+ * forms begin stacked on extra small (mobile) devices and then go inline when
+ * viewports reach <768px.
+ * 
+ * Requires wrapping inputs and labels with `.form-group` for proper display of
+ * default HTML form controls.
+ */
+.form-group {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-left: 0.1875rem;
+    margin-right: 3px;
+    margin-right: 0.1875rem;
+  }
+  .form-inline .form-group:first-child {
+    margin-left: 0;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin: 0px 3px;
+    margin: 0rem 0.1875rem;
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+    top: 0;
+  }
+  .form-inline .btn {
+    margin-left: 3px;
+    margin-left: 0.1875rem;
+    margin-right: 3px;
+    margin-right: 0.1875rem;
+  }
+}
+/*------------------------------------*\
+    $ATOM-IMAGES
+\*------------------------------------*/
+/**
+ * Image Classes
+ */
+.img-rounded {
+  border-radius: 6px;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.img-thumbnail {
+  line-height: 16px;
+  line-height: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  padding: 0.25rem;
+}
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+/**
+ * Completely undo hidden.
+ */
+.display {
+  display: block !important;
+  visibility: visible !important;
+}
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.hidden-visually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+/**
+ * Control visibility without affecting flow.
+ */
+.invisible {
+  visibility: hidden !important;
+}
+.visible {
+  visibility: visible !important;
+}
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-s.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-s.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-s.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-m {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .visible-m.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (max-width: 991px) {
+  .visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-m.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-m.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-l {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-l.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-l.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (max-width: 1199px) {
+  .visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-l.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-w {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-w.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-w.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-w.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1199px) {
+  .visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+/**
+ * Responsive Hidden Classes
+ */
+.hidden-s {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-s.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-s.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-s.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-m {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-m.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-m.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-m.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-l {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-l.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-l.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-l.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-w {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-w.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-w.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-w.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/**
+ * Print Classes
+ */
+.visible-print {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .hidden-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/*------------------------------------*\
+    $ATOM-LAYOUT
+\*------------------------------------*/
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+.align-top {
+  vertical-align: top !important;
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+.align-baseline {
+  vertical-align: baseline !important;
+}
+.align-bottom {
+  vertical-align: bottom !important;
+}
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+.nbfc {
+  overflow: hidden !important;
+}
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+.nbfcAlt {
+  display: table-cell !important;
+  /* 1 */
+  width: 10000px !important;
+  /* 2 */
+}
+/**
+ * Floats
+ */
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+/**
+ * Object position helpers.
+ *
+ * Float an object left or right, and include some space between the object and
+ * proceeding objects.
+ */
+.objLeft {
+  float: left !important;
+  margin-right: 10px;
+}
+.objRight {
+  float: right !important;
+  margin-left: 10px;
+}
+/**
+ * 1. Remove excess space below images
+ * 2. Guard against `img {max-width:100%}` hiding this utility's images in
+ *    IE 8.
+ */
+.objLeft img,
+.objRight img {
+  display: block;
+  /* 1 */
+  max-width: none;
+  /* 2 */
+}
+/*------------------------------------*\
     $NORMALIZE
 \*------------------------------------*/
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
@@ -64,13 +1107,10 @@ audio:not([controls]) {
 html {
   font-family: sans-serif;
   /* 1 */
-
   -webkit-text-size-adjust: 100%;
   /* 2 */
-
   -ms-text-size-adjust: 100%;
   /* 2 */
-
 }
 /*
  * Remove default margin.
@@ -225,10 +1265,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /*
  * 1. Correct font family not being inherited in all browsers.
@@ -241,13 +1279,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /*
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -280,10 +1315,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /*
  * Re-set default cursor for disabled elements.
@@ -300,10 +1333,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /*
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -313,11 +1344,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /*
@@ -343,10 +1372,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -412,11 +1439,7 @@ hr {
   margin: 0;
   padding: 0;
 }
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+fieldset,
 iframe {
   border: 0;
 }
@@ -425,10 +1448,7 @@ iframe {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+::-moz-selection,
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -797,15 +1817,12 @@ table {
   /**
     * Bottom align for column headings
     */
-
   /**
     * Remove top border from thead by default
     */
-
   /**
     * Account for multiple tbody instances
     */
-
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -858,13 +1875,12 @@ textarea:focus {
  * Set Fieldset border and paddings 
  */
 fieldset {
-  border: 0;
   padding: 24px;
   padding: 1.5rem;
 }
 legend {
   font-size: 21px;
-  font-size: 1.3125px;
+  font-size: 1.3125rem;
   line-height: inherit;
   border: 0;
   border-bottom: 1px solid #cccccc;
@@ -896,7 +1912,6 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-
   position: relative;
   top: -3px;
 }
@@ -1057,14 +2072,8 @@ input[type="color"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   display: block;
   height: 32px;
-  padding-top: 6px;
-  padding-top: 0.375rem;
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-bottom: 6px;
-  padding-bottom: 0.375rem;
-  padding-left: 12px;
-  padding-left: 0.75rem;
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
   width: 100%;
   /**
      *  Disabled and read-only inputs
@@ -1072,7 +2081,6 @@ input[type="color"] {
      *  be disabled if the fieldset is disabled. Due to implementation difficulty,
      *  we don't honor that edge case; we style them as disabled anyway.   
      */
-
 }
 select[disabled],
 textarea[disabled],
@@ -1158,18 +2166,11 @@ textarea input[type="color"] {
  */
 /**
  *  Decalre a grid
- */.grid {
+ */
+.grid {
   margin: 0 auto;
   padding: 0px 12px;
   padding: 0rem 0.75rem;
-}
-.grid:before,
-.grid:after {
-  content: " ";
-  display: table;
-}
-.grid:after {
-  clear: both;
 }
 .grid:before,
 .grid:after {
@@ -1185,14 +2186,6 @@ textarea input[type="color"] {
 .grid-row {
   margin: 0px 12px;
   margin: 0rem 0.75rem;
-}
-.grid-row:before,
-.grid-row:after {
-  content: " ";
-  display: table;
-}
-.grid-row:after {
-  clear: both;
 }
 .grid-row:before,
 .grid-row:after {
@@ -1300,7 +2293,8 @@ textarea input[type="color"] {
 }
 /**
  *  Medium
- */@media only screen and (min-width: 768px) {
+ */
+@media only screen and (min-width: 768px) {
   .grid {
     width: 744px;
   }
@@ -1770,12 +2764,10 @@ blockquote.f-right small:before {
  */
 .grid-paint {
   /* Decoration */
-
   background-color: #4a8ec2;
   border-radius: 4px;
   color: #fff;
   /* Layout */
-
   padding: 12px;
   padding: 0.75rem;
 }

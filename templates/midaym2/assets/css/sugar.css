@@ -321,62 +321,45 @@ h6 {
  */
 .btn {
   /* Text */
-
   font-size: 100%;
   /* [1] */
-
   font-family: inherit;
   /* [1] */
-
   font-weight: normal;
   /* [1] */
-
   line-height: normal;
   /* [1] */
-
   letter-spacing: 1px;
   /* [1] */
-
   vertical-align: middle;
   /* [2] */
-
   white-space: nowrap;
   /* [3] */
-
   /* Decoration */
   background-color: #21b5e4;
   /* [4] */
-
   background-image: none;
   /* [5] */
   border: 0;
   /* [4] */
-
   border-radius: 5px;
   /* [4] */
-
   color: #ffffff;
   /* [4] */
-
   cursor: pointer;
   /* [6] */
-
   /* Layout */
   display: inline-block;
   /* [7] */
-
   margin: 0;
   /* [8] */
-
   padding: 12px 24px;
   padding: 0.75rem 1.5rem;
   /* [8] */
-
 }
 .btn:hover {
   text-decoration: none;
   /* [9] */
-
   background-color: #189bc4;
   color: #ffffff;
 }
@@ -687,7 +670,6 @@ h6 {
 }
 .brand a {
   /* Text */
-
   font-family: 'icomoon';
   font-size: inherit;
   font-style: normal;
@@ -703,7 +685,6 @@ h6 {
   font-size: 48px;
   letter-spacing: -4px;
   /* Decoration */
-
   color: #333333;
 }
 .brand a:hover {
@@ -831,7 +812,6 @@ h6 {
   /**
      * Button Overides
      */
-
 }
 .post .btn {
   font-weight: 700;
