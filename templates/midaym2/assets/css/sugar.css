@@ -245,6 +245,34 @@ fieldset[disabled] .checkbox-inline {
 /**
  * Detailing code elements
  */
+h1 {
+  /* Text */
+  font-size: 54px;
+  font-size: 3.375rem;
+  font-weight: 900;
+  line-height: 60px;
+  line-height: 3.75rem;
+  letter-spacing: -4px;
+  /* Layout */
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+h1 small {
+  /* Text */
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: -1px;
+  /* Decoration */
+  color: #333333;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* Layout */
+  display: block;
+}
 h2,
 h3,
 h4 {
@@ -1025,6 +1053,7 @@ h6 {
  * BG Color Overides
  */
 .blue .btn {
+  background-color: #ffffff;
   color: #333333;
 }
 .blue .btn:hover {
