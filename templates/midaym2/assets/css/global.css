@@ -908,6 +908,46 @@
   /* 2 */
 }
 /*------------------------------------*\
+    $ATOM-COLORS
+\*------------------------------------*/
+/**
+ * Used for comon clour changes to text
+ */
+.blue {
+  background-color: #3aa8b9;
+}
+.red {
+  background-color: #c65669;
+}
+.green {
+  background-color: #34d987;
+}
+.yellow {
+  background-color: #ffd22e;
+}
+.orange {
+  background-color: #f79738;
+}
+.pink {
+  background-color: #c655bb;
+}
+.purple {
+  background-color: #8855dc;
+}
+.gray {
+  background-color: #e6e6e6;
+}
+.white {
+  background-color: #ffffff;
+}
+.black {
+  background-color: #333333;
+  color: #ffffff;
+}
+.text-black {
+  color: #333333;
+}
+/*------------------------------------*\
     $ATOM-LISTS
 \*------------------------------------*/
 /**

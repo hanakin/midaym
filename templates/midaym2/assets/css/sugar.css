@@ -418,15 +418,42 @@ h6 {
   padding-left: 24;
   padding-right: 24;
 }
+/**
+ * Social Buttons
+ */
+.btn-twitter {
+  background-color: #00bdef !important;
+}
+.btn-twitter:hover {
+  background-color: #009dc6 !important;
+}
+.btn-facebook {
+  background-color: #2f4b93 !important;
+}
+.btn-facebook:hover {
+  background-color: #253b74 !important;
+}
+.btn-google {
+  background-color: #cf4b33 !important;
+}
+.btn-google:hover {
+  background-color: #b03e29 !important;
+}
+.btn-linkedin {
+  background-color: #0072b5 !important;
+}
+.btn-linkedin:hover {
+  background-color: #00588c !important;
+}
 @font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot');
-  src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-family: 'midaym';
+  src: url('../fonts/midaym.eot');
+  src: url('../fonts/midaym.eot?#iefix') format('embedded-opentype'), url('../fonts/midaym.ttf') format('truetype'), url('../fonts/midaym.woff') format('woff'), url('../fonts/midaym.svg#midaym') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 .icon {
-  font-family: 'icomoon';
+  font-family: 'midaym';
   font-style: inherit;
   font-weight: inherit;
   font-variant: normal;
@@ -464,6 +491,30 @@ h6 {
   content: "\35";
 }
 /* 5 */
+.icon-facebook2:before {
+  content: "\62";
+}
+/* b */
+.icon-linkedin2:before {
+  content: "\78";
+}
+/* x */
+.icon-google2:before {
+  content: "\6d";
+}
+/* m */
+.icon-flickr2:before {
+  content: "\76";
+}
+/* v */
+.icon-twitter2:before {
+  content: "\6e";
+}
+/* n */
+.icon-github2:before {
+  content: "\63";
+}
+/* c */
 .icon-M:before {
   content: "\4d";
 }
@@ -685,49 +736,6 @@ h6 {
 }
 /* z */
 /*------------------------------------*\
-    $ELEMENT-SOCIAL
-\*------------------------------------*/
-.social {
-  text-align: center;
-  margin: 0px 0px 24px;
-  margin: 0rem 0rem 1.5rem;
-}
-.social li {
-  padding: 0px 6px;
-  padding: 0rem 0.375rem;
-}
-.social i {
-  font-size: 32px;
-}
-.social a {
-  color: #cccccc;
-}
-.social a:hover {
-  color: #21b5e4;
-}
-/*------------------------------------*\
-    $ELEMENT-COPYRIGHT
-\*------------------------------------*/
-.copyright {
-  text-align: center;
-}
-/*------------------------------------*\
-    $ELEMENT-LOGO
-\*------------------------------------*/
-.logo {
-  text-align: center;
-  margin: 0;
-}
-.logo i {
-  font-size: 32px;
-}
-.logo a {
-  color: #f2f2f2;
-}
-.logo a:hover {
-  color: #cccccc;
-}
-/*------------------------------------*\
     $OBJECTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -753,7 +761,7 @@ h6 {
  */
 .intro-brand {
   /* Text */
-  font-family: 'icomoon';
+  font-family: 'midaym';
   font-style: inherit;
   font-weight: inherit;
   font-variant: normal;
@@ -900,7 +908,7 @@ h6 {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   display: block;
   height: 300px;
-  margin: -55px auto 0;
+  margin: -55px auto 24px;
   width: 300px;
 }
 /**
@@ -934,14 +942,6 @@ h6 {
   padding: 6px 0px;
   padding: 0.375rem 0rem;
   width: 50px;
-}
-.post-year {
-  font-size: 54px;
-  font-size: 3.375rem;
-  letter-spacing: -4px;
-  display: inline-block;
-  margin: 17px 6px;
-  margin: 1.0625rem 0.375rem;
 }
 /**
  *  Style the Title of the post
@@ -1022,54 +1022,14 @@ h6 {
   width: 50px;
 }
 /**
- * Post Single Styles
- */
-.post-single a {
-  font-weight: 700;
-}
-.post-single strong {
-  color: #c65669;
-}
-.post-single hgroup {
-  display: none;
-}
-/**
  * BG Color Overides
  */
-.blue {
-  background-color: #3aa8b9;
-}
 .blue .btn {
-  background-color: #ffffff;
   color: #333333;
 }
 .blue .btn:hover {
   background-color: #333333;
   color: #ffffff;
-}
-.red {
-  background-color: #c65669;
-}
-.green {
-  background-color: #34d987;
-}
-.yellow {
-  background-color: #ffd22e;
-}
-.orange {
-  background-color: #f79738;
-}
-.pink {
-  background-color: #c655bb;
-}
-.purple {
-  background-color: #8855dc;
-}
-.gray {
-  background-color: #cccccc;
-}
-.white {
-  background-color: #ffffff;
 }
 .white .btn:hover {
   background-color: #333333;
@@ -1092,13 +1052,171 @@ h6 {
 .gray .post-title small {
   color: #333333;
 }
-.black {
-  background-color: #333333;
-  color: #ffffff;
-}
 /**
  * Completely remove from the flow and screen readers.
  */
+/*------------------------------------*\
+    $OBJECT--SINGLE
+\*------------------------------------*/
+/**
+ *  Contains all styles for Single
+ */
+/**
+ * Single Styles
+ */
+.single strong {
+  color: #c65669;
+}
+.single hgroup {
+  display: none;
+}
+.single .btn:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+.single-date {
+  float: right;
+  margin-top: -132px;
+  margin-top: -8.25rem;
+  padding: 0;
+}
+.single-date .post-date {
+  margin: -3px 0px 0px 12px;
+  margin: -0.1875rem 0rem 0rem 0.75rem;
+}
+.single-date .btn {
+  float: right;
+}
+@media (max-width: 767px) {
+  .single-date {
+    float: left;
+    margin-top: -24px;
+    margin-top: -1.5rem;
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
+  }
+  .single-date .post-date {
+    float: left;
+    margin: -3px 12px 0px 0px;
+    margin: -0.1875rem 0.75rem 0rem 0rem;
+  }
+  .single-date .btn {
+    float: left;
+  }
+}
+/*------------------------------------*\
+    $OBJECTS-BOTTOM
+\*------------------------------------*/
+/**
+ * Bottom module.
+ */
+.bottom {
+  padding: 24px 0px;
+  padding: 1.5rem 0rem;
+  margin: 0;
+}
+.bottom-social {
+  text-align: left;
+  margin: 12px 0px 24px;
+  margin: 0.75rem 0rem 1.5rem;
+}
+.bottom-social li {
+  padding: 0px 3px;
+  padding: 0rem 0.1875rem;
+}
+.bottom-social i {
+  font-size: 32px;
+}
+.bottom-social a {
+  color: #cccccc;
+}
+.bottom-social a:hover {
+  color: #21b5e4;
+}
+.bottom-menu {
+  text-align: right;
+  margin: 0px 0px 24px;
+  margin: 0rem 0rem 1.5rem;
+}
+.bottom-menu li {
+  text-align: center;
+  padding: 0px 6px;
+  padding: 0rem 0.375rem;
+}
+.bottom-logo {
+  text-align: right;
+  margin: -6px 0px 0px;
+  margin: -0.375rem 0rem 0rem;
+}
+.bottom-logo i {
+  font-size: 32px;
+}
+.bottom-logo a {
+  color: #f2f2f2;
+}
+.bottom-logo a:hover {
+  color: #cccccc;
+}
+@media (max-width: 767px) {
+  .bottom-copyright,
+  .bottom-social,
+  .bottom-menu,
+  .bottom-logo {
+    text-align: center;
+  }
+}
+/*------------------------------------*\
+    $OBJECTS--SOCIAL
+\*------------------------------------*/
+/**
+ *  Contains all styles for the nav
+ */
+/**
+ * Post Social Styles
+ */
+.social {
+  border-top: solid 2px #cccccc;
+  padding: 24px 0px;
+  padding: 1.5rem 0rem;
+}
+.social .btn:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+.social li {
+  padding: 12px 6px;
+  padding: 0.75rem 0.375rem;
+}
+.social-logo {
+  color: #b3b3b3;
+  margin: 12px 0px 0px;
+  margin: 0.75rem 0rem 0rem;
+}
+.social-logo i {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.social-logo span {
+  font-size: 24px;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: -4px;
+  padding-left: 18px;
+  padding-left: 1.125rem;
+}
+.social-menu {
+  margin: 0;
+}
+.social-menu li {
+  padding: 6px;
+  padding: 0.375rem;
+}
+@media (max-width: 767px) {
+  .social-menu li {
+    padding: 6px 6px;
+    padding: 0.375rem 0.375rem;
+  }
+}
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/

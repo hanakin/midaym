@@ -55,7 +55,7 @@
 
         display: block;
         height: 300px;
-        margin: -55px auto 0;
+        margin: -55px auto @base-spacing-unit*1px;
         width: 300px;
     }
 }
@@ -92,14 +92,6 @@
     float: left;
     .padding(@quarter-spacing-unit, 0);
     width: 50px; 
-}
-
-.post-year {
-    .font-size(54);
-    letter-spacing: -4px;
-
-    display: inline-block;
-    .margin(17, @quarter-spacing-unit);
 }
 
 /**
@@ -178,42 +170,19 @@
 }
 
 /**
- * Post Single Styles
- */
-.post-single {
-    a:extend(.text-bold) { font-weight: 700; }
-    strong { color: @red; }
-    hgroup { display: none; }
-}
-
-/**
  * BG Color Overides
  */
-.blue   { 
-    background-color: @blue;
-    .btn {
-        background-color: @white;
-        color: @black;
-
-        &:hover {
-            background-color: @black;
-            color: @white;
-        }
-    }
-}
-.red    { background-color: @red; }
-.green  { background-color: @green;}
-.yellow { background-color: @yellow; }
-.orange { background-color: @orange; }
-.pink   { background-color: @pink; }
-.purple { background-color: @purple; }
-.gray   { background-color: @gray-lighter; }
-.white  { 
-    background-color: @white; 
-    .btn:hover {
+.blue .btn {
+    color: @black;
+    &:hover {
         background-color: @black;
         color: @white;
     }
+}
+
+.white .btn:hover {
+    background-color: @black;
+    color: @white;
 }
 
 .white, .gray {
@@ -227,11 +196,6 @@
         color: @black;
         small { color: @black; }
     }
-}
-
-.black  { 
-    background-color: @black; 
-    color: @white;
 }
 
 /**
