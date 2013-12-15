@@ -66,13 +66,13 @@
     .hidden();
 
     &.visible-s { 
-        @media (min-width: @small) and (max-width: @medium-max) { .display(); } 
+        @media (max-width: @medium-max) { .display(); } 
     }
 
-    @media (max-width: @large-max) { .display(); }
+    @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
 
     &.visible-l { 
-        @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
+        @media (min-width: @large) and (max-width: @wide-max) { .display(); }
     }
 
     &.visible-w { 
@@ -91,7 +91,7 @@
         @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
     }
 
-    @media (max-width: @wide-max) { .display(); }
+    @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
 
     &.visible-w { 
         @media (min-width: @wide) { .display(); } 
@@ -113,7 +113,7 @@
         @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
     }
 
-    @media (min-width: @wide-max) { .display(); }
+    @media (min-width: @wide) { .display(); }
 }
 
 /**

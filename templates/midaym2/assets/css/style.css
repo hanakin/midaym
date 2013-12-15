@@ -624,13 +624,13 @@
   display: none !important;
   visibility: hidden !important;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .visible-m.visible-s {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .visible-m {
     display: block !important;
     visibility: visible !important;
@@ -664,7 +664,7 @@
     visibility: visible !important;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-l {
     display: block !important;
     visibility: visible !important;
@@ -698,7 +698,7 @@
     visibility: visible !important;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   .visible-w {
     display: block !important;
     visibility: visible !important;
