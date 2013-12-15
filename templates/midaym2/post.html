@@ -27,18 +27,27 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
     <div class="wrapper">
-        
-        <nav class="grid nav visible-s">
-            <ul class="list-inline grid-row">
-                <li class="grid-s-4 text-center"><a href="archives.html" title="archives"><i class="icon icon-cloud"></i></a></li>
-                <li class="grid-s-4 text-center"><a href="about.html" title="about"><i class="icon icon-user"></i></a></li>
-                <li class="grid-s-4 text-center"><a href="contact.html" title="contact"><i class="icon icon-mail"></i></a></li>
-            </ul>
-        </nav>
         <header class="header intro">
-            <p class="brand">
-                <a href="index.html"><img src="assets/img/branding.png" width="48px" height="48px">MIDAYM</a>
-            </p>
+            <section class="intro-nav grid">
+                <!-- Mobile Nav -->
+                <nav class="grid nav visible-s">
+                    <ul class="list-inline grid-row">
+                        <li class="grid-s-4 text-center"><a href="archives.html" title="archives"><i class="icon icon-cloud"></i></a></li>
+                        <li class="grid-s-4 text-center"><a href="about.html" title="about"><i class="icon icon-user"></i></a></li>
+                        <li class="grid-s-4 text-center"><a href="contact.html" title="contact"><i class="icon icon-mail"></i></a></li>
+                    </ul>
+                </nav>
+                <!-- Brand -->
+                <a class="intro-brand" href="index.html"><img src="assets/img/branding.png" width="48px" height="48px">MIDAYM</a>
+                <!-- Normal Nav -->
+                <nav class="nav pull-right hidden-s">
+                    <ul class="list-inline">
+                        <li><a href="archives.html" title="archives"><i class="icon icon-cloud"></i></a></li>
+                        <li><a href="about.html" title="about"><i class="icon icon-user"></i></a></li>
+                        <li><a href="contact.html" title="contact"><i class="icon icon-mail"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
             <hgroup class="grid">
                 <h1 class="intro-lead">
                     Frameing Mino
@@ -49,10 +58,16 @@
             </hgroup>
         </header>
 
-        <section class="post">
+        <section class="single white">
             <div class="grid">
-                <div class="row">
-                    <article class="post-single grid-s-12">
+                <div class="grid-row">
+                    <article class="post grid-s-12">
+                        <div class="single-date grid-s-12 grid-m-4 grid-l-3">
+                            <p class="post-date">
+                                <span class="post-day">Jul<br />24</span>
+                            </p>
+                            <a class="btn" href="archives.html"><i class="icon icon-cloud"></i> Arhives</a>
+                        </div>
                         <hgroup>
                             <h2></h2>
                         </hgroup>
@@ -114,17 +129,17 @@
                                         <ul>
                                             <li>global.less
                                                 <ul>
-                                                     <li>This serves as normalizing and setting up default type and element styles at the core level to build                            upon. This will serve as the primary file in a bare-bone theme</li>
+                                                     <li>This serves as normalizing and setting up default type and element styles at the core level to build upon. This will serve as the primary file in a bare-bone theme</li>
                                                 </ul>
                                             </li>
                                             <li>core-structure.less
                                                 <ul>
-                                                    <li>This will establish the layout of the theme. This gives us the grid and responsive utilities as well                            as some default structural styles to build off of</li>
+                                                    <li>This will establish the layout of the theme. This gives us the grid and responsive utilities as well as some default structural styles to build off of</li>
                                                 </ul>
                                             </li>
                                             <li>core-OBJECTS.less
                                                 <ul>
-                                                    <li>This is used to customize the OBJECTS ported from bootstrap and allow for further definition of the                             defaults for them.</li>
+                                                    <li>This is used to customize the OBJECTS ported from bootstrap and allow for further definition of the defaults for them.</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -134,7 +149,7 @@
                             <li>
                                 <h5><strong>Theme</strong></h5>
                                 <ul>
-                                    <li>This consists of 3 additional less files that do all the heavy lifting for generating the final css                             files that correspond directly to these files.
+                                    <li>This consists of 3 additional less files that do all the heavy lifting for generating the final css files that correspond directly to these files.
                                         <ul>
                                             <li>structure.less
                                                 <ul>
@@ -191,38 +206,53 @@
                             <li>Bench</li>
                             <li>Deployment!</li>
                         </ul>
+
+                        
                     </article>
-                    
-                    <aside class="grid-s-12">
-                        <span class="date">Jul 24, 2013</span>
-                        <a class="pill-light" href="https://twitter.com/intent/tweet?screen_name=midaym
-&text=Re:%20http://www.midaym.com/frameing-mino%20" data-dnt="true">Comment on Twitter</a>
-                        </br>
-                        <a class="pill-light" href="https://twitter.com/intent/tweet?text=&quot;&quot;%20http://www.midaym.com/frameing-mino%20via%20&#64;midaym
-" data-dnt="true">Share on Twitter</a>
-                        </br>
-                        <a class="pill-light" href="http://www.midaym.com">More Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="social gray">
+            <div class="grid">
+                <div class="grid-row">
+                    <p class="social-logo grid-s-12 grid-m-4 grid-l-3"><i class="icon icon-like pull-left"></i> <span> 5243 Shares!<span></p>
+                    <ul class="social-menu grid-s-12 grid-m-8 grid-l-9 list-inline">
+                        <li class="text-center"><a class="btn btn-twitter" href="https://twitter.com/intent/tweet?screen_name=midaym&text=Re:%20http://www.midaym.com/frameing-mino%20" data-dnt="true"><i class="icon icon-twitter2"></i> Tweet 634</a></li>
+                        <li class="text-center"><a class="btn btn-facebook" href="" data-dnt="true"><i class="icon icon-facebook2"></i> Share 325</a></li>
+                        <li class="text-center"><a class="btn btn-google" href="" data-dnt="true"><i class="icon icon-google2"></i> Share 235</a></li>
+                        <li class="text-center"><a class="btn btn-linkedin" href="" data-dnt="true"><i class="icon icon-linkedin2"></i> Share 124</a></li>
                         <script>
                             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                         </script>
-                    </aside>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p class="copyright">
-                &copy; Copyright 2013 MIDAYM. All Right Reserved.</span>
-            </p>
-            <ul class="social list-inline">
-                <li><a href="http://www.flickr.com/photos/midaym/" title="Flickr"><i class="icon icon-flickr"></i></a></li>
-                <li><a href="https://twitter.com/midaym" title="Twitter"><i class="icon icon-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/Midaymcom" title="Facebook"><i class="icon icon-facebook"></i></a></li>
-                <li><a href="https://github.com/hanakin" title="Github"><i class="icon icon-github"></i></a></li>
-                <li><a href="http://www.linkedin.com/pub/mike-miday/16/694/4ba" title="Linked In"><i class="icon icon-linkedin"></i></a></li>
-                <li><a href="https://plus.google.com/105826784814723673348" title="Google+"><i class="icon icon-google"></i></a></li>
-            </ul>
-            <p class="logo"><a href="index.html" title="Midaym"><i class="icon icon-midaym1"></i></a></p>
+            <section class="grid">
+                <article class="bottom grid-row">
+                    <div class="bottom-copyright grid-s-12 grid-m-7">
+                        &copy; Copyright 2013 MIDAYM. All Right Reserved.</span>
+                        <ul class="bottom-social list-inline">
+                            <li><a href="http://www.flickr.com/photos/midaym/" title="Flickr"><i class="icon icon-flickr"></i></a></li>
+                            <li><a href="https://twitter.com/midaym" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/Midaymcom" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="https://github.com/hanakin" title="Github"><i class="icon icon-github"></i></a></li>
+                            <li><a href="http://www.linkedin.com/pub/mike-miday/16/694/4ba" title="Linked In"><i class="icon icon-linkedin"></i></a></li>
+                            <li><a href="https://plus.google.com/105826784814723673348" title="Google+"><i class="icon icon-google"></i></a></li>                                        
+                        </ul>
+                    </div>
+                    
+                    <ul class="bottom-menu grid-s-12 grid-m-4 list-inline">
+                        <li><a href="archives.html" title="archives">Archives</a></li>
+                        <li><a href="about.html" title="about">About</a></li>
+                        <li><a href="contact.html" title="contact">Contact</a></li>                                     
+                    </ul>
+                    <p class="bottom-logo grid-s-12 grid-m-1"><a href="index.html" title="Midaym"><i class="icon icon-midaym1"></i></a></p>
+                </article>
+            </section>
         </footer>
 
         <!-- <?php echo $content ?> -->

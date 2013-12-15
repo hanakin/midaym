@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    $OBJECTS-BOTTOM
+\*------------------------------------*/
+
+/**
+ * Bottom module.
+ */
+.bottom { 
+    .padding(@base-spacing-unit, 0); 
+    margin: 0;
+}
+
+.bottom-social {
+    text-align: left; 
+    .margin(@half-spacing-unit, 0, @base-spacing-unit);
+
+    li { .padding(0, @eighth-spacing-unit); }
+
+    i { font-size: 32px; }
+    a {
+        color: @gray-lighter;
+        &:hover { color: @base-link-color; }
+    }
+}
+
+.bottom-menu { 
+    text-align: right; 
+    
+    .margin(0, 0, @base-spacing-unit);
+
+    li { 
+        text-align: center;
+
+        .padding(0, @quarter-spacing-unit); 
+    }
+}
+
+.bottom-logo { 
+    text-align: right; 
+    
+    .margin(@quarter-spacing-unit*-1, 0, 0);
+
+    i { font-size: 32px; }
+    a {
+        color: @white-dark;
+        &:hover { color: @gray-lighter; }
+    }
+}
+
+
+@media (max-width: @medium-max) { 
+    .bottom-copyright,
+    .bottom-social,
+    .bottom-menu,
+    .bottom-logo    { text-align: center; } 
+}
