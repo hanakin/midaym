@@ -514,159 +514,15 @@
 .text-break {
   word-wrap: break-word !important;
 }
-/*------------------------------------*\
-    $ATOM-LISTS
-\*------------------------------------*/
 /**
- * List Type Classes
+ * Bold Text
+ *
+ * Sometimes you need make blocks of text bold but wrapping in strong tags breaks semantics
  */
-.list-unstyled {
-  list-style: none;
-}
-.list-unstyled ul,
-.list-unstyled ol {
-  list-style: none;
-}
-.list-inline {
-  list-style: none;
-}
-.list-inline ul,
-.list-inline ol {
-  list-style: none;
-}
-.list-inline > li {
-  display: inline-block;
-  padding-left: 6px;
-  padding-left: 0.375rem;
-  padding-right: 6px;
-  padding-right: 0.375rem;
-}
-@media (min-width: 768px) {
-  .list-inline {
-    /**
-         * Inline Description Lists
-         * Defaults to being stacked without any of the below styles applied, until the
-         * grid breakpoint is reached (default of ~768px).
-         */
-  }
-  .list-inline dt {
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    clear: left;
-    float: left;
-    margin-top: 0;
-    width: 160px;
-  }
-  .list-inline dd {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem;
-    margin-left: 180px;
-  }
-  .list-inline dd:before,
-  .list-inline dd:after {
-    content: " ";
-    display: table;
-  }
-  .list-inline dd:after {
-    clear: both;
-  }
-}
-/*------------------------------------*\
-    $ATOM-TABLES
-\*------------------------------------*/
-/**
- * Table Type Classes
- */
-.table-striped > tbody > tr:nth-child(even) > td,
-.table-striped > tbody > tr:nth-child(even) > th {
-  background-color: #f9f9f9;
-}
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
-  background-color: #f5f5f5;
-}
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 6px;
-  padding: 0.375rem;
-}
-.table-bordered {
-  border: 1px solid #ddd;
-  border-radius: 0;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
-}
-.table-bordered > thead th:first-child {
-  border-top-left-radius: 0;
-}
-.table-bordered > thead th:last-child {
-  border-top-right-radius: 0;
-}
-/*------------------------------------*\
-    $ATOM-INLLINE-FORMS
-\*------------------------------------*/
-/**
- * Form Inline Class
- * 
- * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
- * forms begin stacked on extra small (mobile) devices and then go inline when
- * viewports reach <768px.
- * 
- * Requires wrapping inputs and labels with `.form-group` for proper display of
- * default HTML form controls.
- */
-.form-group {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-}
-@media (min-width: 768px) {
-  .form-inline .form-group {
-    vertical-align: middle;
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 3px;
-    margin-left: 0.1875rem;
-    margin-right: 3px;
-    margin-right: 0.1875rem;
-  }
-  .form-inline .form-group:first-child {
-    margin-left: 0;
-  }
-  .form-inline .radio,
-  .form-inline .checkbox {
-    display: inline-block;
-    margin: 0px 3px;
-    margin: 0rem 0.1875rem;
-    padding-left: 0;
-  }
-  .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-    top: 0;
-  }
-  .form-inline .btn {
-    margin-left: 3px;
-    margin-left: 0.1875rem;
-    margin-right: 3px;
-    margin-right: 0.1875rem;
-  }
+.text-bold,
+.post .btn,
+.post-single a {
+  font-weight: 700;
 }
 /*------------------------------------*\
     $ATOM-IMAGES
@@ -700,7 +556,8 @@
 /**
  * Completely remove from the flow and screen readers.
  */
-.hidden {
+.hidden,
+.draft {
   display: none !important;
   visibility: hidden !important;
 }
@@ -983,6 +840,9 @@
     $ATOM-LAYOUT
 \*------------------------------------*/
 /**
+ * Clearfix
+ */
+/**
  * Vertical alignment utilities
  * Depends on an appropriate `display` value.
  */
@@ -1061,6 +921,160 @@
   /* 1 */
   max-width: none;
   /* 2 */
+}
+/*------------------------------------*\
+    $ATOM-LISTS
+\*------------------------------------*/
+/**
+ * List Type Classes
+ */
+.list-unstyled {
+  list-style: none;
+}
+.list-unstyled ul,
+.list-unstyled ol {
+  list-style: none;
+}
+.list-inline {
+  list-style: none;
+}
+.list-inline ul,
+.list-inline ol {
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+}
+@media (min-width: 768px) {
+  .list-inline {
+    /**
+         * Inline Description Lists
+         * Defaults to being stacked without any of the below styles applied, until the
+         * grid breakpoint is reached (default of ~768px).
+         */
+  }
+  .list-inline dt {
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    float: left;
+    margin-top: 0;
+    width: 160px;
+  }
+  .list-inline dd {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+    margin-left: 180px;
+  }
+  .list-inline dd:before,
+  .list-inline dd:after {
+    content: " ";
+    display: table;
+  }
+  .list-inline dd:after {
+    clear: both;
+  }
+}
+/*------------------------------------*\
+    $ATOM-TABLES
+\*------------------------------------*/
+/**
+ * Table Type Classes
+ */
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 6px;
+  padding: 0.375rem;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-bordered > thead th:first-child {
+  border-top-left-radius: 0;
+}
+.table-bordered > thead th:last-child {
+  border-top-right-radius: 0;
+}
+/*------------------------------------*\
+    $ATOM-INLLINE-FORMS
+\*------------------------------------*/
+/**
+ * Form Inline Class
+ * 
+ * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+ * forms begin stacked on extra small (mobile) devices and then go inline when
+ * viewports reach <768px.
+ * 
+ * Requires wrapping inputs and labels with `.form-group` for proper display of
+ * default HTML form controls.
+ */
+.form-group {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-left: 0.1875rem;
+    margin-right: 3px;
+    margin-right: 0.1875rem;
+  }
+  .form-inline .form-group:first-child {
+    margin-left: 0;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin: 0px 3px;
+    margin: 0rem 0.1875rem;
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+    top: 0;
+  }
+  .form-inline .btn {
+    margin-left: 3px;
+    margin-left: 0.1875rem;
+    margin-right: 3px;
+    margin-right: 0.1875rem;
+  }
 }
 /*------------------------------------*\
     $NORMALIZE
@@ -3123,6 +3137,8 @@ h6 {
   /* [2] */
   white-space: nowrap;
   /* [3] */
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* [7] */
   /* Decoration */
   background-color: #21b5e4;
   /* [4] */
@@ -3130,19 +3146,21 @@ h6 {
   /* [5] */
   border: 0;
   /* [4] */
-  border-radius: 5px;
+  border-radius: 4px;
   /* [4] */
   color: #ffffff;
   /* [4] */
   cursor: pointer;
   /* [6] */
+  -webkit-transition: 0.15s linear;
+  transition: 0.15s linear;
   /* Layout */
   display: inline-block;
   /* [7] */
   margin: 0;
   /* [8] */
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
   /* [8] */
 }
 .btn:hover {
@@ -3187,24 +3205,42 @@ h6 {
   font-size: 14px;
   font-size: 0.875rem;
 }
+/**
+ * Button Icon spacings
+ */
+.btn .icon {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+/**
+ * Button Wide
+ */
+.btn-wide {
+  min-width: 144;
+  padding-left: 24;
+  padding-right: 24;
+}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot');
   src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 .icon {
   font-family: 'icomoon';
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
+  font-style: inherit;
+  font-weight: inherit;
   font-variant: normal;
   line-height: 1;
   text-transform: none;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
+  margin: 0 1px;
   position: relative;
   top: 1px;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  speak: none;
 }
 .icon-facebook:before {
   content: "\60";
@@ -3451,39 +3487,6 @@ h6 {
 }
 /* z */
 /*------------------------------------*\
-    $ELEMENT-BRAND
-\*------------------------------------*/
-.brand {
-  text-align: center;
-}
-.brand a {
-  /* Text */
-  font-family: 'icomoon';
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-transform: none;
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 48px;
-  letter-spacing: -4px;
-  /* Decoration */
-  color: #333333;
-}
-.brand a:hover {
-  color: #333333;
-}
-.brand img {
-  margin-bottom: -4px;
-  margin-right: 12px;
-  margin-right: 0.75rem;
-}
-/*------------------------------------*\
     $ELEMENT-SOCIAL
 \*------------------------------------*/
 .social {
@@ -3534,33 +3537,79 @@ h6 {
 \*------------------------------------*/
 /**
  * Intro module.
- *
  */
 .intro {
-  padding: 12px 12px 48px;
-  padding: 0.75rem 0.75rem 3rem;
+  padding: 24px 12px 48px;
+  padding: 1.5rem 0.75rem 3rem;
 }
+/**
+ * Intro Nav.
+ */
+@media (max-width: 767px) {
+  .intro-nav {
+    text-align: center;
+  }
+}
+/**
+ * Intro Brand.
+ */
+.intro-brand {
+  /* Text */
+  font-family: 'icomoon';
+  font-style: inherit;
+  font-weight: inherit;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  margin: 0 1px;
+  position: relative;
+  top: 1px;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  font-size: 48px;
+  letter-spacing: -4px;
+  /* Decoration */
+  color: #333333;
+}
+.intro-brand:hover {
+  color: #333333;
+}
+.intro-brand img {
+  margin-bottom: -4px;
+  margin-right: 12px;
+  margin-right: 0.75rem;
+}
+/**
+ * Intro Lead.
+ */
 .intro-lead {
+  /* Text */
   font-size: 54px;
   font-size: 3.375rem;
   font-weight: 900;
   line-height: 60px;
   line-height: 3.75rem;
   letter-spacing: -4px;
+  /* Layout */
   margin-top: 12px;
   margin-top: 0.75rem;
   margin-bottom: 0;
 }
 .intro-lead small {
+  /* Text */
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 300;
   line-height: 36px;
   line-height: 2.25rem;
   letter-spacing: -1px;
+  /* Decoration */
   color: #333333;
   opacity: 0.6;
   filter: alpha(opacity=60);
+  /* Layout */
   display: block;
 }
 /*------------------------------------*\
@@ -3581,6 +3630,12 @@ h6 {
 }
 .nav a:hover {
   color: #21b5e4;
+}
+.nav li {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 /*------------------------------------*\
     $OBJECT--POST
@@ -3629,8 +3684,7 @@ h6 {
 .post-odd .btn {
   float: right;
 }
-.post-odd .post-date,
-.post-odd .post-date2 {
+.post-odd .post-date {
   text-align: center;
   float: left;
 }
@@ -3648,7 +3702,7 @@ h6 {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   display: block;
   height: 300px;
-  margin: 0 auto;
+  margin: -55px auto 0;
   width: 300px;
 }
 /**
@@ -3665,8 +3719,8 @@ h6 {
   filter: alpha(opacity=50);
   display: inline-block;
   float: right;
-  margin: 24px 0px 0px;
-  margin: 1.5rem 0rem 0rem;
+  margin: 48px 0px 0px;
+  margin: 3rem 0rem 0rem;
 }
 .post-day {
   font-size: 16px;
@@ -3709,6 +3763,9 @@ h6 {
  */
 .post-list {
   padding: 0;
+  margin-left: -1px;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .post-list li {
   border-bottom: 1px solid #e6e6e6;
@@ -3841,10 +3898,9 @@ h6 {
   background-color: #333333;
   color: #ffffff;
 }
-.draft {
-  display: none !important;
-  visibility: hidden !important;
-}
+/**
+ * Completely remove from the flow and screen readers.
+ */
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/

@@ -90,11 +90,11 @@ code.prettyprint {
 }
 @media screen {
   .str {
-    color: #d44950;
+    color: #c65669;
   }
   /* string content */
   .kwd {
-    color: #2f6fa1;
+    color: #217bb2;
   }
   /* a keyword */
   .com {
@@ -106,12 +106,12 @@ code.prettyprint {
   }
   /* a type name */
   .lit {
-    color: #d44950;
+    color: #c65669;
   }
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun {
-    color: #4f9fd0;
+    color: #3aa8b9;
   }
   .opn {
     color: #ffffff;
@@ -120,24 +120,24 @@ code.prettyprint {
     color: #ffffff;
   }
   .tag {
-    color: #2f6fa1;
+    color: #217bb2;
   }
   /* a markup tag name */
   .atn {
-    color: #4f9fd0;
+    color: #3aa8b9;
   }
   /* a markup attribute name */
   .atv {
-    color: #d44950;
+    color: #c65669;
   }
   /* a markup attribute value */
   .dec,
   .var {
-    color: #2f6fa1;
+    color: #217bb2;
   }
   /* a declaration; a variable name */
   .fun {
-    color: #d44950;
+    color: #c65669;
   }
   /* a function name */
 }
@@ -335,6 +335,8 @@ h6 {
   /* [2] */
   white-space: nowrap;
   /* [3] */
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* [7] */
   /* Decoration */
   background-color: #21b5e4;
   /* [4] */
@@ -342,19 +344,21 @@ h6 {
   /* [5] */
   border: 0;
   /* [4] */
-  border-radius: 5px;
+  border-radius: 4px;
   /* [4] */
   color: #ffffff;
   /* [4] */
   cursor: pointer;
   /* [6] */
+  -webkit-transition: 0.15s linear;
+  transition: 0.15s linear;
   /* Layout */
   display: inline-block;
   /* [7] */
   margin: 0;
   /* [8] */
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
   /* [8] */
 }
 .btn:hover {
@@ -399,24 +403,42 @@ h6 {
   font-size: 14px;
   font-size: 0.875rem;
 }
+/**
+ * Button Icon spacings
+ */
+.btn .icon {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+/**
+ * Button Wide
+ */
+.btn-wide {
+  min-width: 144;
+  padding-left: 24;
+  padding-right: 24;
+}
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot');
   src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 .icon {
   font-family: 'icomoon';
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
+  font-style: inherit;
+  font-weight: inherit;
   font-variant: normal;
   line-height: 1;
   text-transform: none;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
+  margin: 0 1px;
   position: relative;
   top: 1px;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  speak: none;
 }
 .icon-facebook:before {
   content: "\60";
@@ -663,39 +685,6 @@ h6 {
 }
 /* z */
 /*------------------------------------*\
-    $ELEMENT-BRAND
-\*------------------------------------*/
-.brand {
-  text-align: center;
-}
-.brand a {
-  /* Text */
-  font-family: 'icomoon';
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-transform: none;
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 48px;
-  letter-spacing: -4px;
-  /* Decoration */
-  color: #333333;
-}
-.brand a:hover {
-  color: #333333;
-}
-.brand img {
-  margin-bottom: -4px;
-  margin-right: 12px;
-  margin-right: 0.75rem;
-}
-/*------------------------------------*\
     $ELEMENT-SOCIAL
 \*------------------------------------*/
 .social {
@@ -746,33 +735,79 @@ h6 {
 \*------------------------------------*/
 /**
  * Intro module.
- *
  */
 .intro {
-  padding: 12px 12px 48px;
-  padding: 0.75rem 0.75rem 3rem;
+  padding: 24px 12px 48px;
+  padding: 1.5rem 0.75rem 3rem;
 }
+/**
+ * Intro Nav.
+ */
+@media (max-width: 767px) {
+  .intro-nav {
+    text-align: center;
+  }
+}
+/**
+ * Intro Brand.
+ */
+.intro-brand {
+  /* Text */
+  font-family: 'icomoon';
+  font-style: inherit;
+  font-weight: inherit;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  margin: 0 1px;
+  position: relative;
+  top: 1px;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  font-size: 48px;
+  letter-spacing: -4px;
+  /* Decoration */
+  color: #333333;
+}
+.intro-brand:hover {
+  color: #333333;
+}
+.intro-brand img {
+  margin-bottom: -4px;
+  margin-right: 12px;
+  margin-right: 0.75rem;
+}
+/**
+ * Intro Lead.
+ */
 .intro-lead {
+  /* Text */
   font-size: 54px;
   font-size: 3.375rem;
   font-weight: 900;
   line-height: 60px;
   line-height: 3.75rem;
   letter-spacing: -4px;
+  /* Layout */
   margin-top: 12px;
   margin-top: 0.75rem;
   margin-bottom: 0;
 }
 .intro-lead small {
+  /* Text */
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 300;
   line-height: 36px;
   line-height: 2.25rem;
   letter-spacing: -1px;
+  /* Decoration */
   color: #333333;
   opacity: 0.6;
   filter: alpha(opacity=60);
+  /* Layout */
   display: block;
 }
 /*------------------------------------*\
@@ -793,6 +828,12 @@ h6 {
 }
 .nav a:hover {
   color: #21b5e4;
+}
+.nav li {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 /*------------------------------------*\
     $OBJECT--POST
@@ -841,8 +882,7 @@ h6 {
 .post-odd .btn {
   float: right;
 }
-.post-odd .post-date,
-.post-odd .post-date2 {
+.post-odd .post-date {
   text-align: center;
   float: left;
 }
@@ -860,7 +900,7 @@ h6 {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   display: block;
   height: 300px;
-  margin: 0 auto;
+  margin: -55px auto 0;
   width: 300px;
 }
 /**
@@ -877,8 +917,8 @@ h6 {
   filter: alpha(opacity=50);
   display: inline-block;
   float: right;
-  margin: 24px 0px 0px;
-  margin: 1.5rem 0rem 0rem;
+  margin: 48px 0px 0px;
+  margin: 3rem 0rem 0rem;
 }
 .post-day {
   font-size: 16px;
@@ -921,6 +961,9 @@ h6 {
  */
 .post-list {
   padding: 0;
+  margin-left: -1px;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 .post-list li {
   border-bottom: 1px solid #e6e6e6;
@@ -985,7 +1028,7 @@ h6 {
   font-weight: 700;
 }
 .post-single strong {
-  color: #d44950;
+  color: #c65669;
 }
 .post-single hgroup {
   display: none;
@@ -994,7 +1037,7 @@ h6 {
  * BG Color Overides
  */
 .blue {
-  background-color: #4f9fd0;
+  background-color: #3aa8b9;
 }
 .blue .btn {
   background-color: #ffffff;
@@ -1005,22 +1048,22 @@ h6 {
   color: #ffffff;
 }
 .red {
-  background-color: #d44950;
+  background-color: #c65669;
 }
 .green {
-  background-color: #48d470;
+  background-color: #34d987;
 }
 .yellow {
-  background-color: #ffcd1a;
+  background-color: #ffd22e;
 }
 .orange {
-  background-color: #f98d21;
+  background-color: #f79738;
 }
 .pink {
-  background-color: #d448ac;
+  background-color: #c655bb;
 }
 .purple {
-  background-color: #9e48d4;
+  background-color: #8855dc;
 }
 .gray {
   background-color: #cccccc;
@@ -1053,16 +1096,9 @@ h6 {
   background-color: #333333;
   color: #ffffff;
 }
-.draft {
-  border: 0 !important;
-  clip: rect(0 0 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-}
+/**
+ * Completely remove from the flow and screen readers.
+ */
 /*------------------------------------*\
     $COMPONENTS
 \*------------------------------------*/
