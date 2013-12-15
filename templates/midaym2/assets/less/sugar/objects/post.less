@@ -17,7 +17,7 @@
     /**
      * Button Overides
      */
-    .btn { font-weight: 700; }
+    .btn:extend(.text-bold) { font-weight: 700; }
     .btn:hover {
         background-color: @white;
         color: @black;
@@ -36,7 +36,7 @@
     .post-title,
     p { text-align: right; }
     .btn { float: right; }
-    .post-date,.post-date2 { 
+    .post-date { 
         text-align: center;
 
         float: left; 
@@ -55,7 +55,7 @@
 
         display: block;
         height: 300px;
-        margin: 0 auto;
+        margin: -55px auto 0;
         width: 300px;
     }
 }
@@ -76,7 +76,7 @@
     display: inline-block;
     float: right;
    
-   .margin(@base-spacing-unit, 0, 0);
+   .margin(@double-spacing-unit, 0, 0);
 }
 
 .post-day {
@@ -122,6 +122,8 @@
  */
 .post-list {
     padding: 0;
+    margin-left: -1px;
+    .margin-bottom(@half-spacing-unit);
 
     li {
         border-bottom: 1px solid @white-darker;
@@ -179,7 +181,7 @@
  * Post Single Styles
  */
 .post-single {
-    a { font-weight: 700; }
+    a:extend(.text-bold) { font-weight: 700; }
     strong { color: @red; }
     hgroup { display: none; }
 }
@@ -219,9 +221,9 @@
         border-color: rgba(0,0,0,.8);
         color: @black;
     }
-    .post-year { color: @black; }
+    .post-year:extend(.text-black) { color: @black; }
 
-    .post-title {
+    .post-title:extend(.text-black) {
         color: @black;
         small { color: @black; }
     }
@@ -232,7 +234,8 @@
     color: @white;
 }
 
-.draft { .hidden(); }
+/**
+ * Completely remove from the flow and screen readers.
+ */
 
-
-
+.draft:extend(.hidden) {}
