@@ -5,6 +5,30 @@
 /**
  * Detailing code elements
  */
+h1 {
+    /* Text */
+    .font-size(54);
+    font-weight: 900;
+    .line-height(60);
+    letter-spacing: -4px;
+    /* Layout */
+    .margin-top(@half-spacing-unit);
+    margin-bottom: 0;
+
+    small {
+        /* Text */
+        .font-size(30);
+        font-weight: 300;
+        .line-height(36);
+        letter-spacing: -1px;
+        /* Decoration */
+        color: @black;
+        .opacity(.6);
+        /* Layout */
+        display: block;
+    }
+}
+
 h2, 
 h3, 
 h4 { font-weight: 900; }
