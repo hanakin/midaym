@@ -18,29 +18,31 @@
  */
 .btn {
     /* Text */
-    font-size: 100%;                                        /* [1] */
-    font-family: inherit;                                   /* [1] */
-    font-weight: normal;                                    /* [1] */
-    line-height: normal;                                    /* [1] */
-    letter-spacing: 1px;                                    /* [1] */
-    vertical-align: middle;                                 /* [2] */
-    white-space: nowrap;                                    /* [3] */
+    font-size: 100%;                                                                /* [1] */
+    font-family: inherit;                                                           /* [1] */
+    font-weight: normal;                                                            /* [1] */
+    line-height: normal;                                                            /* [1] */
+    letter-spacing: 1px;                                                            /* [1] */
+    vertical-align: middle;                                                         /* [2] */
+    white-space: nowrap;                                                            /* [3] */
+    -webkit-font-smoothing: subpixel-antialiased;                                   /* [7] */
+
     /* Decoration */               
-    background-color: @base-link-color;                     /* [4] */
-    background-image: none;                                 /* [5] */ 
-    border: 0;                                              /* [4] */
-    border-radius: 5px;                                     /* [4] */
-    color: @white;                                          /* [4] */
-    cursor: pointer;                                        /* [6] */
+    background-color: @base-link-color;                                             /* [4] */
+    background-image: none;                                                         /* [5] */ 
+    border: 0;                                                                      /* [4] */
+    border-radius: 4px;                                                             /* [4] */
+    color: @white;                                                                  /* [4] */
+    cursor: pointer;                                                                /* [6] */
+    .transition(.15s linear);
     /* Layout */                
-    display: inline-block;                                  /* [7] */
-    margin: 0;                                              /* [8] */
-    .padding(@half-spacing-unit, @base-spacing-unit);       /* [8] */
+    display: inline-block;                                                          /* [7] */
+    margin: 0;                                                                      /* [8] */
+    .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);         /* [8] */
             
     &:hover {           
-        text-decoration: none;                              /* [9] */
+        text-decoration: none;                                                      /* [9] */
         background-color: darken(@base-link-color, 8%);
-        //border-color: darken(@gray-lighter, 12%);
         color: @white;
     }
 
@@ -62,4 +64,18 @@
 .btn-delta      { .font-size(@delta); }
 .btn-epsilon    { .font-size(@epsilon); }
 .btn-zeta       { .font-size(@zeta); }
+
+/**
+ * Button Icon spacings
+ */
+.btn .icon      { .margin-right(@quarter-spacing-unit); }
+
+/**
+ * Button Wide
+ */
+.btn-wide {
+    min-width: @sextuple-spacing-unit;
+    padding-left: @base-spacing-unit;
+    padding-right: @base-spacing-unit;
+}
 
