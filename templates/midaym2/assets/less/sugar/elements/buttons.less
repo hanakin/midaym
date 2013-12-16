@@ -68,7 +68,7 @@
 /**
  * Button Icon spacings
  */
-.btn .icon      { .margin-right(@quarter-spacing-unit); }
+.btn span      { .margin-left(@quarter-spacing-unit); }
 
 /**
  * Button Wide
@@ -82,23 +82,67 @@
 /**
  * Social Buttons
  */
-.btn-twitter {
-    background-color: @social-twitter !important;
-    &:hover { background-color: darken(@social-twitter, 8%) !important; }
+.btn-delicious {
+    background-color: @social-delicious !important;
+    &:hover { background-color: mix(@social-delicious, @black, 80%) !important; }
+}
+
+.btn-digg {
+    background-color: @social-digg !important;
+    &:hover { background-color: mix(@social-digg, @white, 70%) !important; }
+}
+
+.btn-evernote {
+    background-color: @social-evernote !important;
+    &:hover { background-color: mix(@social-evernote, @black, 80%) !important; }
 }
 
 .btn-facebook {
     background-color: @social-facebook !important;
-    &:hover { background-color: darken(@social-facebook, 8%) !important; }
+    &:hover { background-color: mix(@social-facebook, @white, 80%) !important; }
 }
 
-.btn-google {
-    background-color: @social-google !important;
-    &:hover { background-color: darken(@social-google, 8%) !important; }
+.btn-github {
+    background-color: @black !important;
+    &:hover { background-color: @social-github !important; }
+}
+
+.btn-gmail {
+    background-color: @social-gmail !important;
+    &:hover { background-color: mix(@social-gmail, @white, 80%) !important; }
+}
+
+.btn-gplus {
+    background-color: @social-gplus !important;
+    &:hover { background-color: mix(@social-gplus, @white, 80%) !important; }
 }
 
 .btn-linkedin {
     background-color: @social-linkedin !important;
-    &:hover { background-color: darken(@social-linkedin, 8%) !important; }
+    &:hover { background-color: mix(@social-linkedin, @black, 70%) !important; }
+}
+
+.btn-pinterest {
+    background-color: @social-pinterest !important;
+    &:hover { background-color: mix(@social-pinterest, @white, 70%) !important; }
+}
+
+.btn-reddit {
+    color: @black !important;
+    background-color: @social-reddit !important;
+    &:hover { 
+        color: @white !important;
+        background-color: mix(@social-reddit, @black, 70%) !important; 
+    }
+}
+
+.btn-tumblr {
+    background-color: @social-tumblr !important;
+    &:hover { background-color: mix(@social-tumblr, @white, 80%) !important; }
+}
+
+.btn-twitter {
+    background-color: @social-twitter !important;
+    &:hover { background-color: mix(@social-twitter, @black, 80%) !important; }
 }
 

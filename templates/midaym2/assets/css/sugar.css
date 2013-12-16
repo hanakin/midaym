@@ -305,12 +305,17 @@ h5,
 h6 {
   list-style: -1px;
 }
-h3,
-h4 {
-  font-size: 30px;
-  font-size: 1.875rem;
+h3 {
+  font-size: 32px;
+  font-size: 2rem;
   line-height: 36px;
   line-height: 2.25rem;
+}
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 h5 {
   font-size: 18px;
@@ -321,8 +326,8 @@ h5 {
   margin-top: 1.5rem;
 }
 h6 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 0;
   margin: 24px 0px -12px;
   margin: 1.5rem 0rem -0.75rem;
@@ -434,9 +439,9 @@ h6 {
 /**
  * Button Icon spacings
  */
-.btn .icon {
-  margin-right: 6px;
-  margin-right: 0.375rem;
+.btn span {
+  margin-left: 6px;
+  margin-left: 0.375rem;
 }
 /**
  * Button Wide
@@ -449,29 +454,79 @@ h6 {
 /**
  * Social Buttons
  */
+.btn-delicious {
+  background-color: #3399ff !important;
+}
+.btn-delicious:hover {
+  background-color: #3385d6 !important;
+}
+.btn-digg {
+  background-color: #070707 !important;
+}
+.btn-digg:hover {
+  background-color: #515151 !important;
+}
+.btn-evernote {
+  background-color: #7fce2c !important;
+}
+.btn-evernote:hover {
+  background-color: #70af2d !important;
+}
+.btn-facebook {
+  background-color: #2f5890 !important;
+}
+.btn-facebook:hover {
+  background-color: #5979a6 !important;
+}
+.btn-github {
+  background-color: #333333 !important;
+}
+.btn-github:hover {
+  background-color: #4183c4 !important;
+}
+.btn-gmail {
+  background-color: #c92527 !important;
+}
+.btn-gmail:hover {
+  background-color: #d45152 !important;
+}
+.btn-gplus {
+  background-color: #cf4b33 !important;
+}
+.btn-gplus:hover {
+  background-color: #d96f5c !important;
+}
+.btn-linkedin {
+  background-color: #4897c9 !important;
+}
+.btn-linkedin:hover {
+  background-color: #42799c !important;
+}
+.btn-pinterest {
+  background-color: #c92527 !important;
+}
+.btn-pinterest:hover {
+  background-color: #d96668 !important;
+}
+.btn-reddit {
+  color: #333333 !important;
+  background-color: #cee3f8 !important;
+}
+.btn-reddit:hover {
+  color: #ffffff !important;
+  background-color: #a0aebd !important;
+}
+.btn-tumblr {
+  background-color: #2f5070 !important;
+}
+.btn-tumblr:hover {
+  background-color: #59738d !important;
+}
 .btn-twitter {
   background-color: #00bdef !important;
 }
 .btn-twitter:hover {
-  background-color: #009dc6 !important;
-}
-.btn-facebook {
-  background-color: #2f4b93 !important;
-}
-.btn-facebook:hover {
-  background-color: #253b74 !important;
-}
-.btn-google {
-  background-color: #cf4b33 !important;
-}
-.btn-google:hover {
-  background-color: #b03e29 !important;
-}
-.btn-linkedin {
-  background-color: #0072b5 !important;
-}
-.btn-linkedin:hover {
-  background-color: #00588c !important;
+  background-color: #0aa1c9 !important;
 }
 @font-face {
   font-family: 'midaym';
@@ -527,7 +582,7 @@ h6 {
   content: "\78";
 }
 /* x */
-.icon-google2:before {
+.icon-gplus2:before {
   content: "\6d";
 }
 /* m */
@@ -543,6 +598,42 @@ h6 {
   content: "\63";
 }
 /* c */
+.icon-delicious2:before {
+  content: "\2c";
+}
+/* , */
+.icon-pinterest2:before {
+  content: "\2e";
+}
+/* . */
+.icon-reddit2:before {
+  content: "\2f";
+}
+/* / */
+.icon-tumblr2:before {
+  content: "\3c";
+}
+/* < */
+.icon-gmail2:before {
+  content: "\3e";
+}
+/* > */
+.icon-evernote2:before {
+  content: "\3f";
+}
+/* ? */
+.icon-cloud-download:before {
+  content: "\e6";
+}
+/* æ */
+.icon-plus-sign:before {
+  content: "\e1";
+}
+/* á */
+.icon-digg2:before {
+  content: "\e7";
+}
+/* ç */
 .icon-M:before {
   content: "\4d";
 }
