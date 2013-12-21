@@ -82,51 +82,17 @@
 /**
  * Social Buttons
  */
-.btn-delicious {
-    background-color: @social-delicious !important;
-    &:hover { background-color: mix(@social-delicious, @black, 80%) !important; }
-}
-
-.btn-digg {
-    background-color: @social-digg !important;
-    &:hover { background-color: mix(@social-digg, @white, 70%) !important; }
-}
-
-.btn-evernote {
-    background-color: @social-evernote !important;
-    &:hover { background-color: mix(@social-evernote, @black, 80%) !important; }
-}
-
-.btn-facebook {
-    background-color: @social-facebook !important;
-    &:hover { background-color: mix(@social-facebook, @white, 80%) !important; }
-}
-
-.btn-github {
-    background-color: @black !important;
-    &:hover { background-color: @social-github !important; }
-}
-
-.btn-gmail {
-    background-color: @social-gmail !important;
-    &:hover { background-color: mix(@social-gmail, @white, 80%) !important; }
-}
-
-.btn-gplus {
-    background-color: @social-gplus !important;
-    &:hover { background-color: mix(@social-gplus, @white, 80%) !important; }
-}
-
-.btn-linkedin {
-    background-color: @social-linkedin !important;
-    &:hover { background-color: mix(@social-linkedin, @black, 70%) !important; }
-}
-
-.btn-pinterest {
-    background-color: @social-pinterest !important;
-    &:hover { background-color: mix(@social-pinterest, @white, 70%) !important; }
-}
-
+.btn-delicious  { .btn-social(@social-delicious, @mix: @black); }
+.btn-digg       { .btn-social(@social-digg); }
+.btn-evernote   { .btn-social(@social-evernote, @mix: @black); }
+.btn-facebook   { .btn-social(@social-facebook); }
+.btn-github     { .btn-social(@social-github, @mix: @white, @percent: 70%, @btn-color2: @black); }
+.btn-gmail      { .btn-social(@social-gmail); }
+.btn-gplus      { .btn-social(@social-gplus); }
+.btn-linkedin   { .btn-social(@social-linkedin, @mix: @black); }
+.btn-pinterest  { .btn-social(@social-pinterest); }
+.btn-tumblr     { .btn-social(@social-tumblr); }
+.btn-twitter    { .btn-social(@social-twitter, @mix: @black); }
 .btn-reddit {
     color: @black !important;
     background-color: @social-reddit !important;
@@ -135,14 +101,3 @@
         background-color: mix(@social-reddit, @black, 70%) !important; 
     }
 }
-
-.btn-tumblr {
-    background-color: @social-tumblr !important;
-    &:hover { background-color: mix(@social-tumblr, @white, 80%) !important; }
-}
-
-.btn-twitter {
-    background-color: @social-twitter !important;
-    &:hover { background-color: mix(@social-twitter, @black, 80%) !important; }
-}
-
