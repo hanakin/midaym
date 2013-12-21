@@ -53,6 +53,29 @@
         background-image: none;
         .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
     }
+
+    /**
+    * Button Clear
+    * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
+    */
+    &.btn-clear {
+        background: none;
+        border: 2px solid @base-link-color;
+        color: @base-link-color;
+
+        .padding(@half-spacing-unit, @base-spacing-unit);
+
+        &:hover, &:focus { 
+            background: @base-link-color;  
+            color: @white;
+        }
+        &:active, &.active {
+            border-color: mix(@base-link-color, black, 85%);
+            background: mix(@base-link-color, black, 85%);
+            color: rgba(255, 255, 255, 0.75);
+            .box-shadow(none);
+        }
+    }
 }
 
 /**
