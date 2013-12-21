@@ -352,6 +352,35 @@
 .responsive-visibility() { display: block !important; }
 .responsive-invisibility() { & { display: none !important; } }
 
+//Color Variantes
+.btn-color(@btn-color, @text-color: @white) {
+    background-color: @btn-color;
+    color: @text-color;
+
+    &:hover {
+        background-color: darken(@btn-color, 8%);
+        color: @text-color;
+    }
+
+    &.btn-clear {
+        border: 2px solid @btn-color;
+        color: @btn-color;
+
+        &:hover, &:focus { 
+            background: @btn-color;  
+            color: @text-color;
+        }
+        &:active, &.active {
+            border-color: mix(@btn-color, black, 85%);
+            background: mix(@btn-color, black, 85%);
+        }
+    }
+}
+
+.btn-social(@btn-color, @mix: @white, @percent: 70%, @btn-color2: @btn-color) {
+    background-color: @btn-color2 !important;
+    &:hover { background-color: mix(@btn-color, @mix, @percent) !important; }
+}
 
 // Rem Size Mixins
 // generates both px and rem font sizes
