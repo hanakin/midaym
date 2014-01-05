@@ -5,335 +5,7 @@
     $IMPORTS
 \*------------------------------------*/
 /*------------------------------------*\
-    $CORE
-\*------------------------------------*/
-/*------------------------------------*\
-    $CORE--TYPE
-\*------------------------------------*/
-/**
- * Detailing type elements
- */
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-/**
- * Better looking blockquotes
- */
-blockquote {
-  border-left: 5px solid #f2f2f2;
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
-  margin: 0px 0px 24px;
-  margin: 0rem 0rem 1.5rem;
-}
-blockquote p {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 18px;
-  line-height: 1.125rem;
-}
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-blockquote small {
-  line-height: 16px;
-  line-height: 1rem;
-  color: #999999;
-  display: block;
-}
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-/*------------------------------------*\
-    $CORE--CODE
-\*------------------------------------*/
-/**
- * Detailing code elements
- */
-/**
- * Inline Code
- */
-code {
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-}
-/**
- * Code Blocks
- */
-pre {
-  background-color: #f5f5f5;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  color: #333333;
-}
-/**
- * Prettify
- */
-pre.prettyprint,
-code.prettyprint {
-  display: block;
-  padding: 12px;
-  padding: 0.75rem;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-  background-color: #333333;
-  border-radius: 5px;
-  border: solid 1px #d9d9d9;
-  line-height: 20px;
-  line-height: 1.25rem;
-}
-.pln {
-  color: #ffffff;
-}
-@media screen {
-  .str {
-    color: #c65669;
-  }
-  /* string content */
-  .kwd {
-    color: #217bb2;
-  }
-  /* a keyword */
-  .com {
-    color: #b3b3b3;
-  }
-  /* a comment */
-  .typ {
-    color: #ffffff;
-  }
-  /* a type name */
-  .lit {
-    color: #c65669;
-  }
-  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun {
-    color: #3aa8b9;
-  }
-  .opn {
-    color: #ffffff;
-  }
-  .clo {
-    color: #ffffff;
-  }
-  .tag {
-    color: #217bb2;
-  }
-  /* a markup tag name */
-  .atn {
-    color: #3aa8b9;
-  }
-  /* a markup attribute name */
-  .atv {
-    color: #c65669;
-  }
-  /* a markup attribute value */
-  .dec,
-  .var {
-    color: #217bb2;
-  }
-  /* a declaration; a variable name */
-  .fun {
-    color: #c65669;
-  }
-  /* a function name */
-}
-/*------------------------------------*\
-    $CORE--TABLES
-\*------------------------------------*/
-table {
-  border-radius: 4px;
-}
-table > thead th:first-child {
-  border-top-left-radius: 4px;
-}
-table > thead th:last-child {
-  border-top-right-radius: 4px;
-}
-th {
-  background-color: #f2f2f2;
-  text-align: center;
-}
-/*------------------------------------*\
-    $CORE--FORMS
-\*------------------------------------*/
-/**
- *  Checkboxes and radios
- *
- *  Indent the labels to position radios/checkboxes as hanging controls.
- */
-.radio,
-.checkbox {
-  vertical-align: middle;
-  display: block;
-  min-height: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-}
-.radio label,
-.checkbox label {
-  font-weight: normal;
-  cursor: pointer;
-  display: inline;
-  margin-bottom: 0;
-}
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
-}
-/**
- *  Radios and checkboxes on same line
- */
-.radio-inline,
-.checkbox-inline {
-  font-weight: normal;
-  cursor: pointer;
-  vertical-align: middle;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-}
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-/**
- *  Apply same disabled cursor tweak as for inputs
- *  Note: Neither radios nor checkboxes can be readonly.
- */
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-.radio[disabled],
-.radio-inline[disabled],
-.checkbox[disabled],
-.checkbox-inline[disabled],
-fieldset[disabled] input[type="radio"],
-fieldset[disabled] input[type="checkbox"],
-fieldset[disabled] .radio,
-fieldset[disabled] .radio-inline,
-fieldset[disabled] .checkbox,
-fieldset[disabled] .checkbox-inline {
-  cursor: not-allowed;
-}
-/**
- *  Help text
- *
- * Apply to any element you wish to create light text for placement immediately
- * below a form control. Use for general help, formatting, or instructional text.
- */
-.help-block {
-  color: #737373;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-/*------------------------------------*\
-    $CORE--HEADINGS
-\*------------------------------------*/
-/**
- * Detailing code elements
- */
-h1 {
-  /* Text */
-  font-size: 54px;
-  font-size: 3.375rem;
-  font-weight: 900;
-  line-height: 60px;
-  line-height: 3.75rem;
-  letter-spacing: -4px;
-  /* Layout */
-  margin-top: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 0;
-}
-h1 small {
-  /* Text */
-  font-size: 30px;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 36px;
-  line-height: 2.25rem;
-  letter-spacing: -1px;
-  /* Decoration */
-  color: #333333;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  /* Layout */
-  display: block;
-}
-h2,
-h3,
-h4 {
-  font-weight: 900;
-}
-h2 {
-  font-size: 42px;
-  font-size: 2.625rem;
-  line-height: 48px;
-  line-height: 3rem;
-  letter-spacing: -3px;
-  display: block;
-  margin-bottom: 6px;
-  margin-bottom: 0.375rem;
-}
-h2 small {
-  font-size: 30px;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 36px;
-  line-height: 2.25rem;
-  letter-spacing: -1px;
-  color: #ffffff;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-h3,
-h4,
-h5,
-h6 {
-  list-style: -1px;
-}
-h3 {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 36px;
-  line-height: 2.25rem;
-}
-h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 24px;
-  line-height: 1.5rem;
-}
-h5 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 6px;
-  line-height: 0.375rem;
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-h6 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 0;
-  margin: 24px 0px -12px;
-  margin: 1.5rem 0rem -0.75rem;
-}
-/*------------------------------------*\
-    $ELEMENTS
+    $MODULES
 \*------------------------------------*/
 /*------------------------------------*\
     $ELEMENT-BUTTON
@@ -437,28 +109,28 @@ h6 {
  * Button font-size modifiers.
  */
 .btn-alpha {
+  font-size: 54px;
+  font-size: 3.375rem;
+}
+.btn-beta {
+  font-size: 42px;
+  font-size: 2.625rem;
+}
+.btn-gamma {
   font-size: 36px;
   font-size: 2.25rem;
 }
-.btn-beta {
-  font-size: 30px;
-  font-size: 1.875rem;
-}
-.btn-gamma {
+.btn-delta {
   font-size: 24px;
   font-size: 1.5rem;
 }
-.btn-delta {
-  font-size: 18px;
-  font-size: 1.125rem;
-}
 .btn-epsilon {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
 }
 .btn-zeta {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 /**
  * Button Icon spacings
@@ -879,7 +551,32 @@ h6 {
 }
 /* z */
 /*------------------------------------*\
-    $OBJECTS
+    $OBJECTS--NAV
+\*------------------------------------*/
+/**
+ *  Contains all styles for the nav
+ */
+.nav {
+  padding: 12px 0px;
+  padding: 0.75rem 0rem;
+}
+.nav i {
+  font-size: 32px;
+}
+.nav a {
+  color: #cccccc;
+}
+.nav a:hover {
+  color: #21b5e4;
+}
+.nav li {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+/*------------------------------------*\
+    $COMPONENTS
 \*------------------------------------*/
 /*------------------------------------*\
     $OBJECTS-INTRO
@@ -894,7 +591,7 @@ h6 {
 /**
  * Intro Nav.
  */
-@media (max-width: 767px) {
+@media (max-width: 983px) {
   .intro-nav {
     text-align: center;
   }
@@ -962,31 +659,6 @@ h6 {
   display: block;
 }
 /*------------------------------------*\
-    $OBJECTS--NAV
-\*------------------------------------*/
-/**
- *  Contains all styles for the nav
- */
-.nav {
-  padding: 12px 0px;
-  padding: 0.75rem 0rem;
-}
-.nav i {
-  font-size: 32px;
-}
-.nav a {
-  color: #cccccc;
-}
-.nav a:hover {
-  color: #21b5e4;
-}
-.nav li {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-/*------------------------------------*\
     $OBJECT--POST
 \*------------------------------------*/
 /**
@@ -997,8 +669,8 @@ h6 {
  */
 .post {
   font-weight: normal;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
   padding: 0px 12px 48px;
   padding: 0rem 0.75rem 3rem;
   /**
@@ -1132,7 +804,7 @@ h6 {
   font-size: 1.5rem;
   line-height: 30px;
   line-height: 1.875rem;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   color: #333333;
   display: block;
   padding-left: 0;
@@ -1179,6 +851,9 @@ h6 {
   background-color: #333333;
   color: #ffffff;
 }
+.black {
+  color: #ffffff;
+}
 .white .post-day,
 .gray .post-day {
   border-color: rgba(0, 0, 0, 0.8);
@@ -1209,7 +884,7 @@ h6 {
  * Single Styles
  */
 .single strong {
-  color: #c65669;
+  color: #d94636;
 }
 .single hgroup {
   display: none;
@@ -1301,7 +976,7 @@ h6 {
 .bottom-logo a:hover {
   color: #cccccc;
 }
-@media (max-width: 767px) {
+@media (max-width: 983px) {
   .bottom-copyright,
   .bottom-social,
   .bottom-menu,
@@ -1319,7 +994,7 @@ h6 {
  * Post Social Styles
  */
 .social {
-  border-top: solid 2px #cccccc;
+  border-top: solid 2px #9da3a6;
   padding: 24px 0px;
   padding: 1.5rem 0rem;
 }
@@ -1332,19 +1007,19 @@ h6 {
   padding: 0.75rem 0.375rem;
 }
 .social-logo {
-  color: #b3b3b3;
+  color: #9da3a6;
   margin: 12px 0px 0px;
   margin: 0.75rem 0rem 0rem;
 }
 .social-logo i {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 36px;
+  font-size: 2.25rem;
 }
 .social-logo span {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   display: inline-block;
-  margin-top: -4px;
+  margin-top: 8px;
   padding-left: 18px;
   padding-left: 1.125rem;
 }
@@ -1355,12 +1030,9 @@ h6 {
   padding: 6px;
   padding: 0.375rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 983px) {
   .social-menu li {
     padding: 6px 6px;
     padding: 0.375rem 0.375rem;
   }
 }
-/*------------------------------------*\
-    $COMPONENTS
-\*------------------------------------*/

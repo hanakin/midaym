@@ -32,7 +32,7 @@ legend {
     line-height: inherit;
     // ** Decoration ** \\
     border: 0;
-    border-bottom: 1px solid @base-ui-color;
+    border-bottom: 1px solid @base-form-border-color;
     // ** Layout ** \\
     display: block;
     padding: 0;
@@ -42,7 +42,8 @@ legend {
 
 label {
     // ** Text ** \\
-    font-weight: bold;
+    font-weight: 600;
+    .line-height(@base-line-height * 1.1605); // ~20px 
     // ** Layout ** \\
     display: inline-block;
     margin-bottom: 5px;
@@ -54,21 +55,6 @@ label {
  *  Override content-box in Normalize (* isn't specific enough)
  */
 input[type="search"] { .box-sizing(border-box); }
-
-/**
- *  Override content-box in Normalize (* isn't specific enough)
- */
-// Position radios and checkboxes better
-input[type="radio"],
-input[type="checkbox"] {
-    // ** Text ** \\
-    line-height: normal;
-    // ** Layout ** \\
-    margin: 4px 0 0;
-    margin-top: 1px \9; /* IE8-9 */
-    position: relative;
-    top: -3px;
-}
 
 /**
  *  Set the height of select and file controls to match text inputs
@@ -104,9 +90,7 @@ input[type="checkbox"]:focus { .tab-focus(); }
  */
 input[type="number"] {
     &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-        height: auto;
-    }
+    &::-webkit-inner-spin-button { height: auto; }
 }
 
 /**
@@ -118,7 +102,7 @@ output {
     .line-height(@base-font-size);
     vertical-align: middle;
     // ** Decoration ** \\
-    color: @base-ui-color;
+    color: @base-form-output-color;
     // ** Layout ** \\
     display: block;
     padding-top: 7px;
@@ -129,57 +113,21 @@ output {
  */
 select,
 textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] { 
-    &:-moz-placeholder            { color: @base-ui-color; } // Firefox 4-18
-    &::-moz-placeholder           { color: @base-ui-color; } // Firefox 19+
-    &:-ms-input-placeholder       { color: @base-ui-color; } // Internet Explorer 10+
-    &::-webkit-input-placeholder  { color: @base-ui-color; } // Safari and Chrome
-}
-
-select,
-textarea,
-input[type="text"],
-input[type="file"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+input {   
     // ** Text ** \\
     .font-size(@base-font-size);
     vertical-align: middle;
     // ** Decoration ** \\
     background-color: #fff;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-    border: 1px solid @base-ui-color;
-    border-radius: @base-radius;
-    color: @base-ui-color;
+    border: 1px solid @base-form-border-color;
+    border-radius: unit(@base-form-border-radius, px);
+    color: @base-form-color;
     // ** Layout ** \\
     .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
     display: block;
-    height: @base-font-size*2px;
-    .padding(@quarter-spacing-unit, @half-spacing-unit);
+    height: unit(@base-font-size*2, px);
+    .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
     width: 100%;
 
     /**
@@ -194,9 +142,42 @@ input[type="color"] {
         // ** Text ** \\
         cursor: not-allowed;
         // ** Decoration ** \\
-        background-color: @base-ui-color;
+        background-color: @base-form-disabled-color;
     }
 
+    .form-control-focus();
+    .placeholder();
+
     textarea & { height: auto; } // Reset height for `textarea`s
+}
+
+input[type="file"] {
+    height: unit(((@base-font-size+@base-spacing-unit) - 1), px);
+    .padding(@quarter-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
+}
+
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+    // ** Text ** \\
+    line-height: normal;
+    // ** Layout ** \\
+    margin: 4px 0 0;
+    margin-top: 1px \9; /* IE8-9 */
+    position: relative;
+    top: -3px;
+
+    label & { top: -5px; } // fix alignment when wrapped in a label
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border: none;
+    border-radius: 0;
+    width: auto;
+    .box-shadow(none);
 }
 

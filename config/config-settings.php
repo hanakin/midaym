@@ -5,12 +5,13 @@ $blog_url = 'http://midaym.dev';
 $blog_title = "midaym";
 $meta_description = "The Personal Blog of Michael Miday a Front-End Specialist. Follow along as I discuss topics and projects covering the scope of all things Web Design &amp; Development related. I cover topics in HTML, [HTML5, CSS, CSS3, Design, PHP, Javascript, jQuery, PHPBB, Laravel, Less, Git, Photoshop &amp; More...";
 $intro_title = "The Playground";
-$intro_tag = "My name is Mike Miday <br/> Designer, Developer &amp; Front-End Creative Master
-";
+$intro_tag = "My name is Mike Miday <br/> Designer, Developer &amp; Front-End Creative Master";
 $about_title = "About Me";
 $about_tag = "The Creativity Behind The Curtains</br>Pay No Attention To The Machine Back Their!";
 $contact_title = "Reach Out";
 $contact_tag = "Need to get in touch with me. </br>Maybe you just want to know more about me.";
+$archive_title = "The Roundup";
+$archive_tag = "The inner workings of my mind. </br>Conviently organized for your viewing pleasure.";
 $password = 'pumpupthevolume';
 $tracking_code = '<script type=\"text/javascript\">
 

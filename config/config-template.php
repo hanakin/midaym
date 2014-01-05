@@ -1,2 +1,2 @@
 <?php
-$template = 'midaym';
+$template = 'midaym2';

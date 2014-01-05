@@ -10,13 +10,14 @@
 a {
     color: @base-link-color; // [1]
     text-decoration: none;
+    .transition(.25s);
 
     &:hover,
     &:focus {
         // ** Text ** \\
         text-decoration: none;  // [2]
         // ** Decoration ** \\
-        color: darken(@base-link-color, 15%);  // [2]
+        color: @base-link-hover-color;  // [2]
     }
     &:focus { outline: none; }  // [3]
 }
@@ -24,12 +25,22 @@ a {
 /**
  * Establish proper baseline grid
  */
-p { .margin(0, 0, @base-spacing-unit); }
+// p { .margin(0, 0, @base-spacing-unit); }
+p {
+    .font-size(@base-font-size);
+    .line-height(@base-line-height);
+
+    .margin(0, 0, @half-spacing-unit);
+}
 
 /**
  * Set default consistent size
  */
-small   { font-size: 85%; }
+// small   { font-size: 85%; }
+small, .small {
+    font-size: 83%;       // ~15px
+    .line-height(@base-font-size * 2.067); // ~31px
+}
 
 /**
  * Undo browser default styling
@@ -39,7 +50,7 @@ cite    { font-style: normal; }
 /**
  * Remove underlines from potentially troublesome elements.
  */
-u,ins{ text-decoration:none; }
+u, ins{ text-decoration:none; }
 
 /**
  * Apply faux underline via `border-bottom`.
@@ -50,7 +61,8 @@ ins { border-bottom:1px solid; }
  * 1. Give a help cursor to elements that give extra info on `:hover`.
  * 2. Add dotted underline for more offset
  */
-abbr[title] {
+abbr[title],
+abbr[data-original-title] {
     // ** Text ** \\
     cursor: help; // [1]
     // ** Decoration ** \\
@@ -63,7 +75,7 @@ abbr[title] {
 address {
     // ** Text ** \\
     font-style: normal;
-    .line-height(@base-font-size);
+    .line-height(@base-line-height);
     // ** Layout ** \\
     .margin-bottom(@base-spacing-unit);
 }

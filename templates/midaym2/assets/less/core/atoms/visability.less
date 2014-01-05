@@ -1,0 +1,219 @@
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/**
+ * Completely undo hidden.
+ */
+.display {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/**
+ * Display content only for screen readers.
+ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.hidden-visually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/**
+ * Control visibility without affecting flow.
+ */
+.invisible { visibility: hidden !important; }
+.visible { visibility: visible !important; }
+
+/**
+*  IE10 in Windows (Phone) 8
+*  
+*  Support for responsive views via media queries is kind of borked in IE10, for
+*  Surface/desktop in split view and for Windows Phone 8. This particular fix
+*  must be accompanied by a snippet of JavaScript to sniff the user agent and
+*  apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+*  our Getting Started page for more information on this bug.
+*  
+*  For more information, see the following:
+*  
+*  Issue: https://github.com/twbs/bootstrap/issues/10497
+*  Docs: http://getbootstrap.com/getting-started/#browsers
+*  Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+*/
+@-ms-viewport { width: device-width; }
+
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+    .hidden();
+    @media (max-width: @screen-s-max) { .display(); }
+
+    &.visible-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .display(); }
+    }
+
+    &.visible-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .display(); }
+    }
+
+    &.visible-w {
+        @media (min-width: @screen-w-min) { .display(); }
+    }
+}
+
+.visible-m {
+    .hidden();
+    &.visible-s {
+        @media (max-width: @screen-s-max) { .display(); }
+    }
+
+    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .display(); }
+    
+    &.visible-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .display(); }
+    }
+    
+    &.visible-w {
+        @media (min-width: @screen-w-min) { .display(); }
+    }
+}
+
+.visible-l {
+    .hidden();
+    &.visible-s {
+        @media (max-width: @screen-s-max) { .display(); }
+    }
+    
+    &.visible-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .display(); }
+    }
+    
+    @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .display(); }
+    
+    &.visible-w {
+        @media (min-width: @screen-w-min) { .display(); }
+    }
+}
+
+.visible-w {
+    .hidden();
+    &.visible-s {
+        @media (max-width: @screen-s-max) { .display(); }
+    }
+    
+    &.visible-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .display(); }
+    }
+    
+    &.visible-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .display(); }
+    }
+    
+    @media (min-width: @screen-w-min) { .display(); }
+}
+
+.hidden-s {
+    .display();
+    @media (max-width: @screen-s-max) { .hidden(); }
+    
+    &.hidden-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .hidden(); }
+    }
+    
+    &.hidden-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .hidden(); }
+    }
+    
+    &.hidden-w {
+        @media (min-width: @screen-w-min) { .hidden(); }
+    }
+}
+
+.hidden-m {
+    .display();
+    &.hidden-s {
+        @media (max-width: @screen-s-max) { .hidden(); }
+    }
+    
+    @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .hidden(); }
+    
+    &.hidden-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .hidden(); }
+    }
+    
+    &.hidden-w {
+        @media (min-width: @screen-w-min) { .hidden(); }
+    }
+}
+
+.hidden-l {
+    .display();
+    &.hidden-s {
+        @media (max-width: @screen-s-max) { .hidden(); }
+    }
+    
+    &.hidden-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .hidden(); }
+    }
+    
+    @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .hidden(); }
+    
+    &.hidden-w {
+        @media (min-width: @screen-w-min) { .hidden(); }
+    }
+}
+
+.hidden-w {
+    .display();
+    &.hidden-s {
+        @media (max-width: @screen-s-max) { .hidden(); }
+    }
+    
+    &.hidden-m {
+        @media (min-width: @screen-m-min) and (max-width: @screen-m-max) { .hidden(); }
+    }
+    
+    &.hidden-l {
+        @media (min-width: @screen-l-min) and (max-width: @screen-l-max) { .hidden(); }
+    }
+    
+    @media (min-width: @screen-w-min) { .hidden(); }
+}
+
+/**
+ * Print Utility
+ */
+.visible-print { .hidden(); }
+
+@media print {
+    .visible-print { .display(); }
+    .hidden-print { .hidden(); }
+}
+

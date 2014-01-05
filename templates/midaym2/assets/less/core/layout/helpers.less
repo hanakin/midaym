@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+/**
+ * common classes that can be usesed to control the positioning of content
+ */
+
+/**
+ * grid-paint Class
+ * 
+ * use on grid unit to color it
+ */
+.grid-paint {
+    /* Decoration */
+    background-color: #4a8ec2;
+    border-radius: unit(@base-radius, px);
+    color: #fff;
+    /* Layout */
+    .padding(@half-spacing-unit, @quarter-spacing-unit);
+    @media (min-width: @screen-m-min) { .padding(@half-spacing-unit); }
+
+}
+

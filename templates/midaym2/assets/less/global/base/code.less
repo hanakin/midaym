@@ -16,7 +16,7 @@ samp { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
  */
 code {
     // ** Text ** \\
-    font-size: 90%;
+    font-size: 75%;
     white-space: nowrap;
     // ** Layout ** \\
     .padding(@eighth-spacing-unit, @quarter-spacing-unit);
@@ -27,15 +27,17 @@ code {
  */
 pre {
     // ** Text ** \\
-    .font-size(@base-font-size - 1);
-    .line-height(@base-spacing-unit);
+    .font-size(@base-font-size - 5);
+    .line-height(@base-line-height);
+    // font-size: @base-font-size - 5px;
+    // line-height: unit(@base-line-height, px);
     word-break: break-all;
     word-wrap: break-word;
     // ** Layout ** \\
     display: block;
     margin: 0;
-    .margin-left(@half-spacing-unit);
-    .padding(@half-spacing-unit);
+    .margin(0, 0, (@base-line-height / 2));
+    .padding((@base-line-height - 6) / 3);
 
     // Account for some code outputs that place code tags in pre tags
     code {

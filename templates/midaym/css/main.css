@@ -481,7 +481,6 @@ input[type="color"]:focus {
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
-
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
@@ -491,10 +490,8 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   *margin-top: 0;
   /* IE7 */
-
   margin-top: 1px \9;
   /* IE8-9 */
-
   line-height: normal;
 }
 .float label {
@@ -526,10 +523,8 @@ select,
 input[type="file"] {
   height: 34px;
   /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
   *margin-top: 4px;
   /* For IE7, add top margin to align select with labels */
-
   line-height: 34px;
 }
 select {
@@ -569,7 +564,6 @@ input[type="button"] {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   padding: 4px 12px;
   margin-bottom: 0;
@@ -592,7 +586,6 @@ input[type="button"] {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #e6e6e6;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: 1px solid #bbbbbb;
   *border: 0;
@@ -1468,9 +1461,9 @@ code {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  border: solid 1px #f1c5c7;
-  background-color: #fbeeef;
-  color: #d44950;
+  border: solid 1px #f1bcb7;
+  background-color: #f9e4e2;
+  color: #d94636;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -1496,7 +1489,7 @@ code.prettyprint {
 }
 @media screen {
   .str {
-    color: #d44950;
+    color: #d94636;
   }
   /* string content */
   .kwd {
@@ -1512,12 +1505,12 @@ code.prettyprint {
   }
   /* a type name */
   .lit {
-    color: #d44950;
+    color: #d94636;
   }
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun {
-    color: #4f9fd0;
+    color: #3698d9;
   }
   .opn {
     color: #ffffff;
@@ -1530,11 +1523,11 @@ code.prettyprint {
   }
   /* a markup tag name */
   .atn {
-    color: #4f9fd0;
+    color: #3698d9;
   }
   /* a markup attribute name */
   .atv {
-    color: #d44950;
+    color: #d94636;
   }
   /* a markup attribute value */
   .dec,
@@ -1543,7 +1536,7 @@ code.prettyprint {
   }
   /* a declaration; a variable name */
   .fun {
-    color: #d44950;
+    color: #d94636;
   }
   /* a function name */
 }
@@ -1656,7 +1649,7 @@ footer .social > li:hover i {
 .white strong,
 .about strong,
 .single strong {
-  color: #d44950;
+  color: #d94636;
 }
 .white a.pill-light,
 .about a.pill-light,
@@ -1694,7 +1687,7 @@ footer .social > li:hover i {
 }
 .gray strong,
 .contact strong {
-  color: #d44950;
+  color: #d94636;
 }
 .gray a.pill-light,
 .contact a.pill-light {
@@ -1714,36 +1707,13 @@ footer .social > li:hover i {
   background-color: #ffcd1a;
 }
 .red {
-  background-color: #d44950;
+  background-color: #d94636;
 }
 .green {
-  background-color: #48d470;
-  color: #333333;
-}
-.green h2,
-.green h2 small,
-.green h4 {
-  color: #333333;
-}
-.green p {
-  color: #333333;
-}
-.green strong {
-  color: #d44950;
-}
-.green a.pill-light {
-  color: #ffffff;
-  background-color: #21b5e4;
-}
-.green a.pill-light:hover {
-  color: #ffffff;
-  background-color: #666666;
-}
-.green article a:hover {
-  color: #1794bb;
+  background-color: #33cc73;
 }
 .blue {
-  background-color: #4f9fd0;
+  background-color: #3698d9;
 }
 .blue a.pill-light {
   color: #333333;
@@ -1754,18 +1724,17 @@ footer .social > li:hover i {
   background-color: #666666;
 }
 .pink {
-  background-color: #d448ac;
+  background-color: #d94c7b;
 }
 .purple {
-  background-color: #9e48d4;
+  background-color: #9959b3;
 }
 .orange {
-  background-color: #f98d21;
+  background-color: #ff9233;
 }
 .black {
   background-color: #4d4d4d;
   /* a type name */
-
 }
 .black pre.prettyprint,
 .black code.prettyprint {

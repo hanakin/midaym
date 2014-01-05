@@ -11,9 +11,11 @@
 		            </article>
 		            <aside class="span4 offset1">
 		                <?php if($post_image) { ?>
-		        		<img class="featured" src="<?php echo $post_image ?>" alt="<?php echo $post_title ?>" />
-						<?php } ?>
-		            </aside>
+		        			<img class="featured" src="<?php echo $post_image ?>" alt="<?php echo $post_title ?>" />
+						<?php }else{ ?>
+							<img class="featured" src="<?php echo $template_dir_url ?>/img/post-img-default.jpg" alt="<?php echo $post_title ?>" />
+						<?php } ?>		            
+					</aside>
 	            </div>
 	        </div>
 	    </section>

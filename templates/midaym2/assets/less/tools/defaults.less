@@ -8,175 +8,265 @@
 //  $COLORS
 //------------------------------------//
 
-//
 // Blacks
-//
-@black-pure:                    #000;
-@black-dark:                    lighten(#000, 10%); // #1a1a1a
-@black:                         lighten(#000, 20%); // #333333
-@black-light:                   lighten(#000, 30%); // #4d4d4d
+@black-pure:                                #000;
+@black-dark:                                lighten(#000, 10%); // #1a1a1a
+@black:                                     lighten(#000, 20%); // #333333
+@black-light:                               lighten(#000, 30%); // #4d4d4d
 
-//
 // Grays
-//
-@gray-darker:                   lighten(#000, 40%); // #666
-@gray-dark:                     lighten(#000, 50%); // #808
-@gray:                          lighten(#000, 60%); // #999
-@gray-light:                    lighten(#000, 70%); // #b3b
-@gray-lighter:                  lighten(#000, 80%); // #ccc
+@gray-darker:                               lighten(#000, 40%); // #666
+@gray-dark:                                 lighten(#000, 50%); // #808
+@gray:                                      lighten(#000, 60%); // #999
+@gray-light:                                lighten(#000, 70%); // #b3b
+@gray-lighter:                              lighten(#000, 80%); // #ccc
 
-//
 // Whites
-//
-@white-darker:                  lighten(#000, 90%); // #e5e5e5
-@white-dark:                    lighten(#000, 95%); // #f2f2f2
-@white:                         #fff;
+@white-darkest:                             #ddd;
+@white-darker:                              lighten(#000, 90%); // #e5e5e5
+@white-dark:                                lighten(#000, 95%); // #f2f2f2
+@white:                                     #fff;
 
-// Accent colors
-@blue-dark:                     #217bb2;
-@blue:                          #3aa8b9;
-@red:                           #c65669;
-@green:                         #34d987;
-@yellow:                        #ffd22e;
-@orange:                        #f79738;
-@pink:                          #c655bb;
-@purple:                        #8855dc;
+
+// Swatches
+@silver-light:                              #edf1f2;
+@silver:                                    #c8cbcc;
+@silver-dark:                               #9da3a6;
+
+@bluegray-light:                            #b8c6cc;
+@bluegray:                                  #8d9ea6;
+@bluegray-dark:                             #667880;
+
+@pink-light:                                #ff6699;
+@pink:                                      #d94c7b;
+@pink-dark:                                 #b3365f;
+
+@purple-light:                              #b762d9;
+@purple:                                    #9959b3;
+@purple-dark:                               #753f8c;
+
+@blue-light:                                #33beff;
+@blue:                                      #3698d9;
+@blue-dark:                                 #2479b3;
+
+@navy-light:                                #46698c;
+@navy:                                      #384f66;
+@navy-dark:                                 #203040;
+
+@blue-alt-light:                            #3381ff;
+@blue-alt:                                  #3675d9;
+@blue-alt-dark:                             #245ab3;
+
+@teal-light:                                #17e6b9;
+@teal:                                      #1dbf9f;
+@teal-dark:                                 #0f997d;
+
+@green-light:                               #30f281;
+@green:                                     #33cc73;
+@green-dark:                                #21a658;
+
+@yellow-light:                              #fff55b;
+@yellow:                                    #ffcd1a;
+@yellow-dark:                               #f39c12;
+
+@orange-light:                              #ff9233;
+@orange:                                    #e67e22;
+@orange-dark:                               #d35400;
+
+@peach-light:                               #ff9a73;
+@peach:                                     #d98b6c;
+@peach-dark:                                #b37359;
+
+@red-light:                                 #ff4733;
+@red:                                       #d94636;
+@red-dark:                                  #b33224;
 
 // Social colors
-@social-delicious:              #3399ff;
-@social-digg:                   #070707;
-@social-evernote:               #7fce2c;
-@social-facebook:               #2f5890;
-@social-github:                 #4183c4;
-@social-gmail:                  #c92527;
-@social-gplus:                  #cf4b33;
-@social-linkedin:               #4897c9;
-@social-pinterest:              #c92527;
-@social-reddit:                 #cee3f8;
-@social-tumblr:                 #2f5070;
-@social-twitter:                #00bdef;
-
+@social-delicious:                          #3399ff;
+@social-digg:                               #070707;
+@social-evernote:                           #7fce2c;
+@social-facebook:                           #2f5890;
+@social-github:                             #4183c4;
+@social-gmail:                              #c92527;
+@social-gplus:                              #cf4b33;
+@social-linkedin:                           #4897c9;
+@social-pinterest:                          #c92527;
+@social-reddit:                             #cee3f8;
+@social-tumblr:                             #2f5070;
+@social-twitter:                            #00bdef;
 
 
 //------------------------------------//
 //  $BASE
 //------------------------------------//
 
-//
-// Base font sizes
-//
-@base-font-size:                16;
-@base-rem-multiplier:           @base-font-size;
+// Base font
+@base-font-size:                            16;
+@base-font-family:                          "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@base-font-color:                           @gray-dark;
 
-//
 // Base line height
-//
-@base-line-height:              24;
-@base-line-height-ratio:        (@base-line-height/@base-font-size);
+@base-line-height-ratio:                    1.722; 
+@base-line-height:                          floor((@base-font-size * @base-line-height-ratio));
 
-//
+// Base Heading Values
+@giga:                                      110;
+@mega:                                      87;
+@kilo:                                      68; 
+            
+@h1-size:                                   54; 
+@h2-size:                                   42; 
+@h3-size:                                   36; 
+@h4-size:                                   24; 
+@h5-size:                                   21; 
+@h6-size:                                   18; 
+                    
+@milli:                                     12; 
+@micro:                                     10; 
+                    
+@alpha:                                     @h1-size;
+@beta:                                      @h2-size;
+@gamma:                                     @h3-size;
+@delta:                                     @h4-size;
+@epsilon:                                   @h5-size;
+@zeta:                                      @h6-size;
+    
+@base-heading-family:                       @base-font-family;
+@base-heading-weight:                       700;
+@base-heading-color:                        @black;
+
+// Base DT
+@base-dt-color:                             @black;
+
 // Base spacing units
-//
-@base-spacing-unit:             @base-line-height;          // 24
-//Large units
-@sextuple-spacing-unit:         (@base-spacing-unit * 6);   // 144
-@quintuple-spacing-unit:        (@base-spacing-unit * 5);   // 120
-@quadruple-spacing-unit:        (@base-spacing-unit * 4);   // 96
-@triple-spacing-unit:           (@base-spacing-unit * 3);   // 72
-@double-spacing-unit:           (@base-spacing-unit * 2);   // 48
-// Small units
-@half-spacing-unit:             (@base-spacing-unit / 2);   // 12
-@quarter-spacing-unit:          (@base-spacing-unit / 4);   // 6
-@eighth-spacing-unit:           (@base-spacing-unit / 8);   // 3
+@base-spacing-unit:                         @delta; // 24
 
+// Base Rem value
+@base-rem-multiplier:                       @base-font-size;
 
-//
-// Base font-family.
-//
-@base-font-family:              "Helvetica Neue", Arial, sans-serif;
-
-//
-// Base colour for objects’ borders etc.
-//
-@base-ui-color:                 @gray-lighter;
-
-//
-// Base colour for links
-//
-@base-link-color:               #21b5e4;
-        
-//
 // How big would you like round corners to be by default?
-//
-@base-radius:                   4px;
+@base-radius:                               4;
+@base-radius-medium:                        5;
+@base-radius-large:                         6;
 
-//
-// Font-sizes (in pixels). Refer to relevant sections for their implementations.
-//
-@giga:                          @quadruple-spacing-unit;
-@mega:                          @triple-spacing-unit;
-@kilo:                          @double-spacing-unit;
-        
-@h1-size:                       36; 
-@h2-size:                       30; 
-@h3-size:                       @base-spacing-unit; 
-@h4-size:                       18; 
-@h5-size:                       16; 
-@h6-size:                       14; 
-        
-@milli:                         @half-spacing-unit;
-@micro:                         10;
-        
-@alpha:                         @h1-size;
-@beta:                          @h2-size;
-@gamma:                         @h3-size;
-@delta:                         @h4-size;
-@epsilon:                       @h5-size;
-@zeta:                          @h6-size;
+// Base colour for objects’ borders etc.
+@base-ui-color:                             mix(@gray-darker, white, 16.5%);
 
+// Base colour for links & branding
+@base-link-color:                           #21b5e4;
+@base-link-hover-color:                     darken(@base-link-color, 15%);
+
+// Base Form
+@base-form-color:                           @gray-light;
+@base-form-border-color:                    @gray-light;
+@base-form-border-radius:                   @base-radius;
+@base-form-output-color:                    @gray-light;
+@base-form-placeholder-color:               @gray-light;
+@base-form-disabled-color:                  @gray-light;
+@base-form-border-focus:                    #66afe9;
+
+// Base Tables
+@base-table-border-size:                    2;
+@base-table-border-color:                   @base-ui-color;
+
+// Base Strong
+@base-strong-color:                         @black;
+
+// Base Blockquote
+@base-quote-border-size:                    3;
+@base-quote-border-color:                   @white-dark;
+@base-quote-small-color:                    @base-ui-color;
 
 //------------------------------------//
-//  $ELEMENTS
+//  $UNITS
 //------------------------------------//
 
-//
+//Large units
+@sextuple-spacing-unit:                     (@base-spacing-unit * 6);       // 144
+@quintuple-spacing-unit:                    (@base-spacing-unit * 5);       // 120 
+@quadruple-spacing-unit:                    (@base-spacing-unit * 4);       // 96 
+@triple-spacing-unit:                       (@base-spacing-unit * 3);       // 72 
+@double-spacing-unit:                       (@base-spacing-unit * 2);       // 48
+
+// Small units
+@half-spacing-unit:                         (@base-spacing-unit / 2);       // 12
+@quarter-spacing-unit:                      (@base-spacing-unit / 4);       // 6
+@eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3   
+
+//------------------------------------//
+//  $CORE & ATOMS
+//------------------------------------//
+
 // Code
-//
-@code-color:                  #c7254e;
-@code-bg:                     #f9f2f4;
-
-@pre-bg:                      #f5f5f5;
+@code-font-family:                          Monaco, Menlo, Consolas, "Courier New", monospace;
+@code-border-radius:                        @base-radius;
+@code-color:                                #c7254e;
+@code-bg:                                   #f9f2f4;
+    
+// Pre
+@pre-bg:                                    #f5f5f5;
+@pre-color:                                 @black;
+@pre-border-radius:                         @base-radius;
+@pre-border-size:                           2;
+@pre-border-color:                          @base-ui-color;
+    
+@pre-prettyprint-color:                     @white;
+@pre-prettyprint-bg:                        @black;
+@pre-prettyprint-border-size:               1;
+@pre-prettyprint-border-color:              darken(@white, 15%);
+@pre-prettyprint-border-radius:             @base-radius-medium;
+    
+// Table
+@table-heading-bg:                          @white-dark;
+@table-heading-color:                       @black;
+@table-hover-bg:                            lighten(@base-link-color, 46.5%);
+@table-accent-bg:                           #f9f9f9;
+@table-border-color:                        @white-darkest;
+@table-border-size:                         2;
+    
+// Form
+@form-color:                                @base-ui-color;
+@form-bg:                                   @white;
+@form-border-color:                         @base-ui-color;
+@form-border-size:                          2;
+@form-disabled-color:                       @gray-light;
+@form-border-focus:                         #66afe9;
+    
+// Image
+@img-bg:                                    @white;
+@img-border-color:                          @white-darkest;
+@img-border-size:                           1;
+@img-border-radius:                         @base-radius;
 
 
 //------------------------------------//
 //  $BREAKPOINTS
 //------------------------------------//
 
-//
 // Different breakpoints for the project.
-//
-@small:                         480px;
-@medium:                        768px;
-@large:                         992px;
-@wide:                          1200px;
+@screen-s-min:                                 480px;   // Small screen / phone
+@screen-m-min:                                 768px;   // Medium screen / tablet
+@screen-l-min:                                 984px;   // Large screen / desktop
+@screen-w-min:                                 1200px;  // Wide screen / wide desktop
 
-//
 // So media queries don't overlap when required, provide a maximum
-//
-@small-max:                     (@small - 1);
-@medium-max:                    (@medium - 1);
-@large-max:                     (@large - 1);
-@wide-max:                      (@wide - 1);
+@screen-s-max:                                 (@screen-m-min - 1);
+@screen-m-max:                                 (@screen-l-min - 1);
+@screen-l-max:                                 (@screen-w-min - 1);
 
 
 //------------------------------------//
 //  $GRIDS
 //------------------------------------//
 
-//
+// Number of columns in the grid system
+@grid-columns:                                 12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:                            @base-spacing-unit;
+
 // Different Grid sizes for the project.
-//
-@container-m:                   720px + (@base-spacing-unit * 1px);
-@container-l:                   940px + (@base-spacing-unit * 1px);
-@container-w:                   1140px + (@base-spacing-unit * 1px);
+@container-s:                                   100%;                         // Small screen / Phone
+@container-m:                                   (720 + @grid-gutter-width);   // Medium screen / tablet
+@container-l:                                   (936 + @grid-gutter-width);   // Large screen / desktop
+@container-w:                                   (1140 + @grid-gutter-width);  // Wide screen / wide desktop
 

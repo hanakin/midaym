@@ -21,13 +21,13 @@ table {
             > th,
             > td {
                 // ** Text ** \\
-                .line-height(@base-spacing-unit);
+                .line-height(@base-font-size * 1.231);
                 text-align: center;
                 vertical-align: top;
                 // ** Decoration ** \\
-                border-top: 1px solid @base-ui-color;
+                border-top: unit(@base-table-border-size, px) solid @base-table-border-color;
                 // ** Layout ** \\
-                padding: 8px;
+                padding: 9px 25px;
                 
             }
         }
@@ -40,7 +40,7 @@ table {
         // ** Text ** \\
         vertical-align: bottom;
         // ** Decoration ** \\
-        border-bottom: 2px solid @base-ui-color;
+        border-bottom: unit(@base-table-border-size, px) solid @base-table-border-color;
     }
 
     /**
@@ -57,6 +57,6 @@ table {
     /**
     * Account for multiple tbody instances
     */
-    > tbody + tbody { border-top: 2px solid @base-ui-color; }
+    > tbody + tbody { border-top: unit(@base-table-border-size, px) solid @base-table-border-color; }
 }
 

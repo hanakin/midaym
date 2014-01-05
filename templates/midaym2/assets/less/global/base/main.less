@@ -5,6 +5,15 @@
  *  simple defaults for root level
  */
 
+// html { font-size: 62.5%; }
+
+// body { 
+// 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+// 	font-size: unit(@base-font-size, px);
+// 	line-height: @base-line-height-ratio;
+// 	color: @black;
+// }
+
 html { 
 	font: unit(@base-font-size, px) @base-line-height-ratio @base-font-family;
 	font-size: unit(@base-font-size, px);
@@ -12,5 +21,4 @@ html {
 	line-height: @base-line-height-ratio;
 }
 
-body { color: @black; }
-
+body { color: @base-font-color; }

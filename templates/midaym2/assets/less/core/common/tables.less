@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    $CORE--TABLES
+\*------------------------------------*/
+
+table {
+    border-radius: unit(@base-radius, px);
+    > thead {
+        th:first-child { border-top-left-radius: unit(@base-radius, px); }
+        th:last-child { border-top-right-radius: unit(@base-radius, px); }
+    }
+}
+
+th {
+	text-align: center;
+
+	background-color: @table-heading-bg;
+	color: @table-heading-color;
+}
+

@@ -50,7 +50,7 @@
 }
 
 // Placeholder text
-.placeholder(@color: @input-color-placeholder) {
+.placeholder(@color: @base-ui-color) {
     &:-moz-placeholder            { color: @color; } // Firefox 4-18
     &::-moz-placeholder           { color: @color; } // Firefox 19+
     &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
@@ -352,13 +352,140 @@
 .responsive-visibility() { display: block !important; }
 .responsive-invisibility() { & { display: none !important; } }
 
+
+// Grid System
+// -----------
+
+// Centered container element
+.container-fixed() {
+    margin: 0 auto;
+    .padding(0, @quarter-spacing-unit);
+    @media (min-width: @screen-m-min) { .padding(0, @half-spacing-unit); }
+    .cf();
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+    .margin(0);
+    .cf();
+}
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grid-columns`.
+.grid-make-columns() {
+    // Common styles for all sizes of grid columns, widths 1-12
+    .grid(@index) when (@index = 1) { // initial
+        @item: ~".grid-s-@{index}, .grid-m-@{index}, .grid-l-@{index}, .grid-w-@{index}";
+        .grid(@index + 1, @item);
+    }
+    .grid(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+        @item: ~".grid-s-@{index}, .grid-m-@{index}, .grid-l-@{index}, .grid-w-@{index}";
+        .grid(@index + 1, ~"@{list}, @{item}");
+    }
+    .grid(@index, @list) when (@index > @grid-columns) { // terminal
+        @{list} {
+            float: left;
+            position: relative;
+            // Prevent columns from collapsing when empty
+            min-height: 1px;
+            // Inner gutter via padding
+            .padding(0, (@grid-gutter-width / 4));
+            @media (min-width: @screen-m-min) { .padding(0, (@grid-gutter-width / 2)); }
+        }
+    }
+    .grid(1); // kickstart it
+}
+
+.grid-make(@index, @class, @type) when (@type = width) and (@index > 0) {
+    .grid-@{class}-@{index} {
+        width: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = push) {
+    .grid-@{class}-push-@{index} {
+        left: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = pull) {
+    .grid-@{class}-pull-@{index} {
+        right: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = offset) {
+    .grid-@{class}-offset-@{index} {
+        margin-left: percentage((@index / @grid-columns));
+    }
+}
+
+// Basic looping in LESS
+.grid-build(@cols, @class, @type, @i: 1) when (@i <= @cols) {
+    .grid-make(@i, @class, @type);
+    // next iteration
+    .grid-build(@cols, @class, @type, @i + 1);
+}
+
+// Rem Grid Mixins
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = width) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { width: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = push) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = pull) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { right: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = offset) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { margin-left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-build(@cols, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width, @i: 1) when (@i <= @cols) {
+    .grid-rem-make(@i, @class, @type, @width, @columns, @gutter);
+    // next iteration
+    .grid-rem-build(@cols, @class, @type, @width, @columns, @gutter, @i + 1);
+}
+
+
+// Form control focus state
+//
+// Generate a customized focus state and for any input with the specified color,
+// which defaults to the `@input-focus-border` variable.
+//
+// We highly encourage you to not customize the default value, but instead use
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+// WebKit's default styles, but applicable to a wider range of browsers. Its
+// usability and accessibility should be taken into account with any change.
+//
+// Example usage: change the default blue border and shadow to white for better
+// contrast against a dark gray background.
+
+.form-control-focus(@color: @base-link-color) {
+    .form-group.focus &,
+  &:focus {
+    border-color: @color;
+    outline: 0;
+    .box-shadow(none);
+  }
+}
+
 //Color Variantes
-.btn-color(@btn-color, @text-color: @white) {
+.btn-color(@btn-color, @text-color: @white, @btn-hover-color: darken(@btn-color, 8%), @btn-active-color: mix(@btn-color, black, 85%)) {
     background-color: @btn-color;
     color: @text-color;
 
     &:hover {
-        background-color: darken(@btn-color, 8%);
+        background-color: @btn-hover-color;
         color: @text-color;
     }
 
@@ -371,8 +498,8 @@
             color: @text-color;
         }
         &:active, &.active {
-            border-color: mix(@btn-color, black, 85%);
-            background: mix(@btn-color, black, 85%);
+            border-color: @btn-active-color;
+            background: @btn-active-color;
         }
     }
 }
@@ -385,100 +512,100 @@
 // Rem Size Mixins
 // generates both px and rem font sizes
 .font-size(@size) {
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     font-size: @px-size; 
     font-size: @rem-size;
 }
 
 .line-height(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     line-height: @px-size;
     line-height: @rem-size;
 }
 
 .margin(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin: @px-size;
     margin: @rem-size;
 }
 
 .margin(@vertiacl, @horizontal){
-    @v-px-size: @vertiacl*1px;
-    @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertiacl*1px);
+    @h-px-size: (@horizontal*1px);
+    @v-rem-size: ((@vertiacl/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     margin: @v-px-size @h-px-size;
     margin: @v-rem-size @h-rem-size;
 }
 
 .margin(@top, @horizontal, @bottom){
-    @t-px-size: @top*1px;
-    @h-px-size: @horizontal*1px;
-    @b-px-size: @bottom*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @h-px-size: (@horizontal*1px);
+    @b-px-size: (@bottom*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     margin: @t-px-size @h-px-size @b-px-size;
     margin: @t-rem-size @h-rem-size @b-rem-size;
 }
 
 .margin(@top, @right, @bottom, @left){
-    @t-px-size: @top*1px;
-    @r-px-size: @right*1px;
-    @b-px-size: @bottom*1px;
-    @l-px-size: @left*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @r-px-size: (@right*1px);
+    @b-px-size: (@bottom*1px);
+    @l-px-size: (@left*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
     margin: @t-px-size @r-px-size @b-px-size @l-px-size;
     margin: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
 }
 
 .margin-top(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-top: @px-size;
     margin-top: @rem-size;
 }
 
 .margin-right(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-right: @px-size;
     margin-right: @rem-size;
 }
 
 .margin-bottom(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-bottom: @px-size;
     margin-bottom: @rem-size;
 }
 
 .margin-left(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-left: @px-size;
     margin-left: @rem-size;
 }
 
 .margin-horizontal(@horizontal){
-    @h-px-size: @horizontal*1px;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @h-px-size: (@horizontal*1px);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     margin-left: @h-px-size;
     margin-right: @h-px-size;
@@ -487,11 +614,11 @@
 }
 
 .margin-horizontal(@left,@right){
-    @l-px-size: @left*1px;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @l-px-size: (@left*1px);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
-    @r-px-size: @right*1px;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @r-px-size: (@right*1px);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
 
     margin-left: @l-px-size;
     margin-left: @l-rem-size;
@@ -501,8 +628,8 @@
 }
 
 .margin-vertical(@vertical){
-    @v-px-size: @vertical*1px;
-    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertical*1px);
+    @v-rem-size: ((@vertical/@base-rem-multiplier)*1rem);
 
     margin-top: @v-px-size;
     margin-bottom: @v-px-size;
@@ -511,11 +638,11 @@
 }
 
 .margin-vertical(@top,@bottom){
-    @t-px-size: @top*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
 
-    @b-px-size: @bottom*1px;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @b-px-size: (@bottom*1px);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     margin-top: @t-px-size;
     margin-top: @t-rem-size;
@@ -525,84 +652,84 @@
 }
 
 .padding(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding: @px-size;
     padding: @rem-size;
 }
 
 .padding(@vertiacl, @horizontal){
-    @v-px-size: @vertiacl*1px;
-    @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertiacl*1px);
+    @h-px-size: (@horizontal*1px);
+    @v-rem-size: ((@vertiacl/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     padding: @v-px-size @h-px-size;
     padding: @v-rem-size @h-rem-size;
 }
 
 .padding(@top, @horizontal, @bottom){
-    @t-px-size: @top*1px;
-    @h-px-size: @horizontal*1px;
-    @b-px-size: @bottom*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @h-px-size: (@horizontal*1px);
+    @b-px-size: (@bottom*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     padding: @t-px-size @h-px-size @b-px-size;
     padding: @t-rem-size @h-rem-size @b-rem-size;
 }
 
 .padding(@top, @right, @bottom, @left){
-    @t-px-size: @top*1px;
-    @r-px-size: @right*1px;
-    @b-px-size: @bottom*1px;
-    @l-px-size: @left*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @r-px-size: (@right*1px);
+    @b-px-size: (@bottom*1px);
+    @l-px-size: (@left*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
     padding: @t-px-size @r-px-size @b-px-size @l-px-size;
     padding: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
 }
 
 .padding-top(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-top: @px-size;
     padding-top: @rem-size;
 }
 
 .padding-right(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-right: @px-size;
     padding-right: @rem-size;
 }
 
 .padding-bottom(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-bottom: @px-size;
     padding-bottom: @rem-size;
 }
 
 .padding-left(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-left: @px-size;
     padding-left: @rem-size;
 }
 
 .padding-horizontal(@horizontal){
-    @h-px-size: @horizontal*1px;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @h-px-size: (@horizontal*1px);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     padding-left: @h-px-size;
     padding-right: @h-px-size;
@@ -611,11 +738,11 @@
 }
 
 .padding-horizontal(@left,@right){
-    @l-px-size: @left*1px;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @l-px-size: (@left*1px);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
-    @r-px-size: @right*1px;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @r-px-size: (@right*1px);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
 
     padding-left: @l-px-size;
     padding-left: @l-rem-size;
@@ -625,8 +752,8 @@
 }
 
 .padding-vertical(@vertical){
-    @v-px-size: @vertical*1px;
-    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertical*1px);
+    @v-rem-size: ((@vertical/@base-rem-multiplier)*1rem);
 
     padding-top: @v-px-size;
     padding-bottom: @v-px-size;
@@ -635,11 +762,11 @@
 }
 
 .padding-horizontal(@top,@bottom){
-    @t-px-size: @top*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
 
-    @b-px-size: @bottom*1px;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @b-px-size: (@bottom*1px);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     padding-top: @t-px-size;
     padding-top: @t-rem-size;

@@ -3,39 +3,100 @@
 //------------------------------------//
 // Overide defaults.less
 
+@base-font-color:                           @black;
 
 
 //------------------------------------//
-//  $COLORS
+//  $MODULES
 //------------------------------------//
 
+// Brand
+@brand-color:                               @black;
+@brand-font:                                "Hobo Std";
+@brand-logo-font:                           'sugar';
+@brand-logo-size:                           @gamma + 2;
+@brand-logo-color:                          @white;
+@brand-logo-bg:                             @gray;
+@brand-logo-radius:                         50%;
+@brand-logo-border-size:                    3;
+@brand-logo-border-color:                   @gray-dark;
 
+// Buttons
+@button-default-bg:                         @base-link-color;
+@button-default-color:                      @white;
+@button-default-border:                     0;
+@button-default-border-radius:              @base-radius-medium;
+
+@button-clear-border:                       2px solid @base-link-color;
+
+// Icons
+@icon-font:                                 'font-awsome';
+@icon-normal:                               16;
+@icon-medium:                               18;
+@icon-large:                                32;
+
+// Nav
+@nav-link-spacing:                          @base-spacing-unit;
+@nav-link-hover-bg:                         @white;
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+// Slider
+@slider-text-shadow:                         0 1px 2px rgba(0,0,0,.6);
+
+@slider-control-color:                       @white;
+@slider-control-width:                       unit(15, %);
+@slider-control-opacity:                     .5;
+@slider-control-font-size:                   unit(20, px);
+
+@slider-indicator-active-bg:                 @white;
+@slider-indicator-border-color:              @white;
+
+@slider-caption-color:                       @white;
 
 
 //------------------------------------//
-//  $BASE
+//  $COMPONENTS
 //------------------------------------//
 
+// Media -- since media is a reserved word we substitute item in its place
+@item-heading-color:                        @red;
+@item-heading-size-small:                   @zeta;
+@item-heading-size-medium:                  @epsilon;
+@item-heading-size-large:                   @epsilon;
+@item-heading-spacing:                      @quarter-spacing-unit;
 
+@item-text-color:                           @bluegray;
 
+@item-object-size:                          50;
 
-//------------------------------------//
-//  $ELEMENTS
-//------------------------------------//
+// Navbar
+@navbar-height:                             50;
+@navbar-border-radius:                      @base-radius;
 
+@navbar-default-color:                      @gray-darker;
+@navbar-default-bg:                         @white-dark;
+@navbar-default-border:                     darken(@navbar-default-bg, 6.5%);
 
+@navbar-default-link-color:                 @bluegray;
+@navbar-default-link-hover-color:           @base-link-color;
+@navbar-default-link-hover-bg:              transparent;
+@navbar-default-link-active-color:          @navbar-default-link-hover-color;
+@navbar-default-link-active-bg:             @navbar-default-link-hover-bg;
+@navbar-default-link-disabled-color:        @bluegray-dark;
+@navbar-default-link-disabled-bg:           transparent;
 
+@navbar-default-brand-color:                @navy-dark; // mix(@base-link-color, @black, 20%);
+@navbar-default-brand-hover-color:          @base-link-color;
+@navbar-default-brand-hover-bg:             transparent;
 
-//------------------------------------//
-//  $BREAKPOINTS
-//------------------------------------//
+@navbar-default-toggle-hover-bg:            @white-darkest;
+@navbar-default-toggle-icon-bar-bg:         @gray-lighter;
+@navbar-default-toggle-border-color:        @white-darkest;
 
-
-
-
-//------------------------------------//
-//  $GRIDS
-//------------------------------------//
-
-
+// Footbar
+@footbar-bg:                                darken(@silver-light, 10%);
+@footbar-color:                             darken(@bluegray-light, 5%);
+@footbar-link-color:                        @bluegray;
+@footbar-link-hover-color:                  @base-link-color;
 

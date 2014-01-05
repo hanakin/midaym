@@ -1,0 +1,81 @@
+@font-face {
+	font-family: avqest;
+	src: url('avqest.ttf');
+}
+
+body {
+	background-color: #010300;
+	color:#bfbfbf;
+	}
+
+table {
+	text-align: center;
+	font-family: avqest;
+	}
+
+th,td{
+	padding: 15px;
+	}
+	
+th{
+	color: black;
+	font-size: 1.75em;
+	}
+
+
+table.sortable thead  {
+	background-color:#c2c2c2;
+	color:#666666;
+	font-weight: bold;
+	font-size: 1.25em;
+	cursor: default;
+	}
+
+.item {
+	background-color: #010300;
+	}
+.unique-title {
+	color:#878961;
+	}
+.unique-bg {
+	color:#878961;
+	}
+.rare-title {
+	color:#edeb52;
+	}
+.rare-bg {
+	color:#edeb52;
+	}
+.set-title {
+	color:#1dff00;
+	}
+.set-bg {
+	color:#1dff00;
+	}
+.magic-title {
+	color:#5c5b97;
+	}
+.magic-bg {
+	color:#5c5b97;
+	}
+.normal-title {
+	color:#bfbfbf;
+	}
+.normal-bg {
+	color:#bfbfbf;
+	}
+.misc-title {
+	color:#cf831f;
+	}
+.misc-bg {
+	color:#cf831f;
+	}
+.attrib-plain {
+	color:#bfbfbf;
+	}
+.attrib-special {
+	color:#5c5b97;
+	}
+.attrib-restricted {
+	color:#8b453b;
+	}

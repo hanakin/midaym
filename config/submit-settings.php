@@ -18,6 +18,8 @@ if($_POST['submit'] == "submit")
     $about_tag = $_POST['about_tag'];
     $contact_title = htmlspecialchars($_POST['contact_title']);
     $contact_tag = $_POST['contact_tag'];
+    $archive_title = htmlspecialchars($_POST['archive_title']);
+    $archive_tag = $_POST['archive_tag'];
     $password = $_POST['password'];
     $tracking_code = addslashes($_POST['tracking_code']);
 
@@ -34,6 +36,8 @@ if($_POST['submit'] == "submit")
     $config[] = "\$about_tag = \"$about_tag\";";
     $config[] = "\$contact_title = \"$contact_title\";";
     $config[] = "\$contact_tag = \"$contact_tag\";";
+    $config[] = "\$archive_title = \"$archive_title\";";
+    $config[] = "\$archive_tag = \"$archive_tag\";";
     $config[] = "\$password = '$password';";
     $config[] = "\$tracking_code = '$tracking_code';";
 
