@@ -7,11 +7,15 @@
 
  .nav {
     .padding(@half-spacing-unit, 0);
+
+    .active { color: @base-link-color;}
+
     i { font-size: 32px; }
     a {
         color: @gray-lighter;
         &:hover { color: @base-link-color; }
     }
+    
     li { .padding-horizontal(@base-spacing-unit); }
 }
 

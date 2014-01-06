@@ -4669,6 +4669,9 @@ fieldset[disabled] .checkbox-inline {
   padding: 12px 0px;
   padding: 0.75rem 0rem;
 }
+.nav .active {
+  color: #21b5e4;
+}
 .nav i {
   font-size: 32px;
 }
@@ -5068,6 +5071,7 @@ fieldset[disabled] .checkbox-inline {
 }
 .bottom-menu li {
   text-align: center;
+  color: #1482a4;
   padding: 0px 6px;
   padding: 0rem 0.375rem;
 }
