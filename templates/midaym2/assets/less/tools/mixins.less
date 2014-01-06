@@ -507,6 +507,24 @@
 .btn-social(@btn-color, @mix: @white, @percent: 70%, @btn-color2: @btn-color) {
     background-color: @btn-color2 !important;
     &:hover { background-color: mix(@btn-color, @mix, @percent) !important; }
+    &.btn-clear {
+        background: none !important;
+        border: 2px solid @btn-color !important;
+        color: @btn-color !important;
+
+        .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
+
+        &:hover, &:focus { 
+            background: @btn-color !important;  
+            color: @white !important;
+        }
+        &:active, &.active {
+            border-color: mix(@btn-color, black, 85%) !important;
+            background: mix(@btn-color, black, 85%) !important;
+            color: rgba(255, 255, 255, 0.75);
+            .box-shadow(none);
+        }
+    }
 }
 
 // Rem Size Mixins
@@ -761,7 +779,7 @@
     padding-bottom: @v-rem-size;
 }
 
-.padding-horizontal(@top,@bottom){
+.padding-vertical(@top,@bottom){
     @t-px-size: (@top*1px);
     @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
 

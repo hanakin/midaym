@@ -1068,6 +1068,12 @@
 .teal {
   background-color: #1dbf9f;
 }
+.teal p > a {
+  color: #3698d9 !important;
+}
+.teal p > a:hover {
+  color: #2479b3 !important;
+}
 .teal-dark {
   background-color: #0f997d;
 }

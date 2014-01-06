@@ -103,6 +103,24 @@
 }
 
 /**
+ * Button Colors
+ */
+.btn-red        { .btn-color(@red, @white, @red-dark) };
+.btn-pink       { .btn-color(@pink, @white, @pink-dark) };
+.btn-blue       { .btn-color(@blue, @white, @blue-dark) };
+.btn-green      { .btn-color(@green, @white, @green-dark) };
+.btn-yellow     { .btn-color(@yellow, @white, @yellow-dark) };
+.btn-orange     { .btn-color(@orange, @white, @orange-dark) };
+.btn-purple     { .btn-color(@purple, @white, @purple-dark) };
+.btn-pink       { .btn-color(@pink) };
+.btn-gray       { .btn-color(@gray, @black) };
+.btn-black      { .btn-color(@black) };
+.btn-darkblue   { .btn-color(@navy, @white, @navy-dark) };
+.btn-teal       { .btn-color(@teal, @white, @teal-dark) };
+.btn-silver     { .btn-color(@silver, @black, @silver-dark) };
+.btn-bluegray   { .btn-color(@bluegray, @white, @bluegray-dark) };
+
+/**
  * Social Buttons
  */
 .btn-delicious  { .btn-social(@social-delicious, @mix: @black); }
@@ -122,5 +140,21 @@
     &:hover { 
         color: @white !important;
         background-color: mix(@social-reddit, @black, 70%) !important; 
+    }
+    &.btn-clear {
+        background: none !important;
+        border: 2px solid @social-reddit !important;
+        color: @social-reddit !important;
+
+        &:hover, &:focus { 
+            background: @social-reddit !important;  
+            color: @white !important;
+        }
+        &:active, &.active {
+            border-color: mix(@social-reddit, black, 85%) !important;
+            background: mix(@social-reddit, black, 85%) !important;
+            color: rgba(255, 255, 255, 0.75);
+            .box-shadow(none);
+        }
     }
 }

@@ -9,8 +9,6 @@
  * Post Social Styles
  */
 .social {
-    border-top: solid 2px @silver-dark;
-
     .padding(@base-spacing-unit, 0);
     
     .btn:hover {
@@ -24,7 +22,7 @@
 .social-logo {
     color: @silver-dark;
     
-    .margin(@half-spacing-unit,0,0);
+    .margin(@half-spacing-unit, 0);
 
     i { .font-size(@gamma); }
 
@@ -33,16 +31,19 @@
 
         display: inline-block;
         margin-top: 8px;
-        .padding-left(@half-spacing-unit+@quarter-spacing-unit); 
+        .padding-left(@gamma+@half-spacing-unit+@quarter-spacing-unit); 
     }
 }
 
 .social-menu {
-    margin: 0;
-    li { .padding(@quarter-spacing-unit); }
-}
+    border-left: unit(@eighth-spacing-unit, px) solid @silver-dark;
+    @media (max-width: @screen-s-max) { border-left: none; }
 
-@media (max-width: @screen-m-max) { 
-    .social-menu li { .padding(@quarter-spacing-unit, @quarter-spacing-unit); }
+    margin: 0;
+    .padding-horizontal(@double-spacing-unit, @half-spacing-unit,);
+     @media (max-width: @screen-s-max) { padding: 0; }
+
+    li { .padding(@quarter-spacing-unit); }
+    @media (max-width: @screen-m-max) { .padding(@quarter-spacing-unit, @quarter-spacing-unit); }
 }
 
