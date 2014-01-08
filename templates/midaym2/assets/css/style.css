@@ -2202,6 +2202,15 @@ input[type="checkbox"] {
 .orange-dark {
   background-color: #d35400;
 }
+.peach-light {
+  background-color: #ff9a73;
+}
+.peach {
+  background-color: #d98b6c;
+}
+.peach-dark {
+  background-color: #b37359;
+}
 .red-light {
   background-color: #ff4733;
 }
@@ -4963,7 +4972,8 @@ fieldset[disabled] .checkbox-inline {
   background-color: #333333;
   color: #ffffff;
 }
-.black {
+.black,
+.navy {
   color: #ffffff;
 }
 .white .post-day,

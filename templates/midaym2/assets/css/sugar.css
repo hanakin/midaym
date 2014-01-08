@@ -1403,7 +1403,8 @@
   background-color: #333333;
   color: #ffffff;
 }
-.black {
+.black,
+.navy {
   color: #ffffff;
 }
 .white .post-day,
