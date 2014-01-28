@@ -9,6 +9,7 @@
         "published":"true"
     }
 ]
+---
 Extra! Extra! see whats hot of the factory floor. Here it is the new and improved look for midaym.com. I have made several changes through out the site. including the addition of an archives page. for a full list of whats new and the details read the full right up.
 
 ## The Round up
