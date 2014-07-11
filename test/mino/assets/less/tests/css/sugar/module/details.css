@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    $MODULE-DETAILS
+\*------------------------------------*/
+/**
+ * Details stats
+ *
+ * media format type
+ */
+.details-stats {
+  display: inline-block;
+  padding-top: 3px;
+}
+.details-stats > p {
+  margin: 0;
+}
+/**
+ * Details recent
+ *
+ * Position the recent details section
+ */
+.details-recent {
+  display: inline-block;
+  padding-left: 24px;
+  padding-top: 3px;
+}
+/**
+ * Details avatar
+ *
+ * Style the size and position of the avatars
+ */
+.details-avatar {
+  margin-right: 12px;
+  width: 42px;
+}
+/**
+ * Details info
+ *
+ * Position the text block for the detail info section
+ */
+.details-info {
+  margin: 0;
+  padding-top: 3px;
+}
+/**
+ * Details user
+ *
+ * Style the user info
+ */
+.details-user {
+  margin: 0;
+}
+/**
+ * Details time
+ *
+ * Style the time info
+ */
+.details-time {
+  font-size: 12px;
+  font-size: 0.75em;
+}

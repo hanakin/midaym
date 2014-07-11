@@ -1,0 +1,126 @@
+/*------------------------------------*\
+    $COMPONENT-NOTIFICATIONS
+\*------------------------------------*/
+/**
+ * Notification Main Class
+ *
+ * Set the base styling for the notifications menu
+ */
+.notification-sub {
+  font-size: 16px;
+  font-size: 1em;
+  float: left;
+  position: absolute;
+  margin: 8px 0px 0px -377px;
+  white-space: nowrap;
+  z-index: 1020;
+}
+.notification-sub > li {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  color: gray;
+  padding: 6px 12px;
+  display: block;
+  white-space: nowrap;
+  width: 492px;
+}
+.notification-sub > li .icon,
+.notification-sub > li .octicons {
+  vertical-align: middle;
+  padding-right: 6px;
+}
+.notification-sub > li:hover {
+  background-color: #ffffff;
+}
+.notification-sub > li:first-of-type,
+.notification-sub > li:last-of-type {
+  background-color: #f4726d;
+  border: 0;
+  color: #ffffff;
+}
+.notification-sub > li:first-of-type a,
+.notification-sub > li:last-of-type a {
+  background-color: transparent;
+  color: #f79592;
+  clear: none;
+  display: inline-block;
+  padding: 0;
+}
+.notification-sub > li:first-of-type a:hover,
+.notification-sub > li:last-of-type a:hover {
+  color: #ffffff;
+}
+.notification-sub > li:first-of-type {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.notification-sub > li:last-of-type {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.notification-sub > li:before,
+.notification-sub > li:after {
+  content: " ";
+  display: table;
+}
+.notification-sub > li:after {
+  clear: both;
+}
+.notification-sub .details-stats {
+  width: 250px;
+}
+.notification-sub .details-recent {
+  width: 216px;
+}
+.notification-sub .navbar-nav-sub-arrow {
+  color: #f4726d;
+  margin-left: 386px;
+}
+/**
+ * Notification Topic
+ *
+ * style the titel of the notification
+ */
+.notification-topic {
+  font-size: 14px;
+  font-size: 0.875em;
+  text-align: right;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+}
+.notification-topic > a {
+  font-weight: 700;
+  color: #f4726d;
+}
+.notification-topic > a:hover {
+  color: #f79592;
+}
+/**
+ * Notification Status
+ *
+ * style the status msg of the notification
+ */
+.notification-status {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-align: right;
+}
+/**
+ * Notification More
+ *
+ * style the more/see all link
+ */
+.notification-more {
+  position: relative;
+  width: 100%;
+}
+.notification-more > a {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}

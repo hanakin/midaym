@@ -1,0 +1,23 @@
+// /*------------------------------------*\
+//     $MODULE-LEAD
+// \*------------------------------------*/
+
+.lead { 
+    .margin-bottom(@base-spacing-unit);
+    @media (min-width: @screen-m-min) { .margin-bottom(@double-spacing-unit); }
+
+    > p,
+    .alpha small,
+    .beta small,
+    .gamma small, 
+    .delta small,
+    .epsilon small,
+    .zeta small { 
+        .font-size(@delta);
+        font-weight: 300;
+        .line-height(@base-line-height*1.5);
+
+        .margin-top(@base-spacing-unit);
+        @media (min-width: @screen-m-min) { .margin-top(@double-spacing-unit); }
+    }
+}

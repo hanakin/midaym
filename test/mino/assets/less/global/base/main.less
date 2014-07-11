@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    $BASE--MAIN
+\*------------------------------------*/
+/**
+ *  simple defaults for root level
+ */
+
+html { 
+    // font: unit(@base-font-size, px) @base-line-height-ratio @base-font-family;
+    // font-size: unit(@base-font-size, px);
+    font-family: @base-font-family;
+    // line-height: @base-line-height-ratio;
+    font-size: 100%;
+}
+
+body { 
+    font-size: 1em;
+    line-height: 1.25;
+
+    background-color: @base-bg-color;
+    color: @base-font-color;    
+}
+
+@media (min-width: @screen-l-min) { 
+    body {
+        font-size: 1em;
+        line-height: 1.375;
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6 { font-size-adjust: 0.5; }
+

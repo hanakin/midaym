@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    $MODULE-LABELS
+\*------------------------------------*/
+
+/**
+ * Label main class
+ *
+ * This is where we style the label class
+ */
+.label {
+    font-size: 75%;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+
+    background-color: @label-default-bg;
+    border-radius: unit(3, px);
+    color: @white; 
+
+    display: inline;
+    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+
+    // Add hover effects, but only for links
+    &[href] {
+        background-color: @base-link-color;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+
+            background-color: @base-link-hover-color;
+            color: @white;
+            
+            cursor: pointer;
+        }
+    }
+
+    // Empty labels collapse automatically (not available in IE8)
+    &:empty { display: none; }
+}
+
+/**
+ * Label Group
+ *
+ * This is used to style to pieces of information related to each other
+ * into halfs of a label.
+ */
+.label-group {
+    > p {
+        font-size: 75%;
+
+        background-color: @label-default-bg;
+        color: @white; 
+        
+        margin-right: -1px;
+        .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+    }
+
+    > p:first-child { .border-left-radius(unit(3, px)); }
+    > p:last-child { .border-right-radius(unit(3, px)); }
+}
+

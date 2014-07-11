@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    $COMPONENT-NOTIFICATIONS
+\*------------------------------------*/
+
+/**
+ * Notification Main Class
+ *
+ * Set the base styling for the notifications menu
+ */
+.notification-sub {
+    .font-size(@notification-font-size);
+
+    float: left;
+    position: absolute;
+    .margin(8, 0, 0, @notification-offset);
+    white-space: nowrap; // prevent links from randomly breaking onto new lines 
+    z-index: 1020;
+
+    > li {
+        background-color: @notification-bg;
+        border-bottom: 1px solid @notification-border-color;
+        border-right: 1px solid @notification-border-color;
+        border-left: 1px solid @notification-border-color;
+
+        color: gray;
+
+        .padding(@quarter-spacing-unit, @half-spacing-unit);
+        display: block;
+        white-space: nowrap; // prevent links from randomly breaking onto new lines
+        width: @notification-width;
+        
+        .icon, .octicons { 
+            vertical-align: middle;
+
+            .padding-right(@quarter-spacing-unit); 
+        }
+
+        &:hover { background-color: @notification-bg-hover-color; }
+
+        &:first-of-type, &:last-of-type { 
+            background-color: @notification-header-bg;
+            border: 0;
+            color: @notification-header-color;
+            
+            a { 
+                background-color: transparent;
+                color: @notification-header-link-color;
+
+                clear: none;
+                display: inline-block;
+                padding: 0;
+
+                &:hover { color: @notification-header-link-hover-color; }
+            }            
+        }
+
+        &:first-of-type { .border-top-radius(unit(@base-radius, px)); }
+
+        &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); }
+        .cf();
+    }
+    
+    .details-stats { width: @notification-stats-width; }
+    .details-recent { width: @notification-recent-width; }
+    .navbar-nav-sub-arrow {
+        color: @notification-header-bg;
+        
+        .margin-left(@notification-arrow-offset); 
+    }
+}
+
+/**
+ * Notification Topic
+ *
+ * style the titel of the notification
+ */
+.notification-topic {
+    .font-size(14);
+    text-align: right;
+    text-overflow: ellipsis;
+    
+    //display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+
+    > a { 
+        font-weight: 700;
+        
+        color: @notification-link-color;
+                
+        &:hover { color: @notification-link-hover-color; }
+    }
+}
+
+/**
+ * Notification Status
+ *
+ * style the status msg of the notification
+ */
+.notification-status {
+    .font-size(14);
+    font-weight: 700;
+
+    text-align: right;
+}
+
+/**
+ * Notification More
+ *
+ * style the more/see all link
+ */
+.notification-more {
+    position: relative;
+    width: 100%;
+
+    > a {
+        text-align: center;
+
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+

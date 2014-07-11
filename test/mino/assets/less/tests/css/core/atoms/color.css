@@ -1,0 +1,3440 @@
+/*------------------------------------*\
+    $ATOM-COLORS
+\*------------------------------------*/
+/**
+ * Used for comon clour changes to text
+ */
+.black-pure,
+.black-pure.label,
+.black-pure.label[href],
+a .black-pure.label,
+.black-pure.badge,
+.black-pure.btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+.black-pure[href],
+.black-pure.icon,
+.black-pure.octicons,
+.black-pure.clear {
+  background-color: transparent;
+  color: #000000;
+}
+.black-pure.clear,
+.black-pure.btn.clear {
+  border: 2px solid #000000;
+}
+.black-pure.btn.clear {
+  color: #000000;
+}
+.black-pure[href]:hover {
+  background-color: transparent;
+  color: #4d4d4d;
+}
+.black-pure.label[href]:hover,
+a .black-pure.label:hover,
+.black-pure.btn.clear:hover,
+.black-pure.btn.clear:focus {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+.black-pure.btn.clear:hover,
+.black-pure.btn.clear:focus {
+  border-color: #4d4d4d;
+}
+.black-pure.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.black-pure.btn.clear:active,
+.black-pure.btn.clear.active {
+  background-color: #333333;
+  border-color: #333333;
+}
+.black-dark,
+.black-dark.label,
+.black-dark.label[href],
+a .black-dark.label,
+.black-dark.badge,
+.black-dark.btn {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.black-dark[href],
+.black-dark.icon,
+.black-dark.octicons,
+.black-dark.clear {
+  background-color: transparent;
+  color: #1a1a1a;
+}
+.black-dark.clear,
+.black-dark.btn.clear {
+  border: 2px solid #1a1a1a;
+}
+.black-dark.btn.clear {
+  color: #1a1a1a;
+}
+.black-dark[href]:hover {
+  background-color: transparent;
+  color: #5e5e5e;
+}
+.black-dark.label[href]:hover,
+a .black-dark.label:hover,
+.black-dark.btn.clear:hover,
+.black-dark.btn.clear:focus {
+  background-color: #5e5e5e;
+  color: #ffffff;
+}
+.black-dark.btn.clear:hover,
+.black-dark.btn.clear:focus {
+  border-color: #5e5e5e;
+}
+.black-dark.btn:hover {
+  background-color: #050505;
+  color: #ffffff;
+}
+.black-dark.btn.clear:active,
+.black-dark.btn.clear.active {
+  background-color: #000000;
+  border-color: #000000;
+}
+.black,
+.black.label,
+.black.label[href],
+a .black.label,
+.black.badge,
+.black.btn {
+  background-color: #333333;
+  color: #ffffff;
+}
+.black[href],
+.black.icon,
+.black.octicons,
+.black.clear {
+  background-color: transparent;
+  color: #333333;
+}
+.black.clear,
+.black.btn.clear {
+  border: 2px solid #333333;
+}
+.black.btn.clear {
+  color: #333333;
+}
+.black[href]:hover {
+  background-color: transparent;
+  color: #707070;
+}
+.black.label[href]:hover,
+a .black.label:hover,
+.black.btn.clear:hover,
+.black.btn.clear:focus {
+  background-color: #707070;
+  color: #ffffff;
+}
+.black.btn.clear:hover,
+.black.btn.clear:focus {
+  border-color: #707070;
+}
+.black.btn:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+.black.btn.clear:active,
+.black.btn.clear.active {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+.black-light,
+.black-light.label,
+.black-light.label[href],
+a .black-light.label,
+.black-light.badge,
+.black-light.btn {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+.black-light[href],
+.black-light.icon,
+.black-light.octicons,
+.black-light.clear {
+  background-color: transparent;
+  color: #4d4d4d;
+}
+.black-light.clear,
+.black-light.btn.clear {
+  border: 2px solid #4d4d4d;
+}
+.black-light.btn.clear {
+  color: #4d4d4d;
+}
+.black-light[href]:hover {
+  background-color: transparent;
+  color: #828282;
+}
+.black-light.label[href]:hover,
+a .black-light.label:hover,
+.black-light.btn.clear:hover,
+.black-light.btn.clear:focus {
+  background-color: #828282;
+  color: #ffffff;
+}
+.black-light.btn.clear:hover,
+.black-light.btn.clear:focus {
+  border-color: #828282;
+}
+.black-light.btn:hover {
+  background-color: #383838;
+  color: #ffffff;
+}
+.black-light.btn.clear:active,
+.black-light.btn.clear.active {
+  background-color: #333333;
+  border-color: #333333;
+}
+.gray-darker,
+.gray-darker.label,
+.gray-darker.label[href],
+a .gray-darker.label,
+.gray-darker.badge,
+.gray-darker.btn {
+  background-color: #666666;
+  color: #ffffff;
+}
+.gray-darker[href],
+.gray-darker.icon,
+.gray-darker.octicons,
+.gray-darker.clear {
+  background-color: transparent;
+  color: #666666;
+}
+.gray-darker.clear,
+.gray-darker.btn.clear {
+  border: 2px solid #666666;
+}
+.gray-darker.btn.clear {
+  color: #666666;
+}
+.gray-darker[href]:hover {
+  background-color: transparent;
+  color: #525252;
+}
+.gray-darker.label[href]:hover,
+a .gray-darker.label:hover,
+.gray-darker.btn.clear:hover,
+.gray-darker.btn.clear:focus {
+  background-color: #525252;
+  color: #ffffff;
+}
+.gray-darker.btn.clear:hover,
+.gray-darker.btn.clear:focus {
+  border-color: #525252;
+}
+.gray-darker.btn:hover {
+  background-color: #525252;
+  color: #ffffff;
+}
+.gray-darker.btn.clear:active,
+.gray-darker.btn.clear.active {
+  background-color: #575757;
+  border-color: #575757;
+}
+.gray-dark,
+.gray-dark.label,
+.gray-dark.label[href],
+a .gray-dark.label,
+.gray-dark.badge,
+.gray-dark.btn {
+  background-color: #808080;
+  color: #ffffff;
+}
+.gray-dark[href],
+.gray-dark.icon,
+.gray-dark.octicons,
+.gray-dark.clear {
+  background-color: transparent;
+  color: #808080;
+}
+.gray-dark.clear,
+.gray-dark.btn.clear {
+  border: 2px solid #808080;
+}
+.gray-dark.btn.clear {
+  color: #808080;
+}
+.gray-dark[href]:hover {
+  background-color: transparent;
+  color: #6b6b6b;
+}
+.gray-dark.label[href]:hover,
+a .gray-dark.label:hover,
+.gray-dark.btn.clear:hover,
+.gray-dark.btn.clear:focus {
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+.gray-dark.btn.clear:hover,
+.gray-dark.btn.clear:focus {
+  border-color: #6b6b6b;
+}
+.gray-dark.btn:hover {
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+.gray-dark.btn.clear:active,
+.gray-dark.btn.clear.active {
+  background-color: #6c6c6c;
+  border-color: #6c6c6c;
+}
+.gray,
+.gray.label,
+.gray.label[href],
+a .gray.label,
+.gray.badge,
+.gray.btn {
+  background-color: #999999;
+  color: #ffffff;
+}
+.gray[href],
+.gray.icon,
+.gray.octicons,
+.gray.clear {
+  background-color: transparent;
+  color: #999999;
+}
+.gray.clear,
+.gray.btn.clear {
+  border: 2px solid #999999;
+}
+.gray.btn.clear {
+  color: #999999;
+}
+.gray[href]:hover {
+  background-color: transparent;
+  color: #858585;
+}
+.gray.label[href]:hover,
+a .gray.label:hover,
+.gray.btn.clear:hover,
+.gray.btn.clear:focus {
+  background-color: #858585;
+  color: #ffffff;
+}
+.gray.btn.clear:hover,
+.gray.btn.clear:focus {
+  border-color: #858585;
+}
+.gray.btn:hover {
+  background-color: #858585;
+  color: #ffffff;
+}
+.gray.btn.clear:active,
+.gray.btn.clear.active {
+  background-color: #828282;
+  border-color: #828282;
+}
+.gray-light,
+.gray-light.label,
+.gray-light.label[href],
+a .gray-light.label,
+.gray-light.badge,
+.gray-light.btn {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+.gray-light[href],
+.gray-light.icon,
+.gray-light.octicons,
+.gray-light.clear {
+  background-color: transparent;
+  color: #b3b3b3;
+}
+.gray-light.clear,
+.gray-light.btn.clear {
+  border: 2px solid #b3b3b3;
+}
+.gray-light.btn.clear {
+  color: #b3b3b3;
+}
+.gray-light[href]:hover {
+  background-color: transparent;
+  color: #9e9e9e;
+}
+.gray-light.label[href]:hover,
+a .gray-light.label:hover,
+.gray-light.btn.clear:hover,
+.gray-light.btn.clear:focus {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.gray-light.btn.clear:hover,
+.gray-light.btn.clear:focus {
+  border-color: #9e9e9e;
+}
+.gray-light.btn:hover {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.gray-light.btn.clear:active,
+.gray-light.btn.clear.active {
+  background-color: #989898;
+  border-color: #989898;
+}
+.gray-lighter,
+.gray-lighter.label,
+.gray-lighter.label[href],
+a .gray-lighter.label,
+.gray-lighter.badge,
+.gray-lighter.btn {
+  background-color: #cccccc;
+  color: #ffffff;
+}
+.gray-lighter[href],
+.gray-lighter.icon,
+.gray-lighter.octicons,
+.gray-lighter.clear {
+  background-color: transparent;
+  color: #cccccc;
+}
+.gray-lighter.clear,
+.gray-lighter.btn.clear {
+  border: 2px solid #cccccc;
+}
+.gray-lighter.btn.clear {
+  color: #cccccc;
+}
+.gray-lighter[href]:hover {
+  background-color: transparent;
+  color: #b8b8b8;
+}
+.gray-lighter.label[href]:hover,
+a .gray-lighter.label:hover,
+.gray-lighter.btn.clear:hover,
+.gray-lighter.btn.clear:focus {
+  background-color: #b8b8b8;
+  color: #ffffff;
+}
+.gray-lighter.btn.clear:hover,
+.gray-lighter.btn.clear:focus {
+  border-color: #b8b8b8;
+}
+.gray-lighter.btn:hover {
+  background-color: #b8b8b8;
+  color: #ffffff;
+}
+.gray-lighter.btn.clear:active,
+.gray-lighter.btn.clear.active {
+  background-color: #adadad;
+  border-color: #adadad;
+}
+.white-darkest,
+.white-darkest.label,
+.white-darkest.label[href],
+a .white-darkest.label,
+.white-darkest.badge,
+.white-darkest.btn {
+  background-color: #dddddd;
+  color: #333333;
+}
+.white-darkest[href],
+.white-darkest.icon,
+.white-darkest.octicons,
+.white-darkest.clear {
+  background-color: transparent;
+  color: #dddddd;
+}
+.white-darkest.clear,
+.white-darkest.btn.clear {
+  border: 2px solid #dddddd;
+}
+.white-darkest.btn.clear {
+  color: #dddddd;
+}
+.white-darkest[href]:hover {
+  background-color: transparent;
+  color: #c9c9c9;
+}
+.white-darkest.label[href]:hover,
+a .white-darkest.label:hover,
+.white-darkest.btn.clear:hover,
+.white-darkest.btn.clear:focus {
+  background-color: #c9c9c9;
+  color: #333333;
+}
+.white-darkest.btn.clear:hover,
+.white-darkest.btn.clear:focus {
+  border-color: #c9c9c9;
+}
+.white-darkest.btn:hover {
+  background-color: #c9c9c9;
+  color: #333333;
+}
+.white-darkest.btn.clear:active,
+.white-darkest.btn.clear.active {
+  background-color: #bcbcbc;
+  border-color: #bcbcbc;
+}
+.white-darker,
+.white-darker.label,
+.white-darker.label[href],
+a .white-darker.label,
+.white-darker.badge,
+.white-darker.btn {
+  background-color: #e6e6e6;
+  color: #333333;
+}
+.white-darker[href],
+.white-darker.icon,
+.white-darker.octicons,
+.white-darker.clear {
+  background-color: transparent;
+  color: #e6e6e6;
+}
+.white-darker.clear,
+.white-darker.btn.clear {
+  border: 2px solid #e6e6e6;
+}
+.white-darker.btn.clear {
+  color: #e6e6e6;
+}
+.white-darker[href]:hover {
+  background-color: transparent;
+  color: #d1d1d1;
+}
+.white-darker.label[href]:hover,
+a .white-darker.label:hover,
+.white-darker.btn.clear:hover,
+.white-darker.btn.clear:focus {
+  background-color: #d1d1d1;
+  color: #333333;
+}
+.white-darker.btn.clear:hover,
+.white-darker.btn.clear:focus {
+  border-color: #d1d1d1;
+}
+.white-darker.btn:hover {
+  background-color: #d1d1d1;
+  color: #333333;
+}
+.white-darker.btn.clear:active,
+.white-darker.btn.clear.active {
+  background-color: #c3c3c3;
+  border-color: #c3c3c3;
+}
+.white-dark,
+.white-dark.label,
+.white-dark.label[href],
+a .white-dark.label,
+.white-dark.badge,
+.white-dark.btn {
+  background-color: #f2f2f2;
+  color: #333333;
+}
+.white-dark[href],
+.white-dark.icon,
+.white-dark.octicons,
+.white-dark.clear {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+.white-dark.clear,
+.white-dark.btn.clear {
+  border: 2px solid #f2f2f2;
+}
+.white-dark.btn.clear {
+  color: #f2f2f2;
+}
+.white-dark[href]:hover {
+  background-color: transparent;
+  color: #dedede;
+}
+.white-dark.label[href]:hover,
+a .white-dark.label:hover,
+.white-dark.btn.clear:hover,
+.white-dark.btn.clear:focus {
+  background-color: #dedede;
+  color: #333333;
+}
+.white-dark.btn.clear:hover,
+.white-dark.btn.clear:focus {
+  border-color: #dedede;
+}
+.white-dark.btn:hover {
+  background-color: #dedede;
+  color: #333333;
+}
+.white-dark.btn.clear:active,
+.white-dark.btn.clear.active {
+  background-color: #cecece;
+  border-color: #cecece;
+}
+.white,
+.white.label,
+.white.label[href],
+a .white.label,
+.white.badge,
+.white.btn {
+  background-color: #ffffff;
+  color: #333333;
+}
+.white[href],
+.white.icon,
+.white.octicons,
+.white.clear {
+  background-color: transparent;
+  color: #ffffff;
+}
+.white.clear,
+.white.btn.clear {
+  border: 2px solid #ffffff;
+}
+.white.btn.clear {
+  color: #ffffff;
+}
+.white[href]:hover {
+  background-color: transparent;
+  color: #ebebeb;
+}
+.white.label[href]:hover,
+a .white.label:hover,
+.white.btn.clear:hover,
+.white.btn.clear:focus {
+  background-color: #ebebeb;
+  color: #333333;
+}
+.white.btn.clear:hover,
+.white.btn.clear:focus {
+  border-color: #ebebeb;
+}
+.white.btn:hover {
+  background-color: #ebebeb;
+  color: #333333;
+}
+.white.btn.clear:active,
+.white.btn.clear.active {
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+}
+.silver-dark,
+.silver-dark.label,
+.silver-dark.label[href],
+a .silver-dark.label,
+.silver-dark.badge,
+.silver-dark.btn {
+  background-color: #9da3a6;
+  color: #333333;
+}
+.silver-dark[href],
+.silver-dark.icon,
+.silver-dark.octicons,
+.silver-dark.clear {
+  background-color: transparent;
+  color: #9da3a6;
+}
+.silver-dark.clear,
+.silver-dark.btn.clear {
+  border: 2px solid #9da3a6;
+}
+.silver-dark.btn.clear {
+  color: #9da3a6;
+}
+.silver-dark[href]:hover {
+  background-color: transparent;
+  color: #888f93;
+}
+.silver-dark.label[href]:hover,
+a .silver-dark.label:hover,
+.silver-dark.btn.clear:hover,
+.silver-dark.btn.clear:focus {
+  background-color: #888f93;
+  color: #333333;
+}
+.silver-dark.btn.clear:hover,
+.silver-dark.btn.clear:focus {
+  border-color: #888f93;
+}
+.silver-dark.btn:hover {
+  background-color: #888f93;
+  color: #333333;
+}
+.silver-dark.btn.clear:active,
+.silver-dark.btn.clear.active {
+  background-color: #858b8d;
+  border-color: #858b8d;
+}
+.silver,
+.silver.label,
+.silver.label[href],
+a .silver.label,
+.silver.badge,
+.silver.btn {
+  background-color: #bdc3c7;
+  color: #ffffff;
+}
+.silver[href],
+.silver.icon,
+.silver.octicons,
+.silver.clear {
+  background-color: transparent;
+  color: #bdc3c7;
+}
+.silver.clear,
+.silver.btn.clear {
+  border: 2px solid #bdc3c7;
+}
+.silver.btn.clear {
+  color: #bdc3c7;
+}
+.silver[href]:hover {
+  background-color: transparent;
+  color: #a7afb4;
+}
+.silver.label[href]:hover,
+a .silver.label:hover,
+.silver.btn.clear:hover,
+.silver.btn.clear:focus {
+  background-color: #a7afb4;
+  color: #ffffff;
+}
+.silver.btn.clear:hover,
+.silver.btn.clear:focus {
+  border-color: #a7afb4;
+}
+.silver.btn:hover {
+  background-color: #a7afb4;
+  color: #ffffff;
+}
+.silver.btn.clear:active,
+.silver.btn.clear.active {
+  background-color: #a1a6a9;
+  border-color: #a1a6a9;
+}
+.silver-light,
+.silver-light.label,
+.silver-light.label[href],
+a .silver-light.label,
+.silver-light.badge,
+.silver-light.btn {
+  background-color: #edf1f2;
+  color: #333333;
+}
+.silver-light[href],
+.silver-light.icon,
+.silver-light.octicons,
+.silver-light.clear {
+  background-color: transparent;
+  color: #edf1f2;
+}
+.silver-light.clear,
+.silver-light.btn.clear {
+  border: 2px solid #edf1f2;
+}
+.silver-light.btn.clear {
+  color: #edf1f2;
+}
+.silver-light[href]:hover {
+  background-color: transparent;
+  color: #d5dfe1;
+}
+.silver-light.label[href]:hover,
+a .silver-light.label:hover,
+.silver-light.btn.clear:hover,
+.silver-light.btn.clear:focus {
+  background-color: #d5dfe1;
+  color: #333333;
+}
+.silver-light.btn.clear:hover,
+.silver-light.btn.clear:focus {
+  border-color: #d5dfe1;
+}
+.silver-light.btn:hover {
+  background-color: #d5dfe1;
+  color: #333333;
+}
+.silver-light.btn.clear:active,
+.silver-light.btn.clear.active {
+  background-color: #c9cdce;
+  border-color: #c9cdce;
+}
+.bluegray-dark,
+.bluegray-dark.label,
+.bluegray-dark.label[href],
+a .bluegray-dark.label,
+.bluegray-dark.badge,
+.bluegray-dark.btn {
+  background-color: #667880;
+  color: #ffffff;
+}
+.bluegray-dark[href],
+.bluegray-dark.icon,
+.bluegray-dark.octicons,
+.bluegray-dark.clear {
+  background-color: transparent;
+  color: #667880;
+}
+.bluegray-dark.clear,
+.bluegray-dark.btn.clear {
+  border: 2px solid #667880;
+}
+.bluegray-dark.btn.clear {
+  color: #667880;
+}
+.bluegray-dark[href]:hover {
+  background-color: transparent;
+  color: #546369;
+}
+.bluegray-dark.label[href]:hover,
+a .bluegray-dark.label:hover,
+.bluegray-dark.btn.clear:hover,
+.bluegray-dark.btn.clear:focus {
+  background-color: #546369;
+  color: #ffffff;
+}
+.bluegray-dark.btn.clear:hover,
+.bluegray-dark.btn.clear:focus {
+  border-color: #546369;
+}
+.bluegray-dark.btn:hover {
+  background-color: #546369;
+  color: #ffffff;
+}
+.bluegray-dark.btn.clear:active,
+.bluegray-dark.btn.clear.active {
+  background-color: #57666d;
+  border-color: #57666d;
+}
+.bluegray,
+.bluegray.label,
+.bluegray.label[href],
+a .bluegray.label,
+.bluegray.badge,
+.bluegray.btn {
+  background-color: #8d9ea6;
+  color: #ffffff;
+}
+.bluegray[href],
+.bluegray.icon,
+.bluegray.octicons,
+.bluegray.clear {
+  background-color: transparent;
+  color: #8d9ea6;
+}
+.bluegray.clear,
+.bluegray.btn.clear {
+  border: 2px solid #8d9ea6;
+}
+.bluegray.btn.clear {
+  color: #8d9ea6;
+}
+.bluegray[href]:hover {
+  background-color: transparent;
+  color: #768b94;
+}
+.bluegray.label[href]:hover,
+a .bluegray.label:hover,
+.bluegray.btn.clear:hover,
+.bluegray.btn.clear:focus {
+  background-color: #768b94;
+  color: #ffffff;
+}
+.bluegray.btn.clear:hover,
+.bluegray.btn.clear:focus {
+  border-color: #768b94;
+}
+.bluegray.btn:hover {
+  background-color: #768b94;
+  color: #ffffff;
+}
+.bluegray.btn.clear:active,
+.bluegray.btn.clear.active {
+  background-color: #78868d;
+  border-color: #78868d;
+}
+.bluegray-light,
+.bluegray-light.label,
+.bluegray-light.label[href],
+a .bluegray-light.label,
+.bluegray-light.badge,
+.bluegray-light.btn {
+  background-color: #b8c6cc;
+  color: #ffffff;
+}
+.bluegray-light[href],
+.bluegray-light.icon,
+.bluegray-light.octicons,
+.bluegray-light.clear {
+  background-color: transparent;
+  color: #b8c6cc;
+}
+.bluegray-light.clear,
+.bluegray-light.btn.clear {
+  border: 2px solid #b8c6cc;
+}
+.bluegray-light.btn.clear {
+  color: #b8c6cc;
+}
+.bluegray-light[href]:hover {
+  background-color: transparent;
+  color: #a0b3bb;
+}
+.bluegray-light.label[href]:hover,
+a .bluegray-light.label:hover,
+.bluegray-light.btn.clear:hover,
+.bluegray-light.btn.clear:focus {
+  background-color: #a0b3bb;
+  color: #ffffff;
+}
+.bluegray-light.btn.clear:hover,
+.bluegray-light.btn.clear:focus {
+  border-color: #a0b3bb;
+}
+.bluegray-light.btn:hover {
+  background-color: #a0b3bb;
+  color: #ffffff;
+}
+.bluegray-light.btn.clear:active,
+.bluegray-light.btn.clear.active {
+  background-color: #9ca8ad;
+  border-color: #9ca8ad;
+}
+.pink-dark,
+.pink-dark.label,
+.pink-dark.label[href],
+a .pink-dark.label,
+.pink-dark.badge,
+.pink-dark.btn {
+  background-color: #b3365f;
+  color: #ffffff;
+}
+.pink-dark[href],
+.pink-dark.icon,
+.pink-dark.octicons,
+.pink-dark.clear {
+  background-color: transparent;
+  color: #b3365f;
+}
+.pink-dark.clear,
+.pink-dark.btn.clear {
+  border: 2px solid #b3365f;
+}
+.pink-dark.btn.clear {
+  color: #b3365f;
+}
+.pink-dark[href]:hover {
+  background-color: transparent;
+  color: #942d4e;
+}
+.pink-dark.label[href]:hover,
+a .pink-dark.label:hover,
+.pink-dark.btn.clear:hover,
+.pink-dark.btn.clear:focus {
+  background-color: #942d4e;
+  color: #ffffff;
+}
+.pink-dark.btn.clear:hover,
+.pink-dark.btn.clear:focus {
+  border-color: #942d4e;
+}
+.pink-dark.btn:hover {
+  background-color: #942d4e;
+  color: #ffffff;
+}
+.pink-dark.btn.clear:active,
+.pink-dark.btn.clear.active {
+  background-color: #982e51;
+  border-color: #982e51;
+}
+.pink,
+.pink.label,
+.pink.label[href],
+a .pink.label,
+.pink.badge,
+.pink.btn {
+  background-color: #d94c7b;
+  color: #ffffff;
+}
+.pink[href],
+.pink.icon,
+.pink.octicons,
+.pink.clear {
+  background-color: transparent;
+  color: #d94c7b;
+}
+.pink.clear,
+.pink.btn.clear {
+  border: 2px solid #d94c7b;
+}
+.pink.btn.clear {
+  color: #d94c7b;
+}
+.pink[href]:hover {
+  background-color: transparent;
+  color: #d02c63;
+}
+.pink.label[href]:hover,
+a .pink.label:hover,
+.pink.btn.clear:hover,
+.pink.btn.clear:focus {
+  background-color: #d02c63;
+  color: #ffffff;
+}
+.pink.btn.clear:hover,
+.pink.btn.clear:focus {
+  border-color: #d02c63;
+}
+.pink.btn:hover {
+  background-color: #d02c63;
+  color: #ffffff;
+}
+.pink.btn.clear:active,
+.pink.btn.clear.active {
+  background-color: #b84169;
+  border-color: #b84169;
+}
+.pink-light,
+.pink-light.label,
+.pink-light.label[href],
+a .pink-light.label,
+.pink-light.badge,
+.pink-light.btn {
+  background-color: #ff6699;
+  color: #ffffff;
+}
+.pink-light[href],
+.pink-light.icon,
+.pink-light.octicons,
+.pink-light.clear {
+  background-color: transparent;
+  color: #ff6699;
+}
+.pink-light.clear,
+.pink-light.btn.clear {
+  border: 2px solid #ff6699;
+}
+.pink-light.btn.clear {
+  color: #ff6699;
+}
+.pink-light[href]:hover {
+  background-color: transparent;
+  color: #ff3d7e;
+}
+.pink-light.label[href]:hover,
+a .pink-light.label:hover,
+.pink-light.btn.clear:hover,
+.pink-light.btn.clear:focus {
+  background-color: #ff3d7e;
+  color: #ffffff;
+}
+.pink-light.btn.clear:hover,
+.pink-light.btn.clear:focus {
+  border-color: #ff3d7e;
+}
+.pink-light.btn:hover {
+  background-color: #ff3d7e;
+  color: #ffffff;
+}
+.pink-light.btn.clear:active,
+.pink-light.btn.clear.active {
+  background-color: #d95782;
+  border-color: #d95782;
+}
+.purple-dark,
+.purple-dark.label,
+.purple-dark.label[href],
+a .purple-dark.label,
+.purple-dark.badge,
+.purple-dark.btn {
+  background-color: #753f8c;
+  color: #ffffff;
+}
+.purple-dark[href],
+.purple-dark.icon,
+.purple-dark.octicons,
+.purple-dark.clear {
+  background-color: transparent;
+  color: #753f8c;
+}
+.purple-dark.clear,
+.purple-dark.btn.clear {
+  border: 2px solid #753f8c;
+}
+.purple-dark.btn.clear {
+  color: #753f8c;
+}
+.purple-dark[href]:hover {
+  background-color: transparent;
+  color: #5d3270;
+}
+.purple-dark.label[href]:hover,
+a .purple-dark.label:hover,
+.purple-dark.btn.clear:hover,
+.purple-dark.btn.clear:focus {
+  background-color: #5d3270;
+  color: #ffffff;
+}
+.purple-dark.btn.clear:hover,
+.purple-dark.btn.clear:focus {
+  border-color: #5d3270;
+}
+.purple-dark.btn:hover {
+  background-color: #5d3270;
+  color: #ffffff;
+}
+.purple-dark.btn.clear:active,
+.purple-dark.btn.clear.active {
+  background-color: #633677;
+  border-color: #633677;
+}
+.purple,
+.purple.label,
+.purple.label[href],
+a .purple.label,
+.purple.badge,
+.purple.btn {
+  background-color: #9959b3;
+  color: #ffffff;
+}
+.purple[href],
+.purple.icon,
+.purple.octicons,
+.purple.clear {
+  background-color: transparent;
+  color: #9959b3;
+}
+.purple.clear,
+.purple.btn.clear {
+  border: 2px solid #9959b3;
+}
+.purple.btn.clear {
+  color: #9959b3;
+}
+.purple[href]:hover {
+  background-color: transparent;
+  color: #83479c;
+}
+.purple.label[href]:hover,
+a .purple.label:hover,
+.purple.btn.clear:hover,
+.purple.btn.clear:focus {
+  background-color: #83479c;
+  color: #ffffff;
+}
+.purple.btn.clear:hover,
+.purple.btn.clear:focus {
+  border-color: #83479c;
+}
+.purple.btn:hover {
+  background-color: #83479c;
+  color: #ffffff;
+}
+.purple.btn.clear:active,
+.purple.btn.clear.active {
+  background-color: #824c98;
+  border-color: #824c98;
+}
+.purple-light,
+.purple-light.label,
+.purple-light.label[href],
+a .purple-light.label,
+.purple-light.badge,
+.purple-light.btn {
+  background-color: #b762d9;
+  color: #ffffff;
+}
+.purple-light[href],
+.purple-light.icon,
+.purple-light.octicons,
+.purple-light.clear {
+  background-color: transparent;
+  color: #b762d9;
+}
+.purple-light.clear,
+.purple-light.btn.clear {
+  border: 2px solid #b762d9;
+}
+.purple-light.btn.clear {
+  color: #b762d9;
+}
+.purple-light[href]:hover {
+  background-color: transparent;
+  color: #a841d1;
+}
+.purple-light.label[href]:hover,
+a .purple-light.label:hover,
+.purple-light.btn.clear:hover,
+.purple-light.btn.clear:focus {
+  background-color: #a841d1;
+  color: #ffffff;
+}
+.purple-light.btn.clear:hover,
+.purple-light.btn.clear:focus {
+  border-color: #a841d1;
+}
+.purple-light.btn:hover {
+  background-color: #a841d1;
+  color: #ffffff;
+}
+.purple-light.btn.clear:active,
+.purple-light.btn.clear.active {
+  background-color: #9c53b8;
+  border-color: #9c53b8;
+}
+.blue-dark,
+.blue-dark.label,
+.blue-dark.label[href],
+a .blue-dark.label,
+.blue-dark.badge,
+.blue-dark.btn {
+  background-color: #2479b3;
+  color: #ffffff;
+}
+.blue-dark[href],
+.blue-dark.icon,
+.blue-dark.octicons,
+.blue-dark.clear {
+  background-color: transparent;
+  color: #2479b3;
+}
+.blue-dark.clear,
+.blue-dark.btn.clear {
+  border: 2px solid #2479b3;
+}
+.blue-dark.btn.clear {
+  color: #2479b3;
+}
+.blue-dark[href]:hover {
+  background-color: transparent;
+  color: #1d6291;
+}
+.blue-dark.label[href]:hover,
+a .blue-dark.label:hover,
+.blue-dark.btn.clear:hover,
+.blue-dark.btn.clear:focus {
+  background-color: #1d6291;
+  color: #ffffff;
+}
+.blue-dark.btn.clear:hover,
+.blue-dark.btn.clear:focus {
+  border-color: #1d6291;
+}
+.blue-dark.btn:hover {
+  background-color: #1d6291;
+  color: #ffffff;
+}
+.blue-dark.btn.clear:active,
+.blue-dark.btn.clear.active {
+  background-color: #1f6798;
+  border-color: #1f6798;
+}
+.blue,
+.blue.label,
+.blue.label[href],
+a .blue.label,
+.blue.badge,
+.blue.btn {
+  background-color: #3698d9;
+  color: #ffffff;
+}
+.blue[href],
+.blue.icon,
+.blue.octicons,
+.blue.clear {
+  background-color: transparent;
+  color: #3698d9;
+}
+.blue.clear,
+.blue.btn.clear {
+  border: 2px solid #3698d9;
+}
+.blue.btn.clear {
+  color: #3698d9;
+}
+.blue[href]:hover {
+  background-color: transparent;
+  color: #2583c2;
+}
+.blue.label[href]:hover,
+a .blue.label:hover,
+.blue.btn.clear:hover,
+.blue.btn.clear:focus {
+  background-color: #2583c2;
+  color: #ffffff;
+}
+.blue.btn.clear:hover,
+.blue.btn.clear:focus {
+  border-color: #2583c2;
+}
+.blue.btn:hover {
+  background-color: #2583c2;
+  color: #ffffff;
+}
+.blue.btn.clear:active,
+.blue.btn.clear.active {
+  background-color: #2e81b8;
+  border-color: #2e81b8;
+}
+.blue-light,
+.blue-light.label,
+.blue-light.label[href],
+a .blue-light.label,
+.blue-light.badge,
+.blue-light.btn {
+  background-color: #33beff;
+  color: #ffffff;
+}
+.blue-light[href],
+.blue-light.icon,
+.blue-light.octicons,
+.blue-light.clear {
+  background-color: transparent;
+  color: #33beff;
+}
+.blue-light.clear,
+.blue-light.btn.clear {
+  border: 2px solid #33beff;
+}
+.blue-light.btn.clear {
+  color: #33beff;
+}
+.blue-light[href]:hover {
+  background-color: transparent;
+  color: #0ab1ff;
+}
+.blue-light.label[href]:hover,
+a .blue-light.label:hover,
+.blue-light.btn.clear:hover,
+.blue-light.btn.clear:focus {
+  background-color: #0ab1ff;
+  color: #ffffff;
+}
+.blue-light.btn.clear:hover,
+.blue-light.btn.clear:focus {
+  border-color: #0ab1ff;
+}
+.blue-light.btn:hover {
+  background-color: #0ab1ff;
+  color: #ffffff;
+}
+.blue-light.btn.clear:active,
+.blue-light.btn.clear.active {
+  background-color: #2ba2d9;
+  border-color: #2ba2d9;
+}
+.blue-alt-dark,
+.blue-alt-dark.label,
+.blue-alt-dark.label[href],
+a .blue-alt-dark.label,
+.blue-alt-dark.badge,
+.blue-alt-dark.btn {
+  background-color: #245ab3;
+  color: #ffffff;
+}
+.blue-alt-dark[href],
+.blue-alt-dark.icon,
+.blue-alt-dark.octicons,
+.blue-alt-dark.clear {
+  background-color: transparent;
+  color: #245ab3;
+}
+.blue-alt-dark.clear,
+.blue-alt-dark.btn.clear {
+  border: 2px solid #245ab3;
+}
+.blue-alt-dark.btn.clear {
+  color: #245ab3;
+}
+.blue-alt-dark[href]:hover {
+  background-color: transparent;
+  color: #1d4991;
+}
+.blue-alt-dark.label[href]:hover,
+a .blue-alt-dark.label:hover,
+.blue-alt-dark.btn.clear:hover,
+.blue-alt-dark.btn.clear:focus {
+  background-color: #1d4991;
+  color: #ffffff;
+}
+.blue-alt-dark.btn.clear:hover,
+.blue-alt-dark.btn.clear:focus {
+  border-color: #1d4991;
+}
+.blue-alt-dark.btn:hover {
+  background-color: #1d4991;
+  color: #ffffff;
+}
+.blue-alt-dark.btn.clear:active,
+.blue-alt-dark.btn.clear.active {
+  background-color: #1f4d98;
+  border-color: #1f4d98;
+}
+.blue-alt,
+.blue-alt.label,
+.blue-alt.label[href],
+a .blue-alt.label,
+.blue-alt.badge,
+.blue-alt.btn {
+  background-color: #3675d9;
+  color: #ffffff;
+}
+.blue-alt[href],
+.blue-alt.icon,
+.blue-alt.octicons,
+.blue-alt.clear {
+  background-color: transparent;
+  color: #3675d9;
+}
+.blue-alt.clear,
+.blue-alt.btn.clear {
+  border: 2px solid #3675d9;
+}
+.blue-alt.btn.clear {
+  color: #3675d9;
+}
+.blue-alt[href]:hover {
+  background-color: transparent;
+  color: #2561c2;
+}
+.blue-alt.label[href]:hover,
+a .blue-alt.label:hover,
+.blue-alt.btn.clear:hover,
+.blue-alt.btn.clear:focus {
+  background-color: #2561c2;
+  color: #ffffff;
+}
+.blue-alt.btn.clear:hover,
+.blue-alt.btn.clear:focus {
+  border-color: #2561c2;
+}
+.blue-alt.btn:hover {
+  background-color: #2561c2;
+  color: #ffffff;
+}
+.blue-alt.btn.clear:active,
+.blue-alt.btn.clear.active {
+  background-color: #2e63b8;
+  border-color: #2e63b8;
+}
+.blue-alt-light,
+.blue-alt-light.label,
+.blue-alt-light.label[href],
+a .blue-alt-light.label,
+.blue-alt-light.badge,
+.blue-alt-light.btn {
+  background-color: #3381ff;
+  color: #ffffff;
+}
+.blue-alt-light[href],
+.blue-alt-light.icon,
+.blue-alt-light.octicons,
+.blue-alt-light.clear {
+  background-color: transparent;
+  color: #3381ff;
+}
+.blue-alt-light.clear,
+.blue-alt-light.btn.clear {
+  border: 2px solid #3381ff;
+}
+.blue-alt-light.btn.clear {
+  color: #3381ff;
+}
+.blue-alt-light[href]:hover {
+  background-color: transparent;
+  color: #0a68ff;
+}
+.blue-alt-light.label[href]:hover,
+a .blue-alt-light.label:hover,
+.blue-alt-light.btn.clear:hover,
+.blue-alt-light.btn.clear:focus {
+  background-color: #0a68ff;
+  color: #ffffff;
+}
+.blue-alt-light.btn.clear:hover,
+.blue-alt-light.btn.clear:focus {
+  border-color: #0a68ff;
+}
+.blue-alt-light.btn:hover {
+  background-color: #0a68ff;
+  color: #ffffff;
+}
+.blue-alt-light.btn.clear:active,
+.blue-alt-light.btn.clear.active {
+  background-color: #2b6ed9;
+  border-color: #2b6ed9;
+}
+.navy-dark,
+.navy-dark.label,
+.navy-dark.label[href],
+a .navy-dark.label,
+.navy-dark.badge,
+.navy-dark.btn {
+  background-color: #203040;
+  color: #ffffff;
+}
+.navy-dark[href],
+.navy-dark.icon,
+.navy-dark.octicons,
+.navy-dark.clear {
+  background-color: transparent;
+  color: #203040;
+}
+.navy-dark.clear,
+.navy-dark.btn.clear {
+  border: 2px solid #203040;
+}
+.navy-dark.btn.clear {
+  color: #203040;
+}
+.navy-dark[href]:hover {
+  background-color: transparent;
+  color: #121c25;
+}
+.navy-dark.label[href]:hover,
+a .navy-dark.label:hover,
+.navy-dark.btn.clear:hover,
+.navy-dark.btn.clear:focus {
+  background-color: #121c25;
+  color: #ffffff;
+}
+.navy-dark.btn.clear:hover,
+.navy-dark.btn.clear:focus {
+  border-color: #121c25;
+}
+.navy-dark.btn:hover {
+  background-color: #121c25;
+  color: #ffffff;
+}
+.navy-dark.btn.clear:active,
+.navy-dark.btn.clear.active {
+  background-color: #1b2936;
+  border-color: #1b2936;
+}
+.navy,
+.navy.label,
+.navy.label[href],
+a .navy.label,
+.navy.badge,
+.navy.btn {
+  background-color: #384f66;
+  color: #ffffff;
+}
+.navy[href],
+.navy.icon,
+.navy.octicons,
+.navy.clear {
+  background-color: transparent;
+  color: #384f66;
+}
+.navy.clear,
+.navy.btn.clear {
+  border: 2px solid #384f66;
+}
+.navy.btn.clear {
+  color: #384f66;
+}
+.navy[href]:hover {
+  background-color: transparent;
+  color: #2a3b4c;
+}
+.navy.label[href]:hover,
+a .navy.label:hover,
+.navy.btn.clear:hover,
+.navy.btn.clear:focus {
+  background-color: #2a3b4c;
+  color: #ffffff;
+}
+.navy.btn.clear:hover,
+.navy.btn.clear:focus {
+  border-color: #2a3b4c;
+}
+.navy.btn:hover {
+  background-color: #2a3b4c;
+  color: #ffffff;
+}
+.navy.btn.clear:active,
+.navy.btn.clear.active {
+  background-color: #304357;
+  border-color: #304357;
+}
+.navy-light,
+.navy-light.label,
+.navy-light.label[href],
+a .navy-light.label,
+.navy-light.badge,
+.navy-light.btn {
+  background-color: #46698c;
+  color: #ffffff;
+}
+.navy-light[href],
+.navy-light.icon,
+.navy-light.octicons,
+.navy-light.clear {
+  background-color: transparent;
+  color: #46698c;
+}
+.navy-light.clear,
+.navy-light.btn.clear {
+  border: 2px solid #46698c;
+}
+.navy-light.btn.clear {
+  color: #46698c;
+}
+.navy-light[href]:hover {
+  background-color: transparent;
+  color: #385571;
+}
+.navy-light.label[href]:hover,
+a .navy-light.label:hover,
+.navy-light.btn.clear:hover,
+.navy-light.btn.clear:focus {
+  background-color: #385571;
+  color: #ffffff;
+}
+.navy-light.btn.clear:hover,
+.navy-light.btn.clear:focus {
+  border-color: #385571;
+}
+.navy-light.btn:hover {
+  background-color: #385571;
+  color: #ffffff;
+}
+.navy-light.btn.clear:active,
+.navy-light.btn.clear.active {
+  background-color: #3c5977;
+  border-color: #3c5977;
+}
+.teal-dark,
+.teal-dark.label,
+.teal-dark.label[href],
+a .teal-dark.label,
+.teal-dark.badge,
+.teal-dark.btn {
+  background-color: #0f997d;
+  color: #ffffff;
+}
+.teal-dark[href],
+.teal-dark.icon,
+.teal-dark.octicons,
+.teal-dark.clear {
+  background-color: transparent;
+  color: #0f997d;
+}
+.teal-dark.clear,
+.teal-dark.btn.clear {
+  border: 2px solid #0f997d;
+}
+.teal-dark.btn.clear {
+  color: #0f997d;
+}
+.teal-dark[href]:hover {
+  background-color: transparent;
+  color: #0b745f;
+}
+.teal-dark.label[href]:hover,
+a .teal-dark.label:hover,
+.teal-dark.btn.clear:hover,
+.teal-dark.btn.clear:focus {
+  background-color: #0b745f;
+  color: #ffffff;
+}
+.teal-dark.btn.clear:hover,
+.teal-dark.btn.clear:focus {
+  border-color: #0b745f;
+}
+.teal-dark.btn:hover {
+  background-color: #0b745f;
+  color: #ffffff;
+}
+.teal-dark.btn.clear:active,
+.teal-dark.btn.clear.active {
+  background-color: #0d826a;
+  border-color: #0d826a;
+}
+.teal,
+.teal.label,
+.teal.label[href],
+a .teal.label,
+.teal.badge,
+.teal.btn {
+  background-color: #1dbf9f;
+  color: #ffffff;
+}
+.teal[href],
+.teal.icon,
+.teal.octicons,
+.teal.clear {
+  background-color: transparent;
+  color: #1dbf9f;
+}
+.teal.clear,
+.teal.btn.clear {
+  border: 2px solid #1dbf9f;
+}
+.teal.btn.clear {
+  color: #1dbf9f;
+}
+.teal[href]:hover {
+  background-color: transparent;
+  color: #189c82;
+}
+.teal.label[href]:hover,
+a .teal.label:hover,
+.teal.btn.clear:hover,
+.teal.btn.clear:focus {
+  background-color: #189c82;
+  color: #ffffff;
+}
+.teal.btn.clear:hover,
+.teal.btn.clear:focus {
+  border-color: #189c82;
+}
+.teal.btn:hover {
+  background-color: #189c82;
+  color: #ffffff;
+}
+.teal.btn.clear:active,
+.teal.btn.clear.active {
+  background-color: #19a287;
+  border-color: #19a287;
+}
+.teal-light,
+.teal-light.label,
+.teal-light.label[href],
+a .teal-light.label,
+.teal-light.badge,
+.teal-light.btn {
+  background-color: #17e6b9;
+  color: #ffffff;
+}
+.teal-light[href],
+.teal-light.icon,
+.teal-light.octicons,
+.teal-light.clear {
+  background-color: transparent;
+  color: #17e6b9;
+}
+.teal-light.clear,
+.teal-light.btn.clear {
+  border: 2px solid #17e6b9;
+}
+.teal-light.btn.clear {
+  color: #17e6b9;
+}
+.teal-light[href]:hover {
+  background-color: transparent;
+  color: #13c19b;
+}
+.teal-light.label[href]:hover,
+a .teal-light.label:hover,
+.teal-light.btn.clear:hover,
+.teal-light.btn.clear:focus {
+  background-color: #13c19b;
+  color: #ffffff;
+}
+.teal-light.btn.clear:hover,
+.teal-light.btn.clear:focus {
+  border-color: #13c19b;
+}
+.teal-light.btn:hover {
+  background-color: #13c19b;
+  color: #ffffff;
+}
+.teal-light.btn.clear:active,
+.teal-light.btn.clear.active {
+  background-color: #14c49d;
+  border-color: #14c49d;
+}
+.green-dark,
+.green-dark.label,
+.green-dark.label[href],
+a .green-dark.label,
+.green-dark.badge,
+.green-dark.btn {
+  background-color: #21a658;
+  color: #ffffff;
+}
+.green-dark[href],
+.green-dark.icon,
+.green-dark.octicons,
+.green-dark.clear {
+  background-color: transparent;
+  color: #21a658;
+}
+.green-dark.clear,
+.green-dark.btn.clear {
+  border: 2px solid #21a658;
+}
+.green-dark.btn.clear {
+  color: #21a658;
+}
+.green-dark[href]:hover {
+  background-color: transparent;
+  color: #1a8446;
+}
+.green-dark.label[href]:hover,
+a .green-dark.label:hover,
+.green-dark.btn.clear:hover,
+.green-dark.btn.clear:focus {
+  background-color: #1a8446;
+  color: #ffffff;
+}
+.green-dark.btn.clear:hover,
+.green-dark.btn.clear:focus {
+  border-color: #1a8446;
+}
+.green-dark.btn:hover {
+  background-color: #1a8446;
+  color: #ffffff;
+}
+.green-dark.btn.clear:active,
+.green-dark.btn.clear.active {
+  background-color: #1c8d4b;
+  border-color: #1c8d4b;
+}
+.green,
+.green.label,
+.green.label[href],
+a .green.label,
+.green.badge,
+.green.btn {
+  background-color: #33cc73;
+  color: #ffffff;
+}
+.green[href],
+.green.icon,
+.green.octicons,
+.green.clear {
+  background-color: transparent;
+  color: #33cc73;
+}
+.green.clear,
+.green.btn.clear {
+  border: 2px solid #33cc73;
+}
+.green.btn.clear {
+  color: #33cc73;
+}
+.green[href]:hover {
+  background-color: transparent;
+  color: #2bab61;
+}
+.green.label[href]:hover,
+a .green.label:hover,
+.green.btn.clear:hover,
+.green.btn.clear:focus {
+  background-color: #2bab61;
+  color: #ffffff;
+}
+.green.btn.clear:hover,
+.green.btn.clear:focus {
+  border-color: #2bab61;
+}
+.green.btn:hover {
+  background-color: #2bab61;
+  color: #ffffff;
+}
+.green.btn.clear:active,
+.green.btn.clear.active {
+  background-color: #2bad62;
+  border-color: #2bad62;
+}
+.green-light,
+.green-light.label,
+.green-light.label[href],
+a .green-light.label,
+.green-light.badge,
+.green-light.btn {
+  background-color: #30f281;
+  color: #ffffff;
+}
+.green-light[href],
+.green-light.icon,
+.green-light.octicons,
+.green-light.clear {
+  background-color: transparent;
+  color: #30f281;
+}
+.green-light.clear,
+.green-light.btn.clear {
+  border: 2px solid #30f281;
+}
+.green-light.btn.clear {
+  color: #30f281;
+}
+.green-light[href]:hover {
+  background-color: transparent;
+  color: #0fea6a;
+}
+.green-light.label[href]:hover,
+a .green-light.label:hover,
+.green-light.btn.clear:hover,
+.green-light.btn.clear:focus {
+  background-color: #0fea6a;
+  color: #ffffff;
+}
+.green-light.btn.clear:hover,
+.green-light.btn.clear:focus {
+  border-color: #0fea6a;
+}
+.green-light.btn:hover {
+  background-color: #0fea6a;
+  color: #ffffff;
+}
+.green-light.btn.clear:active,
+.green-light.btn.clear.active {
+  background-color: #29ce6e;
+  border-color: #29ce6e;
+}
+.yellow-dark,
+.yellow-dark.label,
+.yellow-dark.label[href],
+a .yellow-dark.label,
+.yellow-dark.badge,
+.yellow-dark.btn {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+.yellow-dark[href],
+.yellow-dark.icon,
+.yellow-dark.octicons,
+.yellow-dark.clear {
+  background-color: transparent;
+  color: #f39c12;
+}
+.yellow-dark.clear,
+.yellow-dark.btn.clear {
+  border: 2px solid #f39c12;
+}
+.yellow-dark.btn.clear {
+  color: #f39c12;
+}
+.yellow-dark[href]:hover {
+  background-color: transparent;
+  color: #d2850b;
+}
+.yellow-dark.label[href]:hover,
+a .yellow-dark.label:hover,
+.yellow-dark.btn.clear:hover,
+.yellow-dark.btn.clear:focus {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.yellow-dark.btn.clear:hover,
+.yellow-dark.btn.clear:focus {
+  border-color: #d2850b;
+}
+.yellow-dark.btn:hover {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.yellow-dark.btn.clear:active,
+.yellow-dark.btn.clear.active {
+  background-color: #cf850f;
+  border-color: #cf850f;
+}
+.yellow,
+.yellow.label,
+.yellow.label[href],
+a .yellow.label,
+.yellow.badge,
+.yellow.btn {
+  background-color: #ffcd1a;
+  color: #ffffff;
+}
+.yellow[href],
+.yellow.icon,
+.yellow.octicons,
+.yellow.clear {
+  background-color: transparent;
+  color: #ffcd1a;
+}
+.yellow.clear,
+.yellow.btn.clear {
+  border: 2px solid #ffcd1a;
+}
+.yellow.btn.clear {
+  color: #ffcd1a;
+}
+.yellow[href]:hover {
+  background-color: transparent;
+  color: #f0bc00;
+}
+.yellow.label[href]:hover,
+a .yellow.label:hover,
+.yellow.btn.clear:hover,
+.yellow.btn.clear:focus {
+  background-color: #f0bc00;
+  color: #ffffff;
+}
+.yellow.btn.clear:hover,
+.yellow.btn.clear:focus {
+  border-color: #f0bc00;
+}
+.yellow.btn:hover {
+  background-color: #f0bc00;
+  color: #ffffff;
+}
+.yellow.btn.clear:active,
+.yellow.btn.clear.active {
+  background-color: #d9ae16;
+  border-color: #d9ae16;
+}
+.yellow-light,
+.yellow-light.label,
+.yellow-light.label[href],
+a .yellow-light.label,
+.yellow-light.badge,
+.yellow-light.btn {
+  background-color: #fff55b;
+  color: #ffffff;
+}
+.yellow-light[href],
+.yellow-light.icon,
+.yellow-light.octicons,
+.yellow-light.clear {
+  background-color: transparent;
+  color: #fff55b;
+}
+.yellow-light.clear,
+.yellow-light.btn.clear {
+  border: 2px solid #fff55b;
+}
+.yellow-light.btn.clear {
+  color: #fff55b;
+}
+.yellow-light[href]:hover {
+  background-color: transparent;
+  color: #fff332;
+}
+.yellow-light.label[href]:hover,
+a .yellow-light.label:hover,
+.yellow-light.btn.clear:hover,
+.yellow-light.btn.clear:focus {
+  background-color: #fff332;
+  color: #ffffff;
+}
+.yellow-light.btn.clear:hover,
+.yellow-light.btn.clear:focus {
+  border-color: #fff332;
+}
+.yellow-light.btn:hover {
+  background-color: #fff332;
+  color: #ffffff;
+}
+.yellow-light.btn.clear:active,
+.yellow-light.btn.clear.active {
+  background-color: #d9d04d;
+  border-color: #d9d04d;
+}
+.orange-dark,
+.orange-dark.label,
+.orange-dark.label[href],
+a .orange-dark.label,
+.orange-dark.badge,
+.orange-dark.btn {
+  background-color: #d35400;
+  color: #ffffff;
+}
+.orange-dark[href],
+.orange-dark.icon,
+.orange-dark.octicons,
+.orange-dark.clear {
+  background-color: transparent;
+  color: #d35400;
+}
+.orange-dark.clear,
+.orange-dark.btn.clear {
+  border: 2px solid #d35400;
+}
+.orange-dark.btn.clear {
+  color: #d35400;
+}
+.orange-dark[href]:hover {
+  background-color: transparent;
+  color: #aa4400;
+}
+.orange-dark.label[href]:hover,
+a .orange-dark.label:hover,
+.orange-dark.btn.clear:hover,
+.orange-dark.btn.clear:focus {
+  background-color: #aa4400;
+  color: #ffffff;
+}
+.orange-dark.btn.clear:hover,
+.orange-dark.btn.clear:focus {
+  border-color: #aa4400;
+}
+.orange-dark.btn:hover {
+  background-color: #aa4400;
+  color: #ffffff;
+}
+.orange-dark.btn.clear:active,
+.orange-dark.btn.clear.active {
+  background-color: #b34700;
+  border-color: #b34700;
+}
+.orange,
+.orange.label,
+.orange.label[href],
+a .orange.label,
+.orange.badge,
+.orange.btn {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+.orange[href],
+.orange.icon,
+.orange.octicons,
+.orange.clear {
+  background-color: transparent;
+  color: #f39c12;
+}
+.orange.clear,
+.orange.btn.clear {
+  border: 2px solid #f39c12;
+}
+.orange.btn.clear {
+  color: #f39c12;
+}
+.orange[href]:hover {
+  background-color: transparent;
+  color: #d2850b;
+}
+.orange.label[href]:hover,
+a .orange.label:hover,
+.orange.btn.clear:hover,
+.orange.btn.clear:focus {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.orange.btn.clear:hover,
+.orange.btn.clear:focus {
+  border-color: #d2850b;
+}
+.orange.btn:hover {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.orange.btn.clear:active,
+.orange.btn.clear.active {
+  background-color: #cf850f;
+  border-color: #cf850f;
+}
+.orange-light,
+.orange-light.label,
+.orange-light.label[href],
+a .orange-light.label,
+.orange-light.badge,
+.orange-light.btn {
+  background-color: #ff9233;
+  color: #ffffff;
+}
+.orange-light[href],
+.orange-light.icon,
+.orange-light.octicons,
+.orange-light.clear {
+  background-color: transparent;
+  color: #ff9233;
+}
+.orange-light.clear,
+.orange-light.btn.clear {
+  border: 2px solid #ff9233;
+}
+.orange-light.btn.clear {
+  color: #ff9233;
+}
+.orange-light[href]:hover {
+  background-color: transparent;
+  color: #ff7c0a;
+}
+.orange-light.label[href]:hover,
+a .orange-light.label:hover,
+.orange-light.btn.clear:hover,
+.orange-light.btn.clear:focus {
+  background-color: #ff7c0a;
+  color: #ffffff;
+}
+.orange-light.btn.clear:hover,
+.orange-light.btn.clear:focus {
+  border-color: #ff7c0a;
+}
+.orange-light.btn:hover {
+  background-color: #ff7c0a;
+  color: #ffffff;
+}
+.orange-light.btn.clear:active,
+.orange-light.btn.clear.active {
+  background-color: #d97c2b;
+  border-color: #d97c2b;
+}
+.peach-dark,
+.peach-dark.label,
+.peach-dark.label[href],
+a .peach-dark.label,
+.peach-dark.badge,
+.peach-dark.btn {
+  background-color: #b37359;
+  color: #ffffff;
+}
+.peach-dark[href],
+.peach-dark.icon,
+.peach-dark.octicons,
+.peach-dark.clear {
+  background-color: transparent;
+  color: #b37359;
+}
+.peach-dark.clear,
+.peach-dark.btn.clear {
+  border: 2px solid #b37359;
+}
+.peach-dark.btn.clear {
+  color: #b37359;
+}
+.peach-dark[href]:hover {
+  background-color: transparent;
+  color: #9c6047;
+}
+.peach-dark.label[href]:hover,
+a .peach-dark.label:hover,
+.peach-dark.btn.clear:hover,
+.peach-dark.btn.clear:focus {
+  background-color: #9c6047;
+  color: #ffffff;
+}
+.peach-dark.btn.clear:hover,
+.peach-dark.btn.clear:focus {
+  border-color: #9c6047;
+}
+.peach-dark.btn:hover {
+  background-color: #9c6047;
+  color: #ffffff;
+}
+.peach-dark.btn.clear:active,
+.peach-dark.btn.clear.active {
+  background-color: #98624c;
+  border-color: #98624c;
+}
+.peach,
+.peach.label,
+.peach.label[href],
+a .peach.label,
+.peach.badge,
+.peach.btn {
+  background-color: #d98b6c;
+  color: #ffffff;
+}
+.peach[href],
+.peach.icon,
+.peach.octicons,
+.peach.clear {
+  background-color: transparent;
+  color: #d98b6c;
+}
+.peach.clear,
+.peach.btn.clear {
+  border: 2px solid #d98b6c;
+}
+.peach.btn.clear {
+  color: #d98b6c;
+}
+.peach[href]:hover {
+  background-color: transparent;
+  color: #d1714c;
+}
+.peach.label[href]:hover,
+a .peach.label:hover,
+.peach.btn.clear:hover,
+.peach.btn.clear:focus {
+  background-color: #d1714c;
+  color: #ffffff;
+}
+.peach.btn.clear:hover,
+.peach.btn.clear:focus {
+  border-color: #d1714c;
+}
+.peach.btn:hover {
+  background-color: #d1714c;
+  color: #ffffff;
+}
+.peach.btn.clear:active,
+.peach.btn.clear.active {
+  background-color: #b8765c;
+  border-color: #b8765c;
+}
+.peach-light,
+.peach-light.label,
+.peach-light.label[href],
+a .peach-light.label,
+.peach-light.badge,
+.peach-light.btn {
+  background-color: #ff9a73;
+  color: #ffffff;
+}
+.peach-light[href],
+.peach-light.icon,
+.peach-light.octicons,
+.peach-light.clear {
+  background-color: transparent;
+  color: #ff9a73;
+}
+.peach-light.clear,
+.peach-light.btn.clear {
+  border: 2px solid #ff9a73;
+}
+.peach-light.btn.clear {
+  color: #ff9a73;
+}
+.peach-light[href]:hover {
+  background-color: transparent;
+  color: #ff7d4a;
+}
+.peach-light.label[href]:hover,
+a .peach-light.label:hover,
+.peach-light.btn.clear:hover,
+.peach-light.btn.clear:focus {
+  background-color: #ff7d4a;
+  color: #ffffff;
+}
+.peach-light.btn.clear:hover,
+.peach-light.btn.clear:focus {
+  border-color: #ff7d4a;
+}
+.peach-light.btn:hover {
+  background-color: #ff7d4a;
+  color: #ffffff;
+}
+.peach-light.btn.clear:active,
+.peach-light.btn.clear.active {
+  background-color: #d98362;
+  border-color: #d98362;
+}
+.red-dark,
+.red-dark.label,
+.red-dark.label[href],
+a .red-dark.label,
+.red-dark.badge,
+.red-dark.btn {
+  background-color: #b33224;
+  color: #ffffff;
+}
+.red-dark[href],
+.red-dark.icon,
+.red-dark.octicons,
+.red-dark.clear {
+  background-color: transparent;
+  color: #b33224;
+}
+.red-dark.clear,
+.red-dark.btn.clear {
+  border: 2px solid #b33224;
+}
+.red-dark.btn.clear {
+  color: #b33224;
+}
+.red-dark[href]:hover {
+  background-color: transparent;
+  color: #91291d;
+}
+.red-dark.label[href]:hover,
+a .red-dark.label:hover,
+.red-dark.btn.clear:hover,
+.red-dark.btn.clear:focus {
+  background-color: #91291d;
+  color: #ffffff;
+}
+.red-dark.btn.clear:hover,
+.red-dark.btn.clear:focus {
+  border-color: #91291d;
+}
+.red-dark.btn:hover {
+  background-color: #91291d;
+  color: #ffffff;
+}
+.red-dark.btn.clear:active,
+.red-dark.btn.clear.active {
+  background-color: #982b1f;
+  border-color: #982b1f;
+}
+.red,
+.red.label,
+.red.label[href],
+a .red.label,
+.red.badge,
+.red.btn {
+  background-color: #d94636;
+  color: #ffffff;
+}
+.red[href],
+.red.icon,
+.red.octicons,
+.red.clear {
+  background-color: transparent;
+  color: #d94636;
+}
+.red.clear,
+.red.btn.clear {
+  border: 2px solid #d94636;
+}
+.red.btn.clear {
+  color: #d94636;
+}
+.red[href]:hover {
+  background-color: transparent;
+  color: #c23425;
+}
+.red.label[href]:hover,
+a .red.label:hover,
+.red.btn.clear:hover,
+.red.btn.clear:focus {
+  background-color: #c23425;
+  color: #ffffff;
+}
+.red.btn.clear:hover,
+.red.btn.clear:focus {
+  border-color: #c23425;
+}
+.red.btn:hover {
+  background-color: #c23425;
+  color: #ffffff;
+}
+.red.btn.clear:active,
+.red.btn.clear.active {
+  background-color: #b83c2e;
+  border-color: #b83c2e;
+}
+.red-light,
+.red-light.label,
+.red-light.label[href],
+a .red-light.label,
+.red-light.badge,
+.red-light.btn {
+  background-color: #ff4733;
+  color: #ffffff;
+}
+.red-light[href],
+.red-light.icon,
+.red-light.octicons,
+.red-light.clear {
+  background-color: transparent;
+  color: #ff4733;
+}
+.red-light.clear,
+.red-light.btn.clear {
+  border: 2px solid #ff4733;
+}
+.red-light.btn.clear {
+  color: #ff4733;
+}
+.red-light[href]:hover {
+  background-color: transparent;
+  color: #ff220a;
+}
+.red-light.label[href]:hover,
+a .red-light.label:hover,
+.red-light.btn.clear:hover,
+.red-light.btn.clear:focus {
+  background-color: #ff220a;
+  color: #ffffff;
+}
+.red-light.btn.clear:hover,
+.red-light.btn.clear:focus {
+  border-color: #ff220a;
+}
+.red-light.btn:hover {
+  background-color: #ff220a;
+  color: #ffffff;
+}
+.red-light.btn.clear:active,
+.red-light.btn.clear.active {
+  background-color: #d93c2b;
+  border-color: #d93c2b;
+}
+.turquuoise,
+.turquuoise.label,
+.turquuoise.label[href],
+a .turquuoise.label,
+.turquuoise.badge,
+.turquuoise.btn {
+  background-color: #1abc9c;
+  color: #ffffff;
+}
+.turquuoise[href],
+.turquuoise.icon,
+.turquuoise.octicons,
+.turquuoise.clear {
+  background-color: transparent;
+  color: #1abc9c;
+}
+.turquuoise.clear,
+.turquuoise.btn.clear {
+  border: 2px solid #1abc9c;
+}
+.turquuoise.btn.clear {
+  color: #1abc9c;
+}
+.turquuoise[href]:hover {
+  background-color: transparent;
+  color: #15987e;
+}
+.turquuoise.label[href]:hover,
+a .turquuoise.label:hover,
+.turquuoise.btn.clear:hover,
+.turquuoise.btn.clear:focus {
+  background-color: #15987e;
+  color: #ffffff;
+}
+.turquuoise.btn.clear:hover,
+.turquuoise.btn.clear:focus {
+  border-color: #15987e;
+}
+.turquuoise.btn:hover {
+  background-color: #15987e;
+  color: #ffffff;
+}
+.turquuoise.btn.clear:active,
+.turquuoise.btn.clear.active {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+.green-sea,
+.green-sea.label,
+.green-sea.label[href],
+a .green-sea.label,
+.green-sea.badge,
+.green-sea.btn {
+  background-color: #16a085;
+  color: #ffffff;
+}
+.green-sea[href],
+.green-sea.icon,
+.green-sea.octicons,
+.green-sea.clear {
+  background-color: transparent;
+  color: #16a085;
+}
+.green-sea.clear,
+.green-sea.btn.clear {
+  border: 2px solid #16a085;
+}
+.green-sea.btn.clear {
+  color: #16a085;
+}
+.green-sea[href]:hover {
+  background-color: transparent;
+  color: #117c67;
+}
+.green-sea.label[href]:hover,
+a .green-sea.label:hover,
+.green-sea.btn.clear:hover,
+.green-sea.btn.clear:focus {
+  background-color: #117c67;
+  color: #ffffff;
+}
+.green-sea.btn.clear:hover,
+.green-sea.btn.clear:focus {
+  border-color: #117c67;
+}
+.green-sea.btn:hover {
+  background-color: #117c67;
+  color: #ffffff;
+}
+.green-sea.btn.clear:active,
+.green-sea.btn.clear.active {
+  background-color: #138871;
+  border-color: #138871;
+}
+.emerald,
+.emerald.label,
+.emerald.label[href],
+a .emerald.label,
+.emerald.badge,
+.emerald.btn {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.emerald[href],
+.emerald.icon,
+.emerald.octicons,
+.emerald.clear {
+  background-color: transparent;
+  color: #2ecc71;
+}
+.emerald.clear,
+.emerald.btn.clear {
+  border: 2px solid #2ecc71;
+}
+.emerald.btn.clear {
+  color: #2ecc71;
+}
+.emerald[href]:hover {
+  background-color: transparent;
+  color: #26ab5f;
+}
+.emerald.label[href]:hover,
+a .emerald.label:hover,
+.emerald.btn.clear:hover,
+.emerald.btn.clear:focus {
+  background-color: #26ab5f;
+  color: #ffffff;
+}
+.emerald.btn.clear:hover,
+.emerald.btn.clear:focus {
+  border-color: #26ab5f;
+}
+.emerald.btn:hover {
+  background-color: #26ab5f;
+  color: #ffffff;
+}
+.emerald.btn.clear:active,
+.emerald.btn.clear.active {
+  background-color: #27ad60;
+  border-color: #27ad60;
+}
+.nephritis,
+.nephritis.label,
+.nephritis.label[href],
+a .nephritis.label,
+.nephritis.badge,
+.nephritis.btn {
+  background-color: #27ae60;
+  color: #ffffff;
+}
+.nephritis[href],
+.nephritis.icon,
+.nephritis.octicons,
+.nephritis.clear {
+  background-color: transparent;
+  color: #27ae60;
+}
+.nephritis.clear,
+.nephritis.btn.clear {
+  border: 2px solid #27ae60;
+}
+.nephritis.btn.clear {
+  color: #27ae60;
+}
+.nephritis[href]:hover {
+  background-color: transparent;
+  color: #208d4e;
+}
+.nephritis.label[href]:hover,
+a .nephritis.label:hover,
+.nephritis.btn.clear:hover,
+.nephritis.btn.clear:focus {
+  background-color: #208d4e;
+  color: #ffffff;
+}
+.nephritis.btn.clear:hover,
+.nephritis.btn.clear:focus {
+  border-color: #208d4e;
+}
+.nephritis.btn:hover {
+  background-color: #208d4e;
+  color: #ffffff;
+}
+.nephritis.btn.clear:active,
+.nephritis.btn.clear.active {
+  background-color: #219452;
+  border-color: #219452;
+}
+.peter-river,
+.peter-river.label,
+.peter-river.label[href],
+a .peter-river.label,
+.peter-river.badge,
+.peter-river.btn {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.peter-river[href],
+.peter-river.icon,
+.peter-river.octicons,
+.peter-river.clear {
+  background-color: transparent;
+  color: #3498db;
+}
+.peter-river.clear,
+.peter-river.btn.clear {
+  border: 2px solid #3498db;
+}
+.peter-river.btn.clear {
+  color: #3498db;
+}
+.peter-river[href]:hover {
+  background-color: transparent;
+  color: #2383c4;
+}
+.peter-river.label[href]:hover,
+a .peter-river.label:hover,
+.peter-river.btn.clear:hover,
+.peter-river.btn.clear:focus {
+  background-color: #2383c4;
+  color: #ffffff;
+}
+.peter-river.btn.clear:hover,
+.peter-river.btn.clear:focus {
+  border-color: #2383c4;
+}
+.peter-river.btn:hover {
+  background-color: #2383c4;
+  color: #ffffff;
+}
+.peter-river.btn.clear:active,
+.peter-river.btn.clear.active {
+  background-color: #2c81ba;
+  border-color: #2c81ba;
+}
+.belize-hole,
+.belize-hole.label,
+.belize-hole.label[href],
+a .belize-hole.label,
+.belize-hole.badge,
+.belize-hole.btn {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+.belize-hole[href],
+.belize-hole.icon,
+.belize-hole.octicons,
+.belize-hole.clear {
+  background-color: transparent;
+  color: #2980b9;
+}
+.belize-hole.clear,
+.belize-hole.btn.clear {
+  border: 2px solid #2980b9;
+}
+.belize-hole.btn.clear {
+  color: #2980b9;
+}
+.belize-hole[href]:hover {
+  background-color: transparent;
+  color: #226998;
+}
+.belize-hole.label[href]:hover,
+a .belize-hole.label:hover,
+.belize-hole.btn.clear:hover,
+.belize-hole.btn.clear:focus {
+  background-color: #226998;
+  color: #ffffff;
+}
+.belize-hole.btn.clear:hover,
+.belize-hole.btn.clear:focus {
+  border-color: #226998;
+}
+.belize-hole.btn:hover {
+  background-color: #226998;
+  color: #ffffff;
+}
+.belize-hole.btn.clear:active,
+.belize-hole.btn.clear.active {
+  background-color: #236d9d;
+  border-color: #236d9d;
+}
+.sun-flower,
+.sun-flower.label,
+.sun-flower.label[href],
+a .sun-flower.label,
+.sun-flower.badge,
+.sun-flower.btn {
+  background-color: #f1c40f;
+  color: #ffffff;
+}
+.sun-flower[href],
+.sun-flower.icon,
+.sun-flower.octicons,
+.sun-flower.clear {
+  background-color: transparent;
+  color: #f1c40f;
+}
+.sun-flower.clear,
+.sun-flower.btn.clear {
+  border: 2px solid #f1c40f;
+}
+.sun-flower.btn.clear {
+  color: #f1c40f;
+}
+.sun-flower[href]:hover {
+  background-color: transparent;
+  color: #cba50c;
+}
+.sun-flower.label[href]:hover,
+a .sun-flower.label:hover,
+.sun-flower.btn.clear:hover,
+.sun-flower.btn.clear:focus {
+  background-color: #cba50c;
+  color: #ffffff;
+}
+.sun-flower.btn.clear:hover,
+.sun-flower.btn.clear:focus {
+  border-color: #cba50c;
+}
+.sun-flower.btn:hover {
+  background-color: #cba50c;
+  color: #ffffff;
+}
+.sun-flower.btn.clear:active,
+.sun-flower.btn.clear.active {
+  background-color: #cda70d;
+  border-color: #cda70d;
+}
+.orange,
+.orange.label,
+.orange.label[href],
+a .orange.label,
+.orange.badge,
+.orange.btn {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+.orange[href],
+.orange.icon,
+.orange.octicons,
+.orange.clear {
+  background-color: transparent;
+  color: #f39c12;
+}
+.orange.clear,
+.orange.btn.clear {
+  border: 2px solid #f39c12;
+}
+.orange.btn.clear {
+  color: #f39c12;
+}
+.orange[href]:hover {
+  background-color: transparent;
+  color: #d2850b;
+}
+.orange.label[href]:hover,
+a .orange.label:hover,
+.orange.btn.clear:hover,
+.orange.btn.clear:focus {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.orange.btn.clear:hover,
+.orange.btn.clear:focus {
+  border-color: #d2850b;
+}
+.orange.btn:hover {
+  background-color: #d2850b;
+  color: #ffffff;
+}
+.orange.btn.clear:active,
+.orange.btn.clear.active {
+  background-color: #cf850f;
+  border-color: #cf850f;
+}
+.carrot,
+.carrot.label,
+.carrot.label[href],
+a .carrot.label,
+.carrot.badge,
+.carrot.btn {
+  background-color: #e67e22;
+  color: #ffffff;
+}
+.carrot[href],
+.carrot.icon,
+.carrot.octicons,
+.carrot.clear {
+  background-color: transparent;
+  color: #e67e22;
+}
+.carrot.clear,
+.carrot.btn.clear {
+  border: 2px solid #e67e22;
+}
+.carrot.btn.clear {
+  color: #e67e22;
+}
+.carrot[href]:hover {
+  background-color: transparent;
+  color: #c96a17;
+}
+.carrot.label[href]:hover,
+a .carrot.label:hover,
+.carrot.btn.clear:hover,
+.carrot.btn.clear:focus {
+  background-color: #c96a17;
+  color: #ffffff;
+}
+.carrot.btn.clear:hover,
+.carrot.btn.clear:focus {
+  border-color: #c96a17;
+}
+.carrot.btn:hover {
+  background-color: #c96a17;
+  color: #ffffff;
+}
+.carrot.btn.clear:active,
+.carrot.btn.clear.active {
+  background-color: #c46b1d;
+  border-color: #c46b1d;
+}
+.pumpkin,
+.pumpkin.label,
+.pumpkin.label[href],
+a .pumpkin.label,
+.pumpkin.badge,
+.pumpkin.btn {
+  background-color: #d35400;
+  color: #ffffff;
+}
+.pumpkin[href],
+.pumpkin.icon,
+.pumpkin.octicons,
+.pumpkin.clear {
+  background-color: transparent;
+  color: #d35400;
+}
+.pumpkin.clear,
+.pumpkin.btn.clear {
+  border: 2px solid #d35400;
+}
+.pumpkin.btn.clear {
+  color: #d35400;
+}
+.pumpkin[href]:hover {
+  background-color: transparent;
+  color: #aa4400;
+}
+.pumpkin.label[href]:hover,
+a .pumpkin.label:hover,
+.pumpkin.btn.clear:hover,
+.pumpkin.btn.clear:focus {
+  background-color: #aa4400;
+  color: #ffffff;
+}
+.pumpkin.btn.clear:hover,
+.pumpkin.btn.clear:focus {
+  border-color: #aa4400;
+}
+.pumpkin.btn:hover {
+  background-color: #aa4400;
+  color: #ffffff;
+}
+.pumpkin.btn.clear:active,
+.pumpkin.btn.clear.active {
+  background-color: #b34700;
+  border-color: #b34700;
+}
+.alizarin,
+.alizarin.label,
+.alizarin.label[href],
+a .alizarin.label,
+.alizarin.badge,
+.alizarin.btn {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+.alizarin[href],
+.alizarin.icon,
+.alizarin.octicons,
+.alizarin.clear {
+  background-color: transparent;
+  color: #e74c3c;
+}
+.alizarin.clear,
+.alizarin.btn.clear {
+  border: 2px solid #e74c3c;
+}
+.alizarin.btn.clear {
+  color: #e74c3c;
+}
+.alizarin[href]:hover {
+  background-color: transparent;
+  color: #df2e1b;
+}
+.alizarin.label[href]:hover,
+a .alizarin.label:hover,
+.alizarin.btn.clear:hover,
+.alizarin.btn.clear:focus {
+  background-color: #df2e1b;
+  color: #ffffff;
+}
+.alizarin.btn.clear:hover,
+.alizarin.btn.clear:focus {
+  border-color: #df2e1b;
+}
+.alizarin.btn:hover {
+  background-color: #df2e1b;
+  color: #ffffff;
+}
+.alizarin.btn.clear:active,
+.alizarin.btn.clear.active {
+  background-color: #c44133;
+  border-color: #c44133;
+}
+.pomegranate,
+.pomegranate.label,
+.pomegranate.label[href],
+a .pomegranate.label,
+.pomegranate.badge,
+.pomegranate.btn {
+  background-color: #c0392b;
+  color: #ffffff;
+}
+.pomegranate[href],
+.pomegranate.icon,
+.pomegranate.octicons,
+.pomegranate.clear {
+  background-color: transparent;
+  color: #c0392b;
+}
+.pomegranate.clear,
+.pomegranate.btn.clear {
+  border: 2px solid #c0392b;
+}
+.pomegranate.btn.clear {
+  color: #c0392b;
+}
+.pomegranate[href]:hover {
+  background-color: transparent;
+  color: #9f2f24;
+}
+.pomegranate.label[href]:hover,
+a .pomegranate.label:hover,
+.pomegranate.btn.clear:hover,
+.pomegranate.btn.clear:focus {
+  background-color: #9f2f24;
+  color: #ffffff;
+}
+.pomegranate.btn.clear:hover,
+.pomegranate.btn.clear:focus {
+  border-color: #9f2f24;
+}
+.pomegranate.btn:hover {
+  background-color: #9f2f24;
+  color: #ffffff;
+}
+.pomegranate.btn.clear:active,
+.pomegranate.btn.clear.active {
+  background-color: #a33025;
+  border-color: #a33025;
+}
+.amethyst,
+.amethyst.label,
+.amethyst.label[href],
+a .amethyst.label,
+.amethyst.badge,
+.amethyst.btn {
+  background-color: #9b59b6;
+  color: #ffffff;
+}
+.amethyst[href],
+.amethyst.icon,
+.amethyst.octicons,
+.amethyst.clear {
+  background-color: transparent;
+  color: #9b59b6;
+}
+.amethyst.clear,
+.amethyst.btn.clear {
+  border: 2px solid #9b59b6;
+}
+.amethyst.btn.clear {
+  color: #9b59b6;
+}
+.amethyst[href]:hover {
+  background-color: transparent;
+  color: #8646a0;
+}
+.amethyst.label[href]:hover,
+a .amethyst.label:hover,
+.amethyst.btn.clear:hover,
+.amethyst.btn.clear:focus {
+  background-color: #8646a0;
+  color: #ffffff;
+}
+.amethyst.btn.clear:hover,
+.amethyst.btn.clear:focus {
+  border-color: #8646a0;
+}
+.amethyst.btn:hover {
+  background-color: #8646a0;
+  color: #ffffff;
+}
+.amethyst.btn.clear:active,
+.amethyst.btn.clear.active {
+  background-color: #844c9b;
+  border-color: #844c9b;
+}
+.wisteria,
+.wisteria.label,
+.wisteria.label[href],
+a .wisteria.label,
+.wisteria.badge,
+.wisteria.btn {
+  background-color: #8e44ad;
+  color: #ffffff;
+}
+.wisteria[href],
+.wisteria.icon,
+.wisteria.octicons,
+.wisteria.clear {
+  background-color: transparent;
+  color: #8e44ad;
+}
+.wisteria.clear,
+.wisteria.btn.clear {
+  border: 2px solid #8e44ad;
+}
+.wisteria.btn.clear {
+  color: #8e44ad;
+}
+.wisteria[href]:hover {
+  background-color: transparent;
+  color: #763890;
+}
+.wisteria.label[href]:hover,
+a .wisteria.label:hover,
+.wisteria.btn.clear:hover,
+.wisteria.btn.clear:focus {
+  background-color: #763890;
+  color: #ffffff;
+}
+.wisteria.btn.clear:hover,
+.wisteria.btn.clear:focus {
+  border-color: #763890;
+}
+.wisteria.btn:hover {
+  background-color: #763890;
+  color: #ffffff;
+}
+.wisteria.btn.clear:active,
+.wisteria.btn.clear.active {
+  background-color: #793a93;
+  border-color: #793a93;
+}
+.clouds,
+.clouds.label,
+.clouds.label[href],
+a .clouds.label,
+.clouds.badge,
+.clouds.btn {
+  background-color: #ecf0f1;
+  color: #333333;
+}
+.clouds[href],
+.clouds.icon,
+.clouds.octicons,
+.clouds.clear {
+  background-color: transparent;
+  color: #ecf0f1;
+}
+.clouds.clear,
+.clouds.btn.clear {
+  border: 2px solid #ecf0f1;
+}
+.clouds.btn.clear {
+  color: #ecf0f1;
+}
+.clouds[href]:hover {
+  background-color: transparent;
+  color: #d5dde0;
+}
+.clouds.label[href]:hover,
+a .clouds.label:hover,
+.clouds.btn.clear:hover,
+.clouds.btn.clear:focus {
+  background-color: #d5dde0;
+  color: #333333;
+}
+.clouds.btn.clear:hover,
+.clouds.btn.clear:focus {
+  border-color: #d5dde0;
+}
+.clouds.btn:hover {
+  background-color: #d5dde0;
+  color: #333333;
+}
+.clouds.btn.clear:active,
+.clouds.btn.clear.active {
+  background-color: #c9cccd;
+  border-color: #c9cccd;
+}
+.wet-asphalt,
+.wet-asphalt.label,
+.wet-asphalt.label[href],
+a .wet-asphalt.label,
+.wet-asphalt.badge,
+.wet-asphalt.btn {
+  background-color: #34495e;
+  color: #ffffff;
+}
+.wet-asphalt[href],
+.wet-asphalt.icon,
+.wet-asphalt.octicons,
+.wet-asphalt.clear {
+  background-color: transparent;
+  color: #34495e;
+}
+.wet-asphalt.clear,
+.wet-asphalt.btn.clear {
+  border: 2px solid #34495e;
+}
+.wet-asphalt.btn.clear {
+  color: #34495e;
+}
+.wet-asphalt[href]:hover {
+  background-color: transparent;
+  color: #253544;
+}
+.wet-asphalt.label[href]:hover,
+a .wet-asphalt.label:hover,
+.wet-asphalt.btn.clear:hover,
+.wet-asphalt.btn.clear:focus {
+  background-color: #253544;
+  color: #ffffff;
+}
+.wet-asphalt.btn.clear:hover,
+.wet-asphalt.btn.clear:focus {
+  border-color: #253544;
+}
+.wet-asphalt.btn:hover {
+  background-color: #253544;
+  color: #ffffff;
+}
+.wet-asphalt.btn.clear:active,
+.wet-asphalt.btn.clear.active {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+}
+.midnight-blue,
+.midnight-blue.label,
+.midnight-blue.label[href],
+a .midnight-blue.label,
+.midnight-blue.badge,
+.midnight-blue.btn {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+.midnight-blue[href],
+.midnight-blue.icon,
+.midnight-blue.octicons,
+.midnight-blue.clear {
+  background-color: transparent;
+  color: #2c3e50;
+}
+.midnight-blue.clear,
+.midnight-blue.btn.clear {
+  border: 2px solid #2c3e50;
+}
+.midnight-blue.btn.clear {
+  color: #2c3e50;
+}
+.midnight-blue[href]:hover {
+  background-color: transparent;
+  color: #1e2a36;
+}
+.midnight-blue.label[href]:hover,
+a .midnight-blue.label:hover,
+.midnight-blue.btn.clear:hover,
+.midnight-blue.btn.clear:focus {
+  background-color: #1e2a36;
+  color: #ffffff;
+}
+.midnight-blue.btn.clear:hover,
+.midnight-blue.btn.clear:focus {
+  border-color: #1e2a36;
+}
+.midnight-blue.btn:hover {
+  background-color: #1e2a36;
+  color: #ffffff;
+}
+.midnight-blue.btn.clear:active,
+.midnight-blue.btn.clear.active {
+  background-color: #253544;
+  border-color: #253544;
+}
+.concrete,
+.concrete.label,
+.concrete.label[href],
+a .concrete.label,
+.concrete.badge,
+.concrete.btn {
+  background-color: #95a5a6;
+  color: #ffffff;
+}
+.concrete[href],
+.concrete.icon,
+.concrete.octicons,
+.concrete.clear {
+  background-color: transparent;
+  color: #95a5a6;
+}
+.concrete.clear,
+.concrete.btn.clear {
+  border: 2px solid #95a5a6;
+}
+.concrete.btn.clear {
+  color: #95a5a6;
+}
+.concrete[href]:hover {
+  background-color: transparent;
+  color: #7f9293;
+}
+.concrete.label[href]:hover,
+a .concrete.label:hover,
+.concrete.btn.clear:hover,
+.concrete.btn.clear:focus {
+  background-color: #7f9293;
+  color: #ffffff;
+}
+.concrete.btn.clear:hover,
+.concrete.btn.clear:focus {
+  border-color: #7f9293;
+}
+.concrete.btn:hover {
+  background-color: #7f9293;
+  color: #ffffff;
+}
+.concrete.btn.clear:active,
+.concrete.btn.clear.active {
+  background-color: #7f8c8d;
+  border-color: #7f8c8d;
+}
+.asbestos,
+.asbestos.label,
+.asbestos.label[href],
+a .asbestos.label,
+.asbestos.badge,
+.asbestos.btn {
+  background-color: #7f8c8d;
+  color: #ffffff;
+}
+.asbestos[href],
+.asbestos.icon,
+.asbestos.octicons,
+.asbestos.clear {
+  background-color: transparent;
+  color: #7f8c8d;
+}
+.asbestos.clear,
+.asbestos.btn.clear {
+  border: 2px solid #7f8c8d;
+}
+.asbestos.btn.clear {
+  color: #7f8c8d;
+}
+.asbestos[href]:hover {
+  background-color: transparent;
+  color: #6b7778;
+}
+.asbestos.label[href]:hover,
+a .asbestos.label:hover,
+.asbestos.btn.clear:hover,
+.asbestos.btn.clear:focus {
+  background-color: #6b7778;
+  color: #ffffff;
+}
+.asbestos.btn.clear:hover,
+.asbestos.btn.clear:focus {
+  border-color: #6b7778;
+}
+.asbestos.btn:hover {
+  background-color: #6b7778;
+  color: #ffffff;
+}
+.asbestos.btn.clear:active,
+.asbestos.btn.clear.active {
+  background-color: #6c7778;
+  border-color: #6c7778;
+}
+.base-link-color,
+.base-link-color.label,
+.base-link-color.label[href],
+a .base-link-color.label,
+.base-link-color.badge,
+.base-link-color.btn {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.base-link-color[href],
+.base-link-color.icon,
+.base-link-color.octicons,
+.base-link-color.clear {
+  background-color: transparent;
+  color: #f4726d;
+}
+.base-link-color.clear,
+.base-link-color.btn.clear {
+  border: 2px solid #f4726d;
+}
+.base-link-color.btn.clear {
+  color: #f4726d;
+}
+.base-link-color[href]:hover {
+  background-color: transparent;
+  color: #f14d47;
+}
+.base-link-color.label[href]:hover,
+a .base-link-color.label:hover,
+.base-link-color.btn.clear:hover,
+.base-link-color.btn.clear:focus {
+  background-color: #f14d47;
+  color: #ffffff;
+}
+.base-link-color.btn.clear:hover,
+.base-link-color.btn.clear:focus {
+  border-color: #f14d47;
+}
+.base-link-color.btn:hover {
+  background-color: #f14d47;
+  color: #ffffff;
+}
+.base-link-color.btn.clear:active,
+.base-link-color.btn.clear.active {
+  background-color: #cf615d;
+  border-color: #cf615d;
+}
+.base-link-hover-color,
+.base-link-hover-color.label,
+.base-link-hover-color.label[href],
+a .base-link-hover-color.label,
+.base-link-hover-color.badge,
+.base-link-hover-color.btn {
+  background-color: #f79592;
+  color: #ffffff;
+}
+.base-link-hover-color[href],
+.base-link-hover-color.icon,
+.base-link-hover-color.octicons,
+.base-link-hover-color.clear {
+  background-color: transparent;
+  color: #f79592;
+}
+.base-link-hover-color.clear,
+.base-link-hover-color.btn.clear {
+  border: 2px solid #f79592;
+}
+.base-link-hover-color.btn.clear {
+  color: #f79592;
+}
+.base-link-hover-color[href]:hover {
+  background-color: transparent;
+  color: #f4716c;
+}
+.base-link-hover-color.label[href]:hover,
+a .base-link-hover-color.label:hover,
+.base-link-hover-color.btn.clear:hover,
+.base-link-hover-color.btn.clear:focus {
+  background-color: #f4716c;
+  color: #ffffff;
+}
+.base-link-hover-color.btn.clear:hover,
+.base-link-hover-color.btn.clear:focus {
+  border-color: #f4716c;
+}
+.base-link-hover-color.btn:hover {
+  background-color: #f4716c;
+  color: #ffffff;
+}
+.base-link-hover-color.btn.clear:active,
+.base-link-hover-color.btn.clear.active {
+  background-color: #d27f7c;
+  border-color: #d27f7c;
+}
+.text-black {
+  color: #333333 !important;
+}

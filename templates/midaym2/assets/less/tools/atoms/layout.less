@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    $ATOM-LAYOUT
+\*------------------------------------*/
+
+/**
+ * Clearfix
+ */
+
+.cf:extend(.cf) { }
+
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+
+.align-top { vertical-align: top !important; }
+.align-middle { vertical-align: middle !important; }
+.align-baseline { vertical-align: baseline !important; }
+.align-bottom { vertical-align: bottom !important; }
+
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+
+.nbfc { overflow: hidden !important; }
+
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+
+.nbfcAlt {
+    display: table-cell !important; /* 1 */
+    width: 10000px !important; /* 2 */
+}
+
+/**
+ * Floats
+ */
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+
+/**
+ * Object position helpers.
+ *
+ * Float an object left or right, and include some space between the object and
+ * proceeding objects.
+ */
+
+.objLeft {
+    float: left !important;
+    margin-right: 10px;
+}
+
+.objRight {
+    float: right !important;
+    margin-left: 10px;
+}
+
+/**
+ * 1. Remove excess space below images
+ * 2. Guard against `img {max-width:100%}` hiding this utility's images in
+ *    IE 8.
+ */
+
+.objLeft img,
+.objRight img {
+    display: block; /* 1 */
+    max-width: none; /* 2 */
+}
+

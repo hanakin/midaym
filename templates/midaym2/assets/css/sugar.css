@@ -1264,10 +1264,6 @@
 /**
  *  Styles for featured section
  */
-.post-featured {
-  margin-top: 120px;
-  margin-top: 7.5rem;
-}
 .post-featured img {
   border: 10px solid rgba(0, 0, 0, 0.07);
   border-radius: 50%;
@@ -1275,7 +1271,7 @@
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   display: block;
   height: 300px;
-  margin: -55px auto 24px;
+  margin: 48px auto 48px;
   width: 300px;
 }
 /**
@@ -1404,7 +1400,8 @@
   color: #ffffff;
 }
 .black,
-.navy {
+.navy,
+.purple {
   color: #ffffff;
 }
 .white .post-day,

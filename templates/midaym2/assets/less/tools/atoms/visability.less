@@ -1,0 +1,202 @@
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+
+/**
+ * Completely remove from the flow and screen readers.
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/**
+ * Completely undo hidden.
+ */
+
+.display {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+
+.hidden-visually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/**
+ * Control visibility without affecting flow.
+ */
+
+.invisible { visibility: hidden !important; }
+
+.visible { visibility: visible !important; }
+
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+    .hidden();
+    @media (max-width: @medium-max) { .display(); }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
+    }
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
+    }
+
+    &.visible-w { 
+        @media (min-width: @wide) { .display(); } 
+    }
+}
+
+.visible-m {
+    .hidden();
+
+    &.visible-s { 
+        @media (max-width: @medium-max) { .display(); } 
+    }
+
+    @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .display(); }
+    }
+
+    &.visible-w { 
+        @media (min-width: @wide) { .display(); } 
+    }
+}
+
+.visible-l {
+    .hidden();
+
+    &.visible-s { 
+        @media (max-width: @medium-max) { .display(); } 
+    }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
+    }
+
+    @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
+
+    &.visible-w { 
+        @media (min-width: @wide) { .display(); } 
+    }
+}
+
+.visible-w {
+    .hidden();
+    
+    &.visible-s { 
+        @media (max-width: @medium-max) { .display(); } 
+    }
+
+    &.visible-m { 
+        @media (min-width: @medium) and (max-width: @large-max) { .display(); } 
+    }
+
+    &.visible-l { 
+        @media (min-width: @large) and (max-width: @wide-max) { .display(); } 
+    }
+
+    @media (min-width: @wide) { .display(); }
+}
+
+/**
+ * Responsive Hidden Classes
+ */
+.hidden-s {
+    .display();
+
+    @media (max-width: @medium-max) { .hidden(); }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .hidden(); }
+    }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .hidden(); }
+    }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .hidden(); }
+    }
+}
+
+.hidden-m {
+    .display();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .hidden(); }
+    }
+
+    @media (min-width: @medium) and (max-width: @large-max) { .hidden(); }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .hidden(); }
+    }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .hidden(); }
+    }
+}
+
+.hidden-l {
+    .display();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .hidden(); }
+    }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .hidden(); }
+    }
+
+    @media (min-width: @large) and (max-width: @wide-max) { .hidden(); }
+
+    &.hidden-w {
+        @media (min-width: @wide) { .hidden(); }
+    }
+}
+
+.hidden-w {
+    .display();
+
+    &.hidden-s {
+        @media (max-width: @medium-max) { .hidden(); }
+    }
+
+    &.hidden-m {
+        @media (min-width: @medium) and (max-width: @large-max) { .hidden(); }
+    }
+
+    &.hidden-l {
+        @media (min-width: @large) and (max-width: @wide-max) { .hidden(); }
+    }
+
+    @media (min-width: @wide) { .hidden(); }
+}
+
+/**
+ * Print Classes
+ */
+.visible-print { .hidden(); }
+
+@media print {
+    .visible-print { .display(); }
+    .hidden-print { .hidden(); }
+}

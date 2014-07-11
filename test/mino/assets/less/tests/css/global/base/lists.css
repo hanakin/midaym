@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $BASE--LISTS
+\*------------------------------------*/
+ul,
+ol {
+  margin: 0px 0px 0px 10px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 6px 0px 6px 24px;
+}
+dl {
+  margin-bottom: 20px;
+}
+dt {
+  font-weight: bold;
+  color: #333333;
+  margin-top: 12px;
+}
+dd {
+  margin-left: 0;
+}

@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    $OBJECTS--SOCIAL
+\*------------------------------------*/
+/**
+ *  Contains all styles for the nav
+ */
+
+/**
+ * Post Social Styles
+ */
+.social {
+    border-top: solid 2px @gray-lighter;
+
+    .padding(@base-spacing-unit, 0);
+    
+    .btn:hover {
+        background-color: @black;
+        color: @white;
+    }
+
+    li { .padding(@half-spacing-unit, @quarter-spacing-unit); }
+}
+
+.social-logo {
+    color: @gray-light;
+    
+    .margin(@half-spacing-unit,0,0);
+
+    i { .font-size(@gamma); }
+
+    span {
+        .font-size(@gamma);
+
+        display: inline-block;
+        margin-top: -4px;
+        .padding-left(@half-spacing-unit+@quarter-spacing-unit); 
+    }
+}
+
+.social-menu {
+    margin: 0;
+    li { .padding(@quarter-spacing-unit); }
+}
+
+@media (max-width: @medium-max) { 
+    .social-menu li { .padding(@quarter-spacing-unit, @quarter-spacing-unit); }
+}
+

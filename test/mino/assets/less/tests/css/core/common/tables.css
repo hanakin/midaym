@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    $CORE--TABLES
+\*------------------------------------*/
+table {
+  border-radius: 4px;
+}
+table > thead th:first-child {
+  border-top-left-radius: 4px;
+}
+table > thead th:last-child {
+  border-top-right-radius: 4px;
+}
+th {
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #333333;
+}

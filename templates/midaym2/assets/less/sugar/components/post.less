@@ -36,28 +36,25 @@
     .post-title,
     p { text-align: right; }
     .btn { float: right; }
-    .post-date { 
+    .post-date {
         text-align: center;
 
-        float: left; 
+        float: left;
     }
 }
 
 /**
  *  Styles for featured section
  */
- .post-featured {
-    .margin-top(@quintuple-spacing-unit);
-    img {
-        border: 10px solid rgba(0,0,0,.07);
-        border-radius: 50%;
-        .box-shadow(0px 0px 0px 1px rgba(0,0,0,.1));
+ .post-featured img {
+    border: 10px solid rgba(0,0,0,.07);
+    border-radius: 50%;
+    .box-shadow(0px 0px 0px 1px rgba(0,0,0,.1));
 
-        display: block;
-        height: 300px;
-        margin: -55px auto @base-spacing-unit*1px;
-        width: 300px;
-    }
+    display: block;
+    height: 300px;
+    margin: @double-spacing-unit*1px auto @double-spacing-unit*1px;
+    width: 300px;
 }
 
 
@@ -65,7 +62,7 @@
  *  Style the date of the post
  */
 .post-date {
-   
+
    .font-size(21);
    font-weight: 700;
    .line-height(18);
@@ -75,7 +72,7 @@
 
     display: inline-block;
     float: right;
-   
+
    .margin(@double-spacing-unit, 0, 0);
 }
 
@@ -87,24 +84,24 @@
 
     border: 3px solid rgba(255,255,255,.9);
     border-radius: 50%;
-    
+
     display: block;
     float: left;
     .padding(@quarter-spacing-unit, 0);
-    width: 50px; 
+    width: 50px;
 }
 
 /**
  *  Style the Title of the post
  */
-.post-title { 
+.post-title {
     color: @white;
 
     .margin-top(@quadruple-spacing-unit);
 
-    small { 
+    small {
         .opacity(.6);
-        
+
         display: block;
     }
 }
@@ -119,7 +116,7 @@
 
     li {
         border-bottom: 1px solid @white-darker;
-        
+
         .padding(@quarter-spacing-unit, 0);
 
         &:first-child { border-top: 1px solid @white-darker; }
@@ -134,7 +131,7 @@
         letter-spacing: -1px;
 
         color: @black;
-        
+
         display: block;
         padding-left: 0;
         margin: 0;
@@ -160,11 +157,11 @@
         border: 3px solid @base-link-color;
         border-radius: 50%;
         color: @base-link-color;
-    
+
         display: block;
         float: none;
         margin: auto;
-        width: 50px; 
+        width: 50px;
     }
 
 }
@@ -186,7 +183,7 @@
     color: @white;
 }
 
-.black, .navy { color: @white; }
+.black, .navy, .purple { color: @white; }
 
 .white, .gray {
     .post-day {

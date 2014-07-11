@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    $CORE--CODE
+\*------------------------------------*/
+/**
+ * Detailing code elements
+ */
+
+/**
+ * Inline Code
+ */
+code {
+    background-color: @code-bg;
+    border-radius: unit(@code-border-radius, px);
+    color: @code-color;
+}
+
+/**
+ * Code Blocks
+ */
+pre {
+    background-color: @pre-bg;
+    border: unit(@pre-border-size, px) solid @pre-border-color;
+    border-radius: unit(@pre-border-radius, px);
+    color: @pre-color;
+}
+
+/**
+ * Prettify
+ */
+pre.prettyprint, code.prettyprint {
+    //.line-height(@base-line-height);
+
+    background-color: @pre-prettyprint-bg;
+    border-radius: unit(@pre-prettyprint-border-radius, px);
+    border: unit(@pre-prettyprint-border-size, px) solid @pre-prettyprint-border-color;
+    .box-shadow(0 1px 2px rgba(0,0,0,.1));
+    color: @pre-prettyprint-color;
+
+    display: block;
+    .padding(@half-spacing-unit);
+    .margin-left(@base-spacing-unit);
+}
+
+@media screen {
+    pre {
+        // ALL
+        .comment            { color: #7d8c93; }
+
+        // HTML
+        .support            { color: #f75972; }
+        .attribute, 
+        .operator           { color: #91a6fa; }
+        .string             { color: #42c8ff; }
+
+        // CSS
+        .hex-color,
+        .unit,
+        .entity.name.tag,
+        .direct-descendant  { color: #f75972; }
+        .css-property,
+        .css-value,
+        .entity.name.pseudo,
+        .vendor-prefix      { color: #91a6fa; }
+        .entity.name.class,
+        .constant.numeric   { color: #42c8ff; }
+    }
+}   

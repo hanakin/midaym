@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Force the use of box sizing by default
+ *
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/**
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications. Removes the default spacing and border for
+ * appropriate elements.
+ *
+ * https://github.com/suitcss/base
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+iframe {
+  border: 0;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection,
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}

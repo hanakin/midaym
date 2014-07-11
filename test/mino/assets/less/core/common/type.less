@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    $CORE--TYPE
+\*------------------------------------*/
+
+/**
+ * Detailing type elements
+ */
+abbr.initialism {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+/**
+ * Strong default styling
+ */
+strong { color: @base-strong-color; }
+
+/**
+ * Better looking blockquotes
+ */
+blockquote {
+    // ** Decoration ** \\
+    border-left: unit(@base-quote-border-size, px) solid @base-quote-border-color;
+    // ** Layout ** \\
+    .padding(0, 0, 0, 16);
+    .margin(0, 0, @base-line-height);
+    
+    p {
+        .font-size(@base-font-size);
+        font-weight: normal;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    small {
+        // ** Text ** \\
+        .font-size(@base-font-size);
+        font-style: italic;
+
+        // ** Decoration ** \\
+        color: @base-quote-small-color;
+        
+        // ** Layout ** \\
+        display: block;
+        
+        &:before { content: '\2014 \00A0'; } // EM DASH, NBSP
+    }
+
+    &.pull-right {
+        // ** Decoration ** \\
+        border-left: 0;
+        border-right: unit(@base-quote-border-size, px) solid @base-quote-border-color;
+        // ** Layout ** \\
+        .padding-right(16);
+        padding-left: 0;
+
+        p, small { text-align: right; }
+        small { &:before { content: ''; } }
+    }
+}

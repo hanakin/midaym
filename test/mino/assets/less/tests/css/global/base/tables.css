@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $BASE--TABLES
+\*------------------------------------*/
+/**
+ * Cell alignments
+ */
+[colspan] {
+  text-align: center;
+}
+[colspan="1"] {
+  text-align: left;
+}
+[rowspan] {
+  vertical-align: middle;
+}
+[rowspan="1"] {
+  vertical-align: top;
+}
+table {
+  width: 100%;
+  margin-bottom: 24px;
+  /**
+    * Bottom align for column headings
+    */
+  /**
+    * Remove top border from thead by default
+    */
+  /**
+    * Account for multiple tbody instances
+    */
+}
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  text-align: center;
+  vertical-align: top;
+  border-top: 2px solid #e6e6e6;
+  padding: 9px 25px;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e6e6e6;
+}
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody + tbody {
+  border-top: 2px solid #e6e6e6;
+}

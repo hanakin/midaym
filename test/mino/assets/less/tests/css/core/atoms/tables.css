@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    $ATOM-TABLES
+\*------------------------------------*/
+/**
+ * Table Type Classes
+ */
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #ffffff;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 6px;
+}
+.table-bordered {
+  border: 2px solid #dddddd;
+  font-size: 14px;
+  font-size: 0.875em;
+  border-radius: 0;
+}
+.table-bordered > thead > tr th,
+.table-bordered > tbody > tr th,
+.table-bordered > tfoot > tr th,
+.table-bordered > thead > tr td,
+.table-bordered > tbody > tr td,
+.table-bordered > tfoot > tr td {
+  border: 2px solid #dddddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-bordered > thead th:first-child {
+  border-top-left-radius: 0;
+}
+.table-bordered > thead th:last-child {
+  border-top-right-radius: 0;
+}

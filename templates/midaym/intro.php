@@ -2,7 +2,7 @@
             <header>
                 <div class="row">
                     <div class="span3">
-                        <a class="branding" href="<?php echo $blog_url ?>"><img src="<?php echo $template_dir_url ?>/img/branding.png" width="48px" height="48px"><? echo $blog_title?></a>
+                        <a class="branding" href="<?php echo $blog_url ?>"><img src="<?php echo $template_dir_url ?>/img/branding.png" width="48px" height="48px"><? echo $blog_title; ?></a>
                     </div>
                     <div class="span9">
                         <nav class="pull-right">
@@ -31,9 +31,9 @@
                 </div>
                 <hgroup>
                     <h1>
-                        <? echo $page_title;?>
+                        <? echo $page_title; ?>
                         <small>
-                            <? echo $page_tag;?>
+                            <? echo $page_tag; ?>
                         </small>
                     </h1>
                 </hgroup>

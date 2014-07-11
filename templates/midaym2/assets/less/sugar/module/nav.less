@@ -1,0 +1,47 @@
+// /*------------------------------------*\
+//     $MODULE-NAV
+// \*------------------------------------*/
+
+/**
+ * Nav Class
+ * This sets some basic settings for a linear navigation
+ */
+.nav {
+    list-style: none;
+
+    margin-bottom: 0;
+    padding-left: 0; // Override default ul/ol
+    
+    .cf();
+
+    > li {
+        display: block;
+        position: relative;
+        
+        > a {
+            display: block;
+            padding: @nav-link-padding;
+            position: relative;
+            
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                background-color: @nav-link-hover-bg;
+            }
+        }
+
+        // Disabled state sets text to gray and nukes hover/tab effects
+        &.disabled > a {
+            color: @nav-disabled-link-color;
+    
+            &:hover,
+            &:focus {
+                text-decoration: none;
+
+                background-color: transparent;
+                color: @nav-disabled-link-hover-color;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

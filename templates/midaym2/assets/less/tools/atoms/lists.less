@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $ATOM-LISTS
+\*------------------------------------*/
+
+/**
+ * List Type Classes
+ */
+.list-unstyled { 
+    list-style: none; 
+    ul,ol { list-style: none; }
+}
+
+.list-inline {
+    .list-unstyled();
+    > li {
+        display: inline-block;
+        .padding-left(@quarter-spacing-unit);
+        .padding-right(@quarter-spacing-unit);
+    }
+    @media (min-width: @medium) {
+        /**
+         * Inline Description Lists
+         * Defaults to being stacked without any of the below styles applied, until the
+         * grid breakpoint is reached (default of ~768px).
+         */
+        dt {
+            // ** Text ** \\
+            text-align: right;
+            .text-overflow();
+            // ** Layout ** \\
+            clear: left;
+            float: left;
+            margin-top: 0;
+            width: (160px);
+        }
+        dd {
+            .margin-bottom(@half-spacing-unit);
+            margin-left: 180px;
+            .cf(); // Clear the floated `dt` if an empty `dd` is present
+        }
+    }
+}

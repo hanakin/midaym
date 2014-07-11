@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    $COMPONENT-LOGIN
+\*------------------------------------*/
+/**
+ * Login main class
+ *
+ * This is main class for establishing the login section.
+ */
+.login {
+  background-color: #ffffff;
+  border-bottom: 1px solid #b3b3b3;
+  display: none;
+  padding: 12px 0px;
+}
+.login.is-active-login {
+  display: block;
+}
+.link,
+.link.label,
+.link.label[href],
+a .link.label,
+.link.badge,
+.link.btn {
+  background-color: #b3b3b3;
+  color: #ffffff;
+}
+.link[href],
+.link.icon,
+.link.octicons,
+.link.clear {
+  background-color: transparent;
+  color: #b3b3b3;
+}
+.link.clear,
+.link.btn.clear {
+  border: 2px solid #b3b3b3;
+}
+.link.btn.clear {
+  color: #b3b3b3;
+}
+.link[href]:hover {
+  background-color: transparent;
+  color: #f4726d;
+}
+.link.label[href]:hover,
+a .link.label:hover,
+.link.btn.clear:hover,
+.link.btn.clear:focus {
+  background-color: #f4726d;
+  color: #ffffff;
+}
+.link.btn.clear:hover,
+.link.btn.clear:focus {
+  border-color: #f4726d;
+}
+.link.btn:hover {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+.link.btn.clear:active,
+.link.btn.clear.active {
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
+}

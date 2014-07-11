@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $BASE--IMAGES
+\*------------------------------------*/
+
+/**
+ * Images
+ *
+ * 1. So that `alt` text is visually offset if images don’t load.
+ * 2. Fluid images.
+ */
+img { 
+    font-style: italic; /* [1] */
+    max-width: 100%;    /* [2] */
+}
+
+/**
+ * Non-fluid images if you specify `width` and/or `height` attributes.
+ */
+img[width],
+img[height]{ max-width: none; }
+
+/**
+ * Images in `figure` elements.
+ */
+figure > img { display: block; }
+

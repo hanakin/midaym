@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    $MODULE-LABELS
+\*------------------------------------*/
+/**
+ * Label main class
+ *
+ * This is where we style the label class
+ */
+.label {
+  font-size: 75%;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #808080;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline;
+  padding: 3px 6px;
+}
+.label[href] {
+  background-color: #f4726d;
+}
+.label[href]:hover,
+.label[href]:focus {
+  text-decoration: none;
+  background-color: #f79592;
+  color: #ffffff;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+/**
+ * Label Group
+ *
+ * This is used to style to pieces of information related to each other
+ * into halfs of a label.
+ */
+.label-group > p {
+  font-size: 75%;
+  background-color: #808080;
+  color: #ffffff;
+  margin-right: -1px;
+  padding: 3px 6px;
+}
+.label-group > p:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.label-group > p:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}

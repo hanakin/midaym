@@ -278,12 +278,12 @@ else if ($filename == 'archives') {
         foreach($posts as $post) {
             
             // The post title.
-            $post_title             = $post['title'];
+            $post_title = $post['title'];
 
             // The published ISO date.
             $published_iso_date     = $post['time'];
 
-            $post_date              = explode( $post['time'], '-');
+            $post_date = explode( $post['time'], '-');
             
             $published_iso_day      = $post_date[2];
             $published_iso_month    = $post_date[1];

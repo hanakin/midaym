@@ -4,13 +4,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-    	<title><?php echo $site_title ?></title>
+    	<title><?php echo $site_title ?> 2</title>
         
         <meta name="description" content="<?php echo $meta_description ?>">
         <meta name="author" content="<?php echo $author ?>">
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
         <link rel="stylesheet" href="<?php echo $template_dir_url ?>css/main.css">
                 
         <link rel="shortcut icon" href="<?php echo $template_dir_url ?>favicon.png">
@@ -29,8 +29,8 @@
                 
 		<?php echo $content ?>
 
-        <!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
-        <!-- // <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <?php echo stripslashes($tracking_code) ?>
     </div>

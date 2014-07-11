@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $ATOM-TEXT
+\*------------------------------------*/
+/**
+ * Horizontal text alignment
+ */
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.text-truncate {
+  max-width: 100%;
+  /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 */
+}
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.text-break {
+  word-wrap: break-word !important;
+}
+/**
+ * Bold Text
+ *
+ * Sometimes you need make blocks of text bold but wrapping in strong tags
+ * breaks semantics
+ */
+.text-bold {
+  font-weight: 700;
+}
+/**
+ * Hide Text
+ *
+ * CSS Image Replaement Class
+ */
+.text-hide {
+  font: 0/0 a;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+}
+/**
+ *  Help text
+ *
+ * Apply to any element you wish to create light text for placement immediately
+ * below a form control. Use for general help, formatting, or instructional text.
+ */
+.text-help {
+  color: #737373;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

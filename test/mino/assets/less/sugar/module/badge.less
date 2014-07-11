@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $MODULE-BADGES
+\*------------------------------------*/
+
+/**
+ * Badge main class
+ *
+ * applying the styles for badges
+ */
+.badge {
+    .font-size(@half-spacing-unit);
+    font-weight: @badge-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-font-smoothing: auto;
+
+    background-color: @badge-bg;
+    border-radius: @badge-border-radius;
+    color: @badge-color;
+
+    display: inline-block;
+    min-width: 20px;
+    .padding(2);
+
+    // Empty badges collapse automatically (not available in IE8)
+    &:empty { display: none; }
+
+    [href] & {
+        float: left;
+        position: absolute;
+        left: unit(@base-spacing-unit, px);
+        top: 10px;
+        z-index: 1050;
+    }
+
+    [href] {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+
+            color: @badge-link-hover-color;
+
+            cursor: pointer;
+        }
+    }
+
+    // Quick fix for labels/badges in buttons
+    .btn & {
+        top: -1px;
+    }
+}
+

@@ -1,0 +1,24 @@
+// /*------------------------------------*\
+//     $MODULE-BRAND
+// \*------------------------------------*/
+
+.brand { 
+    font-family: @brand-font; 
+
+    color: @brand-color;
+
+    &:hover { color: @base-link-color; }
+}
+
+.brand-logo {
+
+    display: block;
+    height: 50px;
+
+    /* Layout */
+    float: left;
+    .margin(-@half-spacing-unit - 3, @base-spacing-unit, 0, 0);
+}
+
+.brand-logo:before { content: "\73"; }
+

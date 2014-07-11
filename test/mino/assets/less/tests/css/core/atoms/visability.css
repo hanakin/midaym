@@ -1,0 +1,313 @@
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+/**
+ * Completely undo hidden.
+ */
+.display {
+  display: block !important;
+  visibility: visible !important;
+}
+/**
+ * Display content only for screen readers.
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.hidden-visually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+/**
+ * Control visibility without affecting flow.
+ */
+.invisible {
+  visibility: hidden !important;
+}
+.visible {
+  visibility: visible !important;
+}
+/**
+*  IE10 in Windows (Phone) 8
+*  
+*  Support for responsive views via media queries is kind of borked in IE10, for
+*  Surface/desktop in split view and for Windows Phone 8. This particular fix
+*  must be accompanied by a snippet of JavaScript to sniff the user agent and
+*  apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+*  our Getting Started page for more information on this bug.
+*  
+*  For more information, see the following:
+*  
+*  Issue: https://github.com/twbs/bootstrap/issues/10497
+*  Docs: http://getbootstrap.com/getting-started/#browsers
+*  Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+*/
+@-ms-viewport {
+  width: device-width;
+}
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 45em) {
+  .visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .visible-s.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .visible-s.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .visible-s.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-m {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 45em) {
+  .visible-m.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .visible-m.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .visible-m.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-l {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 45em) {
+  .visible-l.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .visible-l.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .visible-l.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-w {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 45em) {
+  .visible-w.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .visible-w.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .visible-w.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.hidden-s {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 45em) {
+  .hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .hidden-s.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .hidden-s.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .hidden-s.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-m {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 45em) {
+  .hidden-m.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .hidden-m.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .hidden-m.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-l {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 45em) {
+  .hidden-l.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .hidden-l.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .hidden-l.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-w {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 45em) {
+  .hidden-w.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 45em) and (max-width: 61.25em) {
+  .hidden-w.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 61.25em) and (max-width: 71.25em) {
+  .hidden-w.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 71.25em) {
+  .hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/**
+ * Print Utility
+ */
+.visible-print {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .hidden-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}

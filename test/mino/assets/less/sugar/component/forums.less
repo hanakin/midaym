@@ -1,0 +1,216 @@
+/*------------------------------------*\
+    $COMPONENT-FORUMS
+\*------------------------------------*/
+
+/**
+ * Forums master Class
+ *
+ * Since we use a lot of list elements not as intended we need a micro reset
+ * for them to make styling things easier
+ */
+.forums { margin: 0; }
+
+.forum-list,
+.forum-row-wrap,
+.forum-header,
+.forum-recent-info { margin: 0; }
+
+/**
+ * Forum wrap
+ *
+ * used to assign forum to grid, breaks mobile first on purpose
+ */
+.forums-wrap { @media (max-width: @screen-m-min) { &.grid {.padding(0); } } }
+
+/**
+ * Forum
+ *
+ * Individual forum class
+ */
+.forum {
+    @media (min-width: @screen-m-min) {
+        .margin-top(@base-spacing-unit);
+    }
+}
+
+/**
+ * Forum Name
+ *
+ * This is the header for each forum section
+ */
+.forum-name {
+    background-color: @forums-name-bg;
+    @media (min-width: @screen-m-min) { .border-top-radius(unit(@base-radius, px)); }
+
+    margin: 0;
+
+    > a {
+        .font-size(@base-font-size);
+
+        color: @forums-name-link-color;
+
+        display: block;
+        .padding(@quarter-spacing-unit, @base-spacing-unit);
+
+        &:hover { text-decoration: underline; }
+    }
+}
+
+/**
+ * Forum Row
+ *
+ * Here we style the look of each forum row
+ */
+.forum-row {
+    background-color: @forum-row-bg;
+    border-bottom: 1px solid @forum-row-border-color;
+    @media (min-width: @screen-m-min) {
+        border-right: 1px solid @forum-row-border-color;
+        border-left: 1px solid @forum-row-border-color;
+    }
+
+    .padding(@half-spacing-unit, @quarter-spacing-unit, @half-spacing-unit, @quarter-spacing-unit + @eighth-spacing-unit);
+    @media (min-width: @screen-m-min) { .padding(0); }
+
+    @media (min-width: @screen-m-min) { &:last-of-type { .border-bottom-radius(unit(@base-radius, px)); } }
+    //&:nth-child(even) { background-color: @forum-row-bg-alt; }
+
+    .label {
+        display: inline-block;
+        color: @forum-title-label-color;
+        .margin-left(@quarter-spacing-unit);
+        .margin-top(@quarter-spacing-unit);
+
+    }
+
+    &:hover {
+        background-color: @forum-row-hover-bg;
+        .label { color: @forum-title-label-hover-color; }
+    }
+}
+
+/**
+ * Forum header
+ *
+ * used to positon the left/main section of a forum row
+ */
+.forum-header { .margin-top(@quarter-spacing-unit); }
+
+/**
+ * Forum Title
+ *
+ * This is the physical link to each forum
+ */
+.forum-title {
+    .font-size(@base-font-size - 2);
+    @media (min-width: @screen-m-min) { .font-size(@base-font-size); }
+
+    margin: 0;
+
+    > a {
+        color: @forum-title-link-color;
+        &:hover { color: @forum-title-link-hover-color; }
+    }
+
+    .icon {
+        .font-size(12);
+        vertical-align: middle;
+
+        .margin-right(@quarter-spacing-unit);
+    }
+}
+
+/**
+ * Forum icon
+ *
+ * This is the icon next to the forum title
+ */
+.forum-icon {
+    vertical-align: middle;
+
+    background-color: @base-link-color;
+    border: 1px solid desaturate(darken(@base-link-color, 15%), 40%);//mix(@base-link-color, black, 90%);
+    border-radius: 50%;
+
+    display: inline-block;
+    height: unit(14, px);
+    .margin(-2, @quarter-spacing-unit, 0, 0);
+    margin-top: -2px;
+    position: relative;
+    width: unit(14, px);
+
+    .forum-title & { .margin-left(-@half-spacing-unit - @eighth-spacing-unit); }
+    .forum-title &:first-of-type { margin-left: 0; }
+}
+
+/**
+ * Forum Desc.
+ *
+ * This allows for the styling of the text description of each forum
+ */
+.forum-description {
+    .font-size(14);
+    font-weight: normal;
+    line-height: 1.5;
+    @media (min-width: @screen-m-min) { line-height: 1.5; }
+    letter-spacing: .06em;
+    @media (min-width: @screen-m-min) { .text-overflow(); }
+
+    color: @forum-default-color;
+
+    display: block;
+    .margin-bottom(@quarter-spacing-unit);
+    @media (min-width: @screen-m-min) { .margin-bottom(0);  }
+    .padding-top(@quarter-spacing-unit);
+}
+
+/**
+ * Forum details
+ *
+ * Grouping of none header info for forums, used for grid
+ */
+.forum-details {
+    .margin-top(@quarter-spacing-unit - 1);
+    @media (min-width: @screen-m-min) { .padding-left(20); }
+    @media (min-width: @screen-l-min) { .padding-left(@double-spacing-unit); }
+    @media (min-width: @screen-w-min) { .padding-left(40); }
+
+    //.details-stats { width: unit(@quadruple-spacing-unit, px); }
+    .forum-stat {
+        display: inline-block;
+
+        @media (min-width: @screen-m-min) {
+            text-align: right;
+
+            background-color: transparent;
+            border-radius: 0;
+
+            clear: both;
+            display: block;
+            width: 105px;
+            float: right;
+            .margin-bottom(@quarter-spacing-unit);
+            //&:last-of-type {.margin-bottom(0); }
+
+            > dfn {
+                font-weight: 700;
+                font-style: normal;
+
+                color: @forum-stats-dfn-color;
+
+                float: left;
+                .padding-right(@half-spacing-unit);
+            }
+
+            > b {
+                background-color: @forum-stats-label-bg;
+                border-radius: unit(3, px);
+                color: @forum-stats-label-text-color;
+
+                .margin-top(-@eighth-spacing-unit);
+                .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+            }
+        }
+    }
+}
+

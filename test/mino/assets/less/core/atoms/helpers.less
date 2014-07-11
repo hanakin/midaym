@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+/**
+ * common classes that can be usesed to control the positioning
+ * of content.
+ */
+
+/**
+ * Wrapper class
+ * 
+ * use on multiwrapps to avoid unwanted scollbars for mobile off canvas
+ * menusalso provide more flexability and control for any other hidden 
+ * elements.
+ */
+.outer-wrap, .inner-wrap {
+    position: relative;
+    width: 100%;
+}
+
+/**
+ * Grid Paint class
+ * 
+ * use on grid unit to color it
+ */
+.grid-paint {
+    /* Decoration */
+    background-color: #4a8ec2;
+    border-radius: unit(@base-radius, px);
+    color: #fff;
+    /* Layout */
+    .padding(@half-spacing-unit, @quarter-spacing-unit);
+    @media (min-width: @screen-m-min) { .padding(@half-spacing-unit); }
+
+}
+

@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $MODULE-BADGES
+\*------------------------------------*/
+/**
+ * Badge main class
+ *
+ * applying the styles for badges
+ */
+.badge {
+  font-size: 12px;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: auto;
+  background-color: #b75652;
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  min-width: 20px;
+  padding: 2px;
+}
+.badge:empty {
+  display: none;
+}
+[href] .badge {
+  float: left;
+  position: absolute;
+  left: 24px;
+  top: 10px;
+  z-index: 1050;
+}
+.badge [href]:hover,
+.badge [href]:focus {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn .badge {
+  top: -1px;
+}

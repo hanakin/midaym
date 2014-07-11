@@ -1,0 +1,247 @@
+/*------------------------------------*\
+    $COMPONENT-FORUMS
+\*------------------------------------*/
+/**
+ * Forums master Class
+ *
+ * Since we use a lot of list elements not as intended we need a micro reset
+ * for them to make styling things easier
+ */
+.forums {
+  margin: 0;
+}
+.forum-list,
+.forum-row-wrap,
+.forum-header,
+.forum-recent-info {
+  margin: 0;
+}
+/**
+ * Forum wrap
+ *
+ * used to assign forum to grid, breaks mobile first on purpose
+ */
+@media (max-width: 45em) {
+  .forums-wrap.grid {
+    padding: 0px;
+  }
+}
+/**
+ * Forum
+ *
+ * Individual forum class
+ */
+@media (min-width: 45em) {
+  .forum {
+    margin-top: 24px;
+  }
+}
+/**
+ * Forum Name
+ *
+ * This is the header for each forum section
+ */
+.forum-name {
+  background-color: #f4726d;
+  margin: 0;
+}
+@media (min-width: 45em) {
+  .forum-name {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+}
+.forum-name > a {
+  font-size: 16px;
+  font-size: 1em;
+  color: #ffffff;
+  display: block;
+  padding: 6px 24px;
+}
+.forum-name > a:hover {
+  text-decoration: underline;
+}
+/**
+ * Forum Row
+ *
+ * Here we style the look of each forum row
+ */
+.forum-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 12px 6px 12px 9px;
+}
+@media (min-width: 45em) {
+  .forum-row {
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+  }
+}
+@media (min-width: 45em) {
+  .forum-row {
+    padding: 0px;
+  }
+}
+@media (min-width: 45em) {
+  .forum-row:last-of-type {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+.forum-row .label {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.forum-row:hover {
+  background-color: #e6e6e6;
+}
+.forum-row:hover .label {
+  color: #ffffff;
+}
+/**
+ * Forum header
+ *
+ * used to positon the left/main section of a forum row
+ */
+.forum-header {
+  margin-top: 6px;
+}
+/**
+ * Forum Title
+ *
+ * This is the physical link to each forum
+ */
+.forum-title {
+  font-size: 14px;
+  font-size: 0.875em;
+  margin: 0;
+}
+@media (min-width: 45em) {
+  .forum-title {
+    font-size: 16px;
+    font-size: 1em;
+  }
+}
+.forum-title > a {
+  color: #f4726d;
+}
+.forum-title > a:hover {
+  color: #f79592;
+}
+.forum-title .icon {
+  font-size: 12px;
+  font-size: 0.75em;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+/**
+ * Forum icon
+ *
+ * This is the icon next to the forum title
+ */
+.forum-icon {
+  vertical-align: middle;
+  background-color: #f4726d;
+  border: 1px solid #c05955;
+  border-radius: 50%;
+  display: inline-block;
+  height: 14px;
+  margin: -2px 6px 0px 0px;
+  margin-top: -2px;
+  position: relative;
+  width: 14px;
+}
+.forum-title .forum-icon {
+  margin-left: -15px;
+}
+.forum-title .forum-icon:first-of-type {
+  margin-left: 0;
+}
+/**
+ * Forum Desc.
+ *
+ * This allows for the styling of the text description of each forum
+ */
+.forum-description {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: .06em;
+  color: #666666;
+  display: block;
+  margin-bottom: 6px;
+  padding-top: 6px;
+}
+@media (min-width: 45em) {
+  .forum-description {
+    line-height: 1.5;
+  }
+}
+@media (min-width: 45em) {
+  .forum-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+}
+@media (min-width: 45em) {
+  .forum-description {
+    margin-bottom: 0px;
+  }
+}
+/**
+ * Forum details
+ *
+ * Grouping of none header info for forums, used for grid
+ */
+.forum-details {
+  margin-top: 5px;
+}
+@media (min-width: 45em) {
+  .forum-details {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 61.25em) {
+  .forum-details {
+    padding-left: 48px;
+  }
+}
+@media (min-width: 71.25em) {
+  .forum-details {
+    padding-left: 40px;
+  }
+}
+.forum-details .forum-stat {
+  display: inline-block;
+}
+@media (min-width: 45em) {
+  .forum-details .forum-stat {
+    text-align: right;
+    background-color: transparent;
+    border-radius: 0;
+    clear: both;
+    display: block;
+    width: 105px;
+    float: right;
+    margin-bottom: 6px;
+  }
+  .forum-details .forum-stat > dfn {
+    font-weight: 700;
+    font-style: normal;
+    color: #808080;
+    float: left;
+    padding-right: 12px;
+  }
+  .forum-details .forum-stat > b {
+    background-color: #808080;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-top: -3px;
+    padding: 3px 6px;
+  }
+}
