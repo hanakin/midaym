@@ -1,60 +1,25 @@
-Dropplets
-=========
+## Laravel PHP Framework
 
-> Version 1.0
+[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
+[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-A minimalist markdown blogging platform that just works.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
 
-## What's Markdown?
-Markdown is a text formatting syntax inspired on plain text email. It is extremely simple, memorizable and visually lightweight on artifacts so as not to hinder reading.
+Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
 
-> The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
+Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-If you're looking for an awesome Markdown editor, Byword (http://bywordapp.com/) is a great solution for the Mac. They also have an awesome syntax guide which can be found Here (http://bywordapp.com/markdown/syntax.html).
+## Official Documentation
 
-## Installation
-Installing Dropplets is pretty easy. Just follow the few steps below.
+Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
 
-1. Download the latest version here on GitHub.
-2. Extract the zip file.
-3. Drag and drop everything to your server wherever you want it to be installed. 
-4. Pull up your target site in a web browser and follow the prompts.
+### Contributing To Laravel
 
-**IMPORTANT NOTE:** If you're not brought to the installation screen after this process, you probably didn't get the **.htaccess** file in the root Dropplets directory. These files are usually hidden by default, so you might have to show hidden files to see it.
+**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
 
-## Post Formatting
-Posts must currently be composed in markdown format, saved as a "*.md". You may include a matching featured image (optional). Here's an example of good post file naming:
+### License
 
-- your-post-title.md
-- your-post-title.jpg
-
-Post file names are used to structure permalinks. So, a post file saved as "your-post-title.txt" will result in "http://yoursite.com/your-post-title".
-
-Your posts (markdown files) **MUST** be formatted as follows:
-
-    # Your Post Title
-    - Post Author
-    - Twitter Handle (e.g. "dropplets")
-    - 2020/02/02
-    - Post Category
-    - Post Status (e.g. "published" or "draft")
-
-    Your post text starts here.
-    
-## About the Dashboard
-The Dashboard can be used to publish new posts, edit existing posts, change your blog settings or change your template. To access the Dropplets dashboard, load "http://yoursite.com/dashboard/", obviously changing "yoursite.com" to your websites URL.
-
-## Publishing Posts
-Publishing posts is really easy to do within the Dashboard:
-
-1. Login to your Dropplets Dashboard.
-2. Drag and drop your post file into the big "drop" zone within the center of your dashboard.
-
-## License
-Copyright (c) 2013 Circa75 Media, LLC
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
