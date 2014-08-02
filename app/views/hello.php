@@ -35,7 +35,7 @@
 </head>
 <body>
 	<div class="welcome">
-		<a href="http://midaym.com" title="Midaym"><img src="http://www.gravatar.com/avatar/e71d16fc7fcce713ef08faac6ae587e8.png&s=135" /></a>
+		<a href="http://midaym.com" title="Midaym"><img src="http://www.gravatar.com/avatar/e71d16fc7fcce713ef08faac6ae587e8.png?s=135" /></a>
 		<h1>Things are changing.</h1>
 	</div>
 </body>
