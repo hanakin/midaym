@@ -35,7 +35,7 @@
 </head>
 <body>
 	<div class="welcome">
-		<a href="http://midaym.com" title="Midaym"><img src="logo.png" alt="Midaym"></a>
+		<a href="http://midaym.com" title="Midaym"><img src="http://www.gravatar.com/avatar/<?php= md5('midaym@gmail.com'); ?>&s=135" /></a>
 		<h1>Things are changing.</h1>
 	</div>
 </body>
