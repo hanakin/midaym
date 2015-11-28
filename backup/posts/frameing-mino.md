@@ -1,11 +1,12 @@
-# Frameing Mino <small>Responsive, SMACSS, Bare-Bone, Bootstrap 3.0</small>
-- Michael Miday
-- midaym
-- 2013-07-24
-- Web
-- yellow
-- published
-
+- title: Frameing Mino <small>Responsive, SMACSS, Bare-Bone, Bootstrap 3.0</small>
+- author: Michael Miday
+- username: midaym
+- date: 2013-07-24
+- tag: Web
+- color: yellow
+- published: true
+- excerpt: When coming up with the best solution for working with the front-end devlopment of a major web application, there are alot of factors to take into account. By establishing the requirments for both devlopment and releaseability. We can then begin to determine what is needed out of a front-end workflow. Once we establish the workflow we can determine what best way to utilize a framework. Can we use one of the existing ones? Do we need to build our own fully tailor framework? Can we customize an existing one to fit our needs. These are the major questions that I wayed when determining the best approach to utilizing a framework.
+---
 When coming up with the best solution for working with the front-end devlopment of a major web application, there are alot of factors to take into account. By establishing the requirments for both devlopment and releaseability. We can then begin to determine what is needed out of a front-end workflow. Once we establish the workflow we can determine what best way to utilize a framework. Can we use one of the existing ones? Do we need to build our own fully tailor framework? Can we customize an existing one to fit our needs. These are the major questions that I wayed when determining the best approach to utilizing a framework.
 
 ## Framework Requirments
