@@ -1,4 +1,0 @@
-          	        </ul>
-				</article>
-			</div>
-		</section>

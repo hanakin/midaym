@@ -1,7 +1,0 @@
-# Pretty Permalinks
-RewriteRule ^(dashboard)($|/) - [L]
-RewriteRule ^(images)($|/) - [L]
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !index
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php?filename=$1 [L]
